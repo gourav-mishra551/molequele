@@ -9,7 +9,7 @@ const Contact = () => {
         <NavBar/>
         <header  className='headerContact'>
           <div className="upper">
-            <div className=' p-5 sm:p-10'>
+            <div className=' p-5 sm:p-10 '>
               <h1 className='text-white font-semibold heading contactHeading font-mulish flex justify-center ' >Let’s Discuss Your Project</h1>
               </div>
               <div className="socioIcon flex  flex-col-reverse justify-center sm:flex sm:flex-row">

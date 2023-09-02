@@ -4,8 +4,8 @@
 
 }
 .upper{
-    background-image: url("./Image.svg");
     height: 595px;
+    background-image: url("../../assets/Image.svg");
     width: auto;
     background-repeat: no-repeat;
     background-size: cover;
