@@ -1,5 +1,6 @@
 import TopHeader from '../../components/TopHeader/TopHeader'
 import NavBar from '../../components/Navbar/Navbar'
+import Image from '../../assets/Image.svg';
 import "./contactpage.css"
 
 const Contact = () => {
@@ -8,7 +9,7 @@ const Contact = () => {
         <TopHeader/>
         <NavBar/>
         <header  className='headerContact'>
-          <div className="upper">
+          <div className="upper" style={{backgroundImage:`url(${Image})`}}>
             <div className=' p-5 sm:p-10 '>
               <h1 className='text-white font-semibold heading contactHeading font-mulish flex justify-center ' >Let’s Discuss Your Project</h1>
               </div>
