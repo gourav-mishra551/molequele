@@ -9,7 +9,7 @@ const Header = () => {
             <p className="mt-4 para text-lg sm:text-2xl leading-loose font-normal">We Provide high quality chemicals with exceptional services & 
                 <span className="flex flex-col leading-loose">competitive price</span>
             </p>
-            <button className="mt-4  text-white button text-2xl sm:mt-10">Browse Products</button>
+            <button className="mt-4  text-white button sm:mt-10">Browse Products</button>
         </div>
         <div className="rights float-right mt-10">
             <img className="h-auto w-auto float-right " src="\Group 48703.svg" alt="chemical-svg" />

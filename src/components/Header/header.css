@@ -14,10 +14,10 @@
     color: black;
 }
 .button{
-    height: 68px;
-    width: 247px;
+    height: 59px;
+    width: 199px;
     background-color: rgba(141, 46, 209, 1);
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 500;
     border-radius: 5px;
 }

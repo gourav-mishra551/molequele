@@ -8,8 +8,8 @@ const Contact = () => {
       <div className="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-7 wk-ipadp-10 line" id="i69b-2">
         <form className="form-box">
           <div className="container-block form-wrapper">
-            <h1 className="text-2xl font-semibold">Let’s Discuss Your Project</h1>
-              <p className="text-blk contactus-subhead mt-6 sm:mt-6">Let’s make something new</p>
+            <h1 className="text-2xl font-semibold">We are here to help</h1>
+              <p className="text-base contactus-subhead mt-8 font-medium text-gray-500 sm:mt-6">Get in touch & let us know how we can help</p>
             <div className="responsive-container-block">
               <div className="responsive-cell-block wk-ipadp-6 wk-tab-12 wk-mobile-12 wk-desk-6" id="i10mt-6">
                 <input className="input" id="ijowk-6" placeholder="Full Name" name="FirstName"/>

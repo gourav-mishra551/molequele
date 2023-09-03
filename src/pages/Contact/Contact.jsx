@@ -2,6 +2,7 @@ import TopHeader from '../../components/TopHeader/TopHeader'
 import NavBar from '../../components/Navbar/Navbar'
 import Image from '../../assets/Image.svg';
 import "./contactpage.css"
+import Footer from '../../components/Footer/Footer';
 
 const Contact = () => {
   return (
@@ -29,6 +30,9 @@ const Contact = () => {
               </div>
           </div>
         </header>
+       <div className='sm:h-96 h-screen mb-0 sm:mb-20'></div>
+        <Footer/>
+      <div>
       <div className='absolute top-80 h-auto sm:w-3/4 w-auto mr-5 sm:mr-0 ml-5 sm:ml-40 bg-white rounded-xl drop-shadow-md ' >
       <section className="text-gray-700  ">
         <div className="container px-5 sm:px-12 py-12  mx-auto">
@@ -120,7 +124,9 @@ const Contact = () => {
         </div>
       </section>
     </div>
+    </div>
 </div>
+
   )
 }
 
