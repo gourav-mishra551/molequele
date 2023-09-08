@@ -1,14 +1,30 @@
+import "./Indusrty.css"
 const Industry = () => {
   return (
     <>
     
     <h1 className="text-2xl font-medium sm:text-3xl" style={{margin:"4% 0 1% 10%"}} >Industry </h1>
     <div className="grid grid-cols-2 sm:grid-cols-6  mr-5 sm:mr-60 ml-1 sm:ml-32">
-        <img className="m-4" src="./Rectangle 28634.svg" alt="img1" />
-        <img className="m-4" src="./Rectangle 28635.svg" alt="img2" />
-        <img className="m-4" src="./Rectangle 28636.svg" alt="img3" />
-        <img className="m-4" src="./Rectangle 28637.svg" alt="img5" />
-        <img className="m-4" src="./Rectangle 28638.svg" alt="img6" />
+        <div className="container">
+        <img className="m-4 image" src="./Frame 550.svg" alt="img1" />
+        <div className="bottom-right font-bold">Pharma</div>
+        </div>
+        <div className="container">
+        <img className="m-4 image" src="./Rectangle 28635.svg" alt="img2" />
+        <div className="bottom-right font-bold">Agro Chemical</div>
+        </div>
+        <div className="container">
+        <img className="m-4 image" src="./Rectangle 28636.svg" alt="img3" />
+        <div className="bottom-right font-bold ">Cosmetics & Personal Care</div>
+        </div>
+        <div className="container">
+        <img className="m-4 image" src="./Rectangle 28637.svg" alt="img5" />
+        <div className="bottom-right font-bold">Nutrition & Supplements</div>
+        </div>
+        <div className="container">
+        <img className="m-4 image" src="./Rectangle 28638.svg" alt="img6" />
+        <div className="bottom-right font-bold">Plastics & Polymers</div>
+        </div>
     </div>
     {/* first =====================================>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/}
 
