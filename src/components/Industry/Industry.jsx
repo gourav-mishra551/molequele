@@ -4,11 +4,11 @@ const Industry = () => {
     
     <h1 className="text-2xl font-medium sm:text-3xl" style={{margin:"4% 0 1% 10%"}} >Industry </h1>
     <div className="grid grid-cols-2 sm:grid-cols-6  mr-5 sm:mr-60 ml-1 sm:ml-32">
-        <img className="m-4" src="./Group 48745.svg" alt="img1" />
-        <img className="m-4" src="./Group 48744.svg" alt="img2" />
-        <img className="m-4" src="./Group 48742.svg" alt="img3" />
-        <img className="m-4" src="./Group 48748.svg" alt="img5" />
-        <img className="m-4" src="./Group 48746.svg" alt="img6" />
+        <img className="m-4" src="./Rectangle 28634.svg" alt="img1" />
+        <img className="m-4" src="./Rectangle 28635.svg" alt="img2" />
+        <img className="m-4" src="./Rectangle 28636.svg" alt="img3" />
+        <img className="m-4" src="./Rectangle 28637.svg" alt="img5" />
+        <img className="m-4" src="./Rectangle 28638.svg" alt="img6" />
     </div>
     {/* first =====================================>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/}
 
