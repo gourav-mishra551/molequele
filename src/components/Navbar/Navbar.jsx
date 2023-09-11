@@ -13,9 +13,9 @@ export default function NavBar() {
             <div className="  px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
                 <div>
                     <div className="flex items-center justify-between py-3 md:py-5 md:block">
-                        <a href="/">
-                            <img src="Group 48702.svg" alt="" />
-                        </a>
+                        <Link  to="/">
+                            <img className="w-[123px] h-[15.86px] sm:h-auto sm:w-auto" src="Group 48702.svg" alt="" />
+                        </Link>``
                         <div className="md:hidden">
                             <button
                                 className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
@@ -69,12 +69,12 @@ export default function NavBar() {
 		<a className="flex items-center   sm:mb-0 sm:text-base text-2xl font-medium hover:text-purple-600 link link-underline link-underline-black  text-purple-700 sm:text-black">
             <Link to="/about">About</Link></a>
         
-		<button className=" flex flex-col items-center group mega-menu " onClick={(e)=>{e.preventDefault()}}>
+		<button className=" flex flex-col items-center group mega-menu " onSubmit={(e)=>{e.preventDefault()}}>
 			<div className="my-auto sm:my-0 mr-auto sm:text-base text-2xl sm:ml-2  font-medium hover:text-purple-600 link link-underline link-underline-black text-purple-700 sm:text-black "  >
 			Products	
 			</div>
 			<div className="absolute  hidden w-screen   mt-16 bg-white border  shadow-lg group-focus:visible" onClick={(e)=>{e.stopPropagation}}>
-                <div className=" flex flex-row  sm:flex " onClick={(e)=>{e.stopPropagation}}>
+                <div className=" flex flex-row  sm:flex " onSubmit={(e)=>{e.stopPropagation}}>
                 <div className="w-60 h-auto ml-44 mt-10 hidden sm:block">
                     <div className="flex flex-col">
                         <div className="flex">
@@ -164,10 +164,11 @@ export default function NavBar() {
 	</div>
 </div>
 
-<a className="fixed flex items-center justify-center drop-shadow-lg  h-8 pr-2 pl-1 bg-purple-200 rounded-full bottom-10 right-10 mr-4 mb-4 shadow-lg text-purple-800 hover:bg-purple-600" href="http://wa.me/918010150164" target="_top">
-	<div className="flex items-center justify-center h-6 w-6 bg-purple-500 rounded-full">
+<a className="fixed flex items-center justify-center   h-8 pr-2 pl-1 bg-[#F9F5FD] rounded-full bottom-[13.5rem] right-14 mr-4 mb-4 border border-[#E1B9FD]  text-purple-800 hover:bg-purple-600" href="http://wa.me/918010150164" target="_top">
+	<div className=" rounded-full">
+        <img className="rounded-full" src="/Vector4.svg" alt="logo" />
 	</div>
-	<span className="text-sm ml-1 p-1 leading-none">Chat</span>
+	<span className="text-sm  p-1 leading-none">Chat</span>
 </a>
                             
                         </ul>

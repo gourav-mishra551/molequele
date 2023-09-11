@@ -2,7 +2,7 @@ import TopHeader from '../../components/TopHeader/TopHeader'
 import NavBar from '../../components/Navbar/Navbar'
 import Image from '../../assets/Image.svg';
 import "./contactpage.css"
-import Footer from '../../components/Footer/Footer';
+import Footer2 from '../../components/Footer/Footer2';
 
 import emailjs from '@emailjs/browser';
 import { ErrorMessage, useFormik } from 'formik';
@@ -69,50 +69,50 @@ const Contact = () => {
       <header className='headerContact'>
         <div className="upper" style={{ backgroundImage: `url(${Image})` }}>
           <div className=' p-5 sm:p-10 '>
-            <h1 className='text-white font-semibold heading contactHeading font-mulish flex justify-center ' >Let’s Discuss Your Project</h1>
+            <h1 className='text-white font-semibold text-[20px] sm:text-[32px] mt-8 headerContact w-auto sm:w-[703px] mx-auto flex justify-center' > Lets Discuss your project</h1>
           </div>
-          <div className="socioIcon flex  flex-col-reverse justify-center sm:flex sm:flex-row">
-            <div className="whatsapp flex flex-wrap mr-10 ">
-              <img className='hidden sm:block mb-5' src="./Vector.svg" alt="logo" />
-              <p className='text-white font-medium text-xl ml-6 hidden sm:block '><a href="whatsapp.com">Chat With US</a></p>
+          <div className="socioIcon flex  flex-col-reverse justify-center sm:flex sm:flex-row w-auto sm:w-[754px] mx-auto">
+            <div className="whatsapp flex flex-wrap mr-10">
+              <img className='hidden sm:block mb-6' src="./Vector.svg" alt="logo" />
+              <p className='text-white font-medium text-xl ml-4 hidden sm:block ' style={{ lineHeight: "33.3px" }}><a href="whatsapp.com">Chat With US</a></p>
             </div>
             <div className="phone  mx-auto sm:mx-0   flex flex-wrap ">
-              <img src="./Vector (1).svg" alt="logo" />
-              <p className='text-white font-medium text-base sm:text-xl ml-3 mx-auto mr-10'>+91 9876543210</p>
+              <img className='sm:mb-5 ml-10 sm:ml-0 mb-0 mt-2 sm:mt-0 sm:h-auto sm:w-auto h-[20px] w-[20px]' src="./Vector (1).svg" alt="logo" />
+              <p className='text-white font-medium text-base sm:text-xl ml-3 mx-auto mr-10' style={{ lineHeight: "33.3px" }}>+91 9876543210</p>
             </div>
             <div className="mail flex mx-auto sm:mx-0 mb-5">
-              <img src="./Vector (2).svg" alt="logo" />
-              <p className='text-white ml-5 font-medium text-base sm:text-xl'>Ayush@molequle.biz</p>
+              <img className='sm:mb-1 mb-0 mt-2 sm:mt-0 sm:h-auto sm:w-auto h-[20px] w-[20px]' src="./Vector (2).svg" alt="logo" />
+              <p className='text-white ml-4 font-medium text-base sm:text-xl'style={{ lineHeight: "33.3px" }}>Ayush@molequle.biz</p>
             </div>
           </div>
         </div>
       </header>
       <div className='sm:h-96 h-screen mb-0 sm:mb-20'></div>
-      <Footer />
+      <Footer2 />
       <div>
-        
-        <form className='absolute top-80 sm:mt-8 h-auto sm:w-3/4 w-auto mr-5 sm:mr-0 ml-5 sm:ml-40 bg-white rounded-xl drop-shadow-md' onSubmit={sendEmail} ref={form}>
+
+        <form className='absolute top-80 sm:mt-8 mt-0   h-auto sm:w-3/4 w-auto mr-5 sm:mr-0 ml-4 sm:ml-40 bg-white rounded-xl drop-shadow-md' onSubmit={sendEmail} ref={form}>
           <div className="text-gray-700  " >
             <div className="container px-5 sm:px-12 py-12  mx-auto" >
               <div className=" mx-auto">
                 <div className="flex flex-wrap -m-2">
-                  <div className="p-2 w-auto sm:w-1/2 ">
-                    <div className="relative ">
-                      <label htmlFor="form_name" className="leading-7 text-sm text-black font-bold ">
+                  <div className="p-2 w-auto sm:w-1/2 " >
+                    <div className="relative " >
+                      <label htmlFor="form_name" className="leading-7  text-sm text-black font-bold ">
                         Full Name*
                       </label>
                       <div className={`expandable ${formik.touched.from_name && formik.errors.from_name ? 'show' : ''}`}>
                         {formik.errors.from_name}
                       </div>
                       <input
-                        
+
                         id="username"
                         onChange={formik.handleChange}
                         value={formik.values.from_name}
                         type="text"
                         name="from_name"
                         placeholder='jhon david'
-                        className="w-full h-16 mt-5 font-normal rounded-2xl text-black border border-gray-300 focus:border-purple-500 text-base outline-none py-2 px-5 leading-8 transition-colors duration-200 ease-in-out"
+                        className="sm:w-full h-16 mt-5  font-normal rounded-2xl text-black border border-gray-300 focus:border-purple-500 text-base outline-none py-2 px-5 leading-8 transition-colors duration-200 ease-in-out w-[319px]"
                       />
                     </div>
                   </div>
@@ -134,7 +134,7 @@ const Contact = () => {
                         id="to_name"
                         name="to_name"
                         placeholder='example@youremail.com'
-                        className="w-full mt-5 rounded-2xl h-16 border font-normal border-gray-300 focus:border-purple-500 text-base outline-none text-gray-700 py-2 px-5 leading-8 transition-colors duration-200 ease-in-out"
+                        className="sm:w-full mt-5 rounded-2xl h-16 border font-normal border-gray-300 focus:border-purple-500 text-base outline-none text-gray-700 py-2 px-5 leading-8 transition-colors duration-200 ease-in-out w-[319px]"
                       />
                     </div>
                   </div>
@@ -153,7 +153,7 @@ const Contact = () => {
                         id="form_phone"
                         name="form_phone"
                         placeholder='your phone number'
-                        className="w-full mt-5 h-16 rounded-2xl font-normal border border-gray-300 focus:border-purple-500 text-base outline-none text-gray-700 py-2 px-5 leading-8 transition-colors duration-200 ease-in-out"
+                        className="sm:w-full mt-5 h-16 rounded-2xl font-normal border border-gray-300 focus:border-purple-500 text-base outline-none text-gray-700 py-2 px-5 leading-8 transition-colors duration-200 ease-in-out w-[319px]"
                       />
                     </div>
                   </div>
@@ -175,7 +175,7 @@ const Contact = () => {
                         id="subject"
                         name="subject"
                         placeholder='your company name'
-                        className="w-full mt-5 h-16 font-normal rounded-2xl border border-gray-300 focus:border-purple-500 text-base outline-none text-gray-700 py-1 px-5 leading-8 transition-colors duration-200 ease-in-out"
+                        className="sm:w-full mt-5 h-16 font-normal rounded-2xl border border-gray-300 focus:border-purple-500 text-base outline-none text-gray-700 py-1 px-5 leading-8 transition-colors duration-200 ease-in-out w-[319px]"
                       />
                     </div>
                   </div>
@@ -202,7 +202,7 @@ const Contact = () => {
                     </div>
                   </div>
                   <div className="p-2">
-                    <button type="submit" className=" text-white bg-purple-600 border-0 py-2 px-8 focus:outline-none hover:bg-purple-800 w-48 h-16  text-base rounded-lg font-medium float-left">
+                    <button type="submit" className=" text-white bg-purple-600 border-0 text-sm  py-2 px-[1rem] sm:px-8 focus:outline-none hover:bg-purple-800 sm:h-[68.59px]  sm:text-base rounded-lg font-medium float-left sm:w-[195px] w-[141px] h-[56px]">
                       Send Message
                     </button>
                   </div>

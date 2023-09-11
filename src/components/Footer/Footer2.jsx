@@ -1,11 +1,15 @@
 
-const Footer = () => {
+
+const Footer2 = () => {
   return (
-    <div className="bg-purple-50 pt-10">
-      <hr className=" mx-5 sm:mx-32 border dark:bg-[#8D2ED1]"></hr>
+    <div className="bg-purple-50 pt-1">
+            <img className="sm:block hidden p-4  sm:ml-auto sm:mr-[7em]" src="./Group 48702.svg" alt="logo" />
+            <hr className="border sm:block hidden sm:ml-[8rem] sm:mr-[3em]" />
     <div className="flex flex-col pb-32  bg-purple-50  px-5 sm:pl-[8rem] sm:pr-[3em]  w-auto sm:flex sm:flex-row ">
     <div className="w-auto sm:w-8/12">
+        
         <div className="flex flex-start ">
+            
             <div className="grid grid-cols-4 text-[14px] sm:text-[16px]  sm:grid-cols-4 mt-10 sm:mt-10 font-medium leading-7 text-gray-400 ">
                 <div>Home</div>
                 <div>About</div>
@@ -42,9 +46,11 @@ const Footer = () => {
         </div>
         <p className="mt-6 font-medium text-[14px] sm:text-[16px] text-gray-600">Elara Technology Private Limited</p>
       </div>
+      
     </div>
     </div>
+    
   )
 }
 
-export default Footer
+export default Footer2

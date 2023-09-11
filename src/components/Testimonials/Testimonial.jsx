@@ -82,13 +82,13 @@ class Carousel extends React.Component {
         }
         return (
         <>
-          <div style={{margin:"6% 10% 0% 10%"}}>
-            <h1 className='text-xl font-medium sm:text-3xl'>Trusted by leaders across industries...</h1>
-            <p className='font-medium  text-sm sm:text-lg whitespace-pre-wrap text-gray-500  gap-3 tracking-normal mt-3'>Over 80% of our customers find us remarkably great to work with. Service Excellence lies in the emotions we <br /> evoke and the relationships we forge. Every customer, every day!</p>
+          <div style={{margin:"8% 6% 0% 6%"}}>
+            <h1 className='text-xl font-medium sm:text-3xl'> <span className='underline-text'>Trusted by leaders</span> across industries...</h1>
+            <p className='font-normal leading-7 tracking-[1%] text-[15px] text-[#6A6A6A]  sm:text-lg whitespace-pre-wrap  gap-3  mt-4'>Over 80% of our customers find us remarkably great to work with. Service Excellence lies in the emotions we <br /> evoke and the relationships we forge. Every customer, every day!</p>
           </div>
-            <div className="carousel-container">
+            <div className="carousel-container mt-5">
                 <div className="cards">
-                    <div className="card leftCard ">
+                    <div className="card leftCard ml-[6rem] ">
                       <div className='flex'>
                         <img className="avatars" src={items[this.state.leftCard].imgSrc} alt="avatar"></img>
                         <span className="fa fa-star checked"></span>
@@ -97,10 +97,10 @@ class Carousel extends React.Component {
                         <span className="fa fa-star"></span>
                         <span className="fa fa-star"></span>
                         </div>
-                        <div className="text">
+                        <div className="">
                             <h3 className="name font-semibold">{items[this.state.leftCard].name} </h3>
                             <p className="position">{items[this.state.leftCard].position}</p>
-                            <p className="testimony font-normal sm:font-semibold">{items[this.state.leftCard].quote}</p>
+                            <p className="testimony font-normal text">{items[this.state.leftCard].quote}</p>
                         </div>
                     </div>
                     <div className="card active">
@@ -113,10 +113,10 @@ class Carousel extends React.Component {
                         <span className="fa fa-star checked"></span>
                         </div>
                         <span>
-                            <div className="text">
-                                <h3 className="name text-lg font-semibold">{items[this.state.activeIndex].name}</h3>
-                                <p className="position">{items[this.state.activeIndex].position}</p>
-                                <p className="testimony font-normal sm:font-semibold ">{items[this.state.activeIndex].quote}</p>
+                            <div className="">
+                                <h3 className="name  font-semibold">{items[this.state.activeIndex].name}</h3>
+                                <p className="position" >{items[this.state.activeIndex].position}</p>
+                                <p className="testimony text">{items[this.state.activeIndex].quote}</p>
                             </div>
                             <div className="arrow-container">
                                 <ArrowLeft className="arrow arrow-left" fill="hsla(221, 0%, 49%, 0.98)" onClick={this.activatePreviousSlide.bind(this)}></ArrowLeft>
@@ -133,10 +133,10 @@ class Carousel extends React.Component {
                         <span className="fa fa-star checked"></span>
                         <span className="fa fa-star checked"></span>
                         </div>
-                        <div className="text">
+                        <div className="">
                             <h3 className="name font-semibold">{items[this.state.rightCard].name}</h3>
                             <p className="position">{items[this.state.rightCard].position}</p>
-                            <p className="testimony font-normal sm:font-semibold">{items[this.state.rightCard].quote}</p>
+                            <p className="testimony  text">{items[this.state.rightCard].quote}</p>
                         </div>
                     </div>
                 </div>
