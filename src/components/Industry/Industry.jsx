@@ -3,42 +3,42 @@ const Industry = () => {
     return (
         <>
 
-            <h1 className="text-2xl font-medium sm:text-3xl mt-[4%] mb-[1%] ml-[18px] sm:ml-[9.5%]" >Industry </h1>
-            <div className="grid grid-cols-2 sm:grid-cols-6  sm:mr-60  sm:ml-[6.6rem] pl-5 pt-5">
+            <h1 className="text-2xl font-medium sm:text-3xl mt-[4%] mb-[1%] ml-[18px] sm:ml-[6.5%]" >Industry </h1>
+            <div className="grid grid-cols-2 sm:grid-cols-6  sm:mr-60  sm:ml-[4.4rem] pl-3 pt-5">
                 <div className="h-[158px] w-[163px] sm:w-auto sm:h-auto overflow-hidden mb-5">
                     <div className="containers">
-                        <img className="mt-0 ml-0 mb-5 mr-0 sm:m-4 image overflow-hidden" src="./Frame 550.svg" alt="img1" />
-                        <div className="bottom-right">Pharma</div>
+                        <img className="mt-0 ml-0 mb-5 sm:w-[156px] sm:h-[208px] mr-0 sm:m-4 image overflow-hidden" src="./Frame 550.svg" alt="img1" />
+                        <div className="bottom-right sm:top-[137px] top-[108px]">Pharma</div>
                     </div>
                 </div>
                 <div className="h-[158px] w-[163px] sm:w-auto sm:h-auto overflow-hidden">
                 <div className="containers">
                     <img className="mt-0 ml-0 mb-5 mr-0 sm:m-4 image" src="./Rectangle 28635.svg" alt="img2" />
-                    <div className="bottom-right">Agro Chemical</div>
+                    <div className="bottom-right sm:top-[137px] top-[108px]">Agro Chemical</div>
                 </div>
                 </div>
                 <div className="h-[158px] w-[163px] sm:w-auto sm:h-auto overflow-hidden mb-5">
                 <div className="containers">
                     <img className="m-0 sm:m-4 image" src="./Rectangle 28636.svg" alt="img3" />
-                    <div className="bottom-right  ">Cosmetics & Personal Care</div>
+                    <div className="bottom-right  sm:top-[137px] top-[108px]">Cosmetics & Personal Care</div>
                 </div>
                 </div>
                 <div className="h-[158px] w-[163px] sm:w-auto sm:h-auto overflow-hidden">
                 <div className="containers">
                     <img className="m-0 sm:m-4 image" src="./Rectangle 28637.svg" alt="img5" />
-                    <div className="bottom-right ">Nutrition & Supplements</div>
+                    <div className="bottom-right sm:top-[135px] top-[108px]">Nutrition & Supplements</div>
                 </div>
                 </div>
                 <div className="h-[158px] w-[163px] sm:w-auto sm:h-auto overflow-hidden">
                 <div className="containers overflow-hidden">
                     <img className="m-0 sm:m-4 image overflow-hidden" src="./Rectangle 28638.svg" alt="img6" />
-                    <div className="bottom-right ">Plastics & Polymers</div>
+                    <div className="bottom-right sm:top-[150px] top-[108px]">Plastics & Polymers</div>
                 </div>
                 </div>
             </div>
             {/* first =====================================>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/}
 
-            <div className="flex flex-col-reverse mt-20 sm:mt-20 sm:flex sm:flex-row md:ml-[8rem] sm:ml-40 h-auto" >
+            <div className="flex flex-col-reverse mt-20 sm:mt-20 sm:flex sm:flex-row md:ml-[6.5rem] sm:ml-40 h-auto" >
                 <div className="left w-auto sm:w-2/5" >
                     <h2 className="text-xl font-medium sm:text-3xl sm:leading-relaxed mt-5 sm:mt-0 ml-5 sm:ml-0">Diverse Range of Specialty Chemicals</h2>
                     <p className="font-medium text-sm sm:text-lg whitespace-pre-wrap text-gray-500   gap-3 tracking-normal mt-4 float-left leading-loose sm:leading-loose ml-5 sm:ml-0 sm:mr-0 mr-5">Explore Molequle`s <span className="text-purple-600 leading-loose ">vast product portfolio,</span> ranging from APIs & Excipients in Pharma to Polymers in Plastics, encompassing a comprehensive range of industrial and specialty chemicals. <br />
@@ -53,7 +53,7 @@ const Industry = () => {
 
             {/* second  =================================================>>>>>>>>>>>>>>*/}
 
-            <div className="flex flex-col mt-20 sm:flex sm:flex-row md:ml-[rem] sm:ml-[8rem] h-auto" >
+            <div className="flex flex-col mt-20 sm:flex sm:flex-row md:ml-[rem] sm:ml-[6.5rem] h-auto" >
                 <div className="left  mr-8 sm:ml-0 ml-5">
                     <img src="./Mask group.jpg" alt="mask group" />
                 </div>
@@ -74,7 +74,7 @@ const Industry = () => {
 
             {/* third =======================================================*/}
 
-            <div className="flex flex-col-reverse  sm:mt-28 sm:flex sm:flex-row md:ml-[rem] sm:ml-[8rem] h-auto mt-20" >
+            <div className="flex flex-col-reverse  sm:mt-28 sm:flex sm:flex-row md:ml-[rem] sm:ml-[6.5rem] h-auto mt-20" >
                 <div className="left w-auto sm:w-2/5" >
                     <h2 className="text-xl mt-6 sm:mt-20 font-medium sm:text-3xl leading-relaxed sm:leading-relaxed ml-5 sm:ml-0 mr-5 sm:mr-0">Credit support and post-sale service</h2>
                     <p className="font-medium text-sm sm:text-lg  whitespace-pre-wrap text-gray-500  gap-3 tracking-normal mt-4 ml-5 sm:ml-0 mr-5 sm:mr-0 leading-loose sm:leading-loose">Get <span className="text-purple-600">extended technical and non-technical support.</span>  Our post-sale service ensures all queries are promptly addressed by a dedicated team. Additionally, we offer reliable credit support options to facilitate seamless transactions and cultivate long-term partnerships.</p>
@@ -87,7 +87,7 @@ const Industry = () => {
                 </div>
             </div>
             {/* value chain ======================>>>>>>>>>>>>>>>>>>>>>>>>>> */}
-            <div className="w-auto bg-purple-50 mt-10 sm:mt-28 h-auto" style={{ padding: "3% 0% 4% 6% ", height: "auto" }}>
+            <div className="w-auto bg-purple-50 mt-10 sm:mt-28 h-auto" style={{ padding: "3% 0% 4% 7% ", height: "auto" }}>
                 <h1 className="text-xl font-medium sm:text-3xl mr-[0.4rem]">Redefining <span className="underline-text">Speciality  Chemicals</span>  value chain!</h1>
                 <p className="font-normal leading-7 tracking-[1%] text-[16px]  text-[#6A6A6A] mr-0 sm:mr-[4rem] sm:text-lg whitespace-pre-wrap  gap-3  mt-4 " >Molequle is your trusted gateway to best manufacturers from China, India, and beyond to fulfill all your chemical needs. We provide innovative and market driven products across industries with end-to-end logistics support.</p>
 
@@ -118,7 +118,7 @@ const Industry = () => {
                     </div>
                 </div>
             </div>
-            <div style={{ margin: "5% 6% 2% 6%" }}>
+            <div style={{ margin: "5% 6% 2% 7%" }}>
                 <h1 className="text-xl sm:text-3xl font-medium pt-5 sm:pt-0"> <span className="underline-text">Uncompromising quality </span> with right compliances...</h1>
                 <p className="font-normal leading-7 tracking-[1%] text-[15px] text-[#6A6A6A]  sm:text-lg whitespace-pre-wrap  gap-3  mt-4">From Indian & US Pharmacopoeia to Reach & Toy Safety, our vast suppliers network meets highly rigid and extensive regulatory compliances.  </p>
                 <div className="grid grid-cols-3 gap-x-3 gap-y-3 sm:grid-cols-5 mt-10 sm:mt-10 mb-5 ">

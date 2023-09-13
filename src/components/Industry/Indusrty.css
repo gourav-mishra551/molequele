@@ -5,15 +5,15 @@
   }
   .bottom-right {
     position: absolute;
-    top: 83%;
-    left: 51%;
+bottom: 10px;
+left: 15px;
     height: 72px;
-    width: 154px;
+    width: 156px;
     font-weight: 500;
     font-size: 15px;
     line-height: 22.5px;
     letter-spacing: 4% ;
-    transform: translate(-50%, -50%);
+    overflow: hidden;
     background: linear-gradient(180deg, rgba(217, 217, 217, 0) 0%, #000000 103.47%),
     linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #000000 103.47%);
   }
@@ -31,7 +31,9 @@
   }
   @media (max-width: 640px){
     .bottom-right{
-      top: 61%;
-      left: 48%;
+      width: 157.5px;
+      height: 72px;
+      left: -1px;
+      top:110px;
     }
   }

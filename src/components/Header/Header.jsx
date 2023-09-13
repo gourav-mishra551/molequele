@@ -2,7 +2,7 @@ import "./header.css"
 const Header = () => {
   return (
     <div className="main flex">
-        <div className="lefts sm:ml-36 ml-5">
+        <div className="lefts sm:ml-[6.5rem] ml-5">
             <h1 className="text-3xl font-bold heading sm:text-5xl sm:leading-loosen leading-relaxed ">Your Speciality chemicals 
                 <span className="flex flex-col sm:flex sm:flex-row sm:leading-loose md:leading-relaxed leading-relaxed">procuments
                 <span className= "flex flex-col sm:flex sm:flex-row sm:ml-4 ml-0">partner</span></span>

@@ -2,8 +2,8 @@
 const Footer = () => {
   return (
     <div className="bg-purple-50 pt-10">
-      <hr className=" mx-5 sm:mx-32 border dark:bg-[#8D2ED1]"></hr>
-    <div className="flex flex-col pb-32  bg-purple-50  px-5 sm:pl-[8rem] sm:pr-[3em]  w-auto sm:flex sm:flex-row ">
+      <hr className=" mx-5 sm:ml-[6.5rem] sm:mr-[7.5rem] border dark:bg-[#8D2ED1]"></hr>
+    <div className="flex flex-col pb-32  bg-purple-50  px-5 sm:pl-[6.5rem] sm:pr-[3em]  w-auto sm:flex sm:flex-row ">
     <div className="w-auto sm:w-8/12">
         <div className="flex flex-start ">
             <div className="grid grid-cols-4 text-[14px] sm:text-[16px]  sm:grid-cols-4 mt-10 sm:mt-10 font-medium leading-7 text-gray-400 ">

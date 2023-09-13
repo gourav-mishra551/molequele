@@ -15,7 +15,7 @@ export default function NavBar() {
                     <div className="flex items-center justify-between py-3 md:py-5 md:block">
                         <Link  to="/">
                             <img className="w-[123px] h-[15.86px] sm:h-auto sm:w-auto" src="Group 48702.svg" alt="" />
-                        </Link>``
+                        </Link>
                         <div className="md:hidden">
                             <button
                                 className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
@@ -164,7 +164,7 @@ export default function NavBar() {
 	</div>
 </div>
 
-<a className="fixed flex items-center justify-center   h-8 pr-2 pl-1 bg-[#F9F5FD] rounded-full bottom-[13.5rem] right-14 mr-4 mb-4 border border-[#E1B9FD]  text-purple-800 hover:bg-purple-600" href="http://wa.me/918010150164" target="_top">
+<a className="fixed flex items-center justify-center   h-8 pr-2 pl-1 bg-[#F9F5FD] rounded-full bottom-[13.5rem] right-14 mr-4 mb-4 border border-[#E1B9FD]  text-purple-800 hover:bg-purple-100" href="http://wa.me/918010150164" target="_top">
 	<div className=" rounded-full">
         <img className="rounded-full" src="/Vector4.svg" alt="logo" />
 	</div>

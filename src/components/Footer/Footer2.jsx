@@ -3,8 +3,8 @@
 const Footer2 = () => {
   return (
     <div className="bg-purple-50 pt-1">
-            <img className="sm:block hidden p-4  sm:ml-auto sm:mr-[7em]" src="./Group 48702.svg" alt="logo" />
-            <hr className="border sm:block hidden sm:ml-[8rem] sm:mr-[3em]" />
+            <img className="sm:block hidden p-5  sm:ml-auto sm:mr-[7em]" src="./Group 48702.svg" alt="logo" />
+            <hr className="border sm:block hidden sm:ml-[8rem] sm:mr-[8em]" />
     <div className="flex flex-col pb-32  bg-purple-50  px-5 sm:pl-[8rem] sm:pr-[3em]  w-auto sm:flex sm:flex-row ">
     <div className="w-auto sm:w-8/12">
         

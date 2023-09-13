@@ -69,7 +69,7 @@ const Contact = () => {
       <header className='headerContact'>
         <div className="upper" style={{ backgroundImage: `url(${Image})` }}>
           <div className=' p-5 sm:p-10 '>
-            <h1 className='text-white font-semibold text-[20px] sm:text-[32px] mt-8 headerContact w-auto sm:w-[703px] mx-auto flex justify-center' > Lets Discuss your project</h1>
+            <h1 className='text-white font-semibold text-[20px] sm:text-[32px] mt-8 headerContact w-auto sm:w-[703px] mx-auto flex justify-center' >Get in touch & let us know how we can help</h1>
           </div>
           <div className="socioIcon flex  flex-col-reverse justify-center sm:flex sm:flex-row w-auto sm:w-[754px] mx-auto">
             <div className="whatsapp flex flex-wrap mr-10">
@@ -87,11 +87,11 @@ const Contact = () => {
           </div>
         </div>
       </header>
-      <div className='sm:h-96 h-screen mb-0 sm:mb-20'></div>
+      <div className='sm:h-[28rem] h-screen mb-0 sm:mb-20'></div>
       <Footer2 />
       <div>
 
-        <form className='absolute top-80 sm:mt-8 mt-0   h-auto sm:w-3/4 w-auto mr-5 sm:mr-0 ml-4 sm:ml-40 bg-white rounded-xl drop-shadow-md' onSubmit={sendEmail} ref={form}>
+        <form className='absolute top-80 sm:mt-10 mt-0   h-auto sm:w-3/4 w-auto mr-5 sm:mr-0 ml-4 sm:ml-40 bg-white rounded-xl drop-shadow' onSubmit={sendEmail} ref={form}>
           <div className="text-gray-700  " >
             <div className="container px-5 sm:px-12 py-12  mx-auto" >
               <div className=" mx-auto">
