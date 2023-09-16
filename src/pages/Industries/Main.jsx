@@ -1,9 +1,13 @@
 import "./Industry.css"
+import { Link } from "react-router-dom";
 import React from 'react';
 import cloneDeep from "lodash/cloneDeep";
 import throttle from "lodash/throttle";
 import Pagination from "rc-pagination";
 import "rc-pagination/assets/index.css";
+import "./industry.less";
+import { Table, Thead, Tbody, Tr, Td } from 'react-super-responsive-table'
+import 'react-super-responsive-table/dist/SuperResponsiveTableStyle.css'
 
 import { allData } from "./constants";
 import NavBar from '../../components/Navbar/Navbar';
@@ -58,9 +62,9 @@ const Main = () => {
 		const { key, index } = rowData;
 		const tableCell = Object.keys(tableHead);
 		const columnData = tableCell.map((keyD, i) => {
-			return <td key={i}>{key[keyD]}</td>;
+			return <Td key={i}>{key[keyD]}</Td>;
 		});
-		return <tr key={index}>{columnData}</tr>;
+		return <Tr key={index}>{columnData}</Tr>;
 	};
 
 	const tableData = () => {
@@ -69,7 +73,7 @@ const Main = () => {
 
 	const headRow = () => {
 		return Object.values(tableHead).map((title, index) => (
-			<td key={index}>{title}</td>
+			<Td key={index}>{title}</Td>
 		));
 	};
 
@@ -77,48 +81,53 @@ const Main = () => {
 	return (
 		<>
 			<NavBar />
-			<div className='bg-gray-100'>
-				<div style={{ backgroundImage: `url(${Group})` }}>
-					<h1 className='flex justify-center font-semibold text-[28px] pt-14 ' style={{ lineHeight: "42px" }}>Some heading will come here</h1>
-					<p className='flex justify-center font-medium text-[20px] pt-5 pb-8 text-black' style={{ letterSpacingz: "2%" }}>Need text let’s Discuss Get in touch & let us know how we can help Your Project</p>
-				</div>
-				<ul className=' sm:w-[1133px] w-[414px] h-[38px] ml-5 sm:ml-auto sm:h-[50px] mx-auto flex mt-10 mb-20 overflow-auto sm:overflow-visible'>
-					<li className='font-medium text-[15px] sm:text-[16px] sm:mr-8 md:mr-14 link-underline-list link-underline-black-list text-purple-700 ' style={{ lineHeight: "24px" }}>All Products</li>
-					<li className='font-medium text-[16px] sm:mr-8 md:mr-14 link-underline-list link-underline-black-list' style={{ lineHeight: "24px" }}> Pharma</li>
-					<li className='font-medium text-[16px] sm:mr-8 md:mr-14 link-underline-list link-underline-black-list' style={{ lineHeight: "24px" }}> Agro Chemical</li>
-					<li className='font-medium text-[16px] sm:mr-8 md:mr-14 link-underline-list link-underline-black-list' style={{ lineHeight: "24px" }}>Cosmetic & Personal Care</li>
-					<li className='font-medium text-[16px] sm:mr-8 md:mr-14 link-underline-list link-underline-black-list' style={{ lineHeight: "24px" }}>Nutrition & Suppliment</li>
-					<li className='font-medium text-[16px] link-underline-list link-underline-black-list' style={{ lineHeight: "24px" }}>Plastics & Polymers</li>
-				</ul>
-				<div className=' ml-[6%] mr-[6%] relative'>
-
-					<div className="search">
-						<input
-							placeholder="Search Productss....."
-							style={{ position:"absolute",left: "0", right: "0",top:"-90px", marginLeft:"auto",marginRight:"auto",marginTop:"20px" , paddingLeft: "20px" }}
-							value={value}
-							onChange={e => setValue(e.target.value)}
-						/>
-						<button className="bg-[#8D2ED1] w-[131px] h-[44px] rounded text-white absolute  2xl:right-[11rem] md:right-[-2rem] lg:right-[5rem]  top-[-60px] ">Search</button>
+			<div className='bg-gray-100 '>
+				<div className="pl-4 pr-4 sm:pl-0 sm:pr-0">
+					<div style={{ backgroundImage: `url(${Group})` }}>
+						<h1 className='flex justify-center font-semibold text-[20px] sm:text-[28px] sm:pt-14 pt-8' style={{ lineHeight: "42px" }}>Some heading will come here</h1>
+						<p className='sm:flex justify-center font-medium sm:text-[20px] text-[16px] pt-5 pb-8 text-black mb-12 sm:mb-0 ml' style={{ letterSpacingz: "2%" }}>Need text let’s Discuss Get in touch & let us <span className="flex justify-center">know how we can help Your Project</span> </p>
 					</div>
-					<table>
-						<thead className="mt-10">
-							<tr className="bg-[#FBF6FF]  border border-[#E9EFF4]">{headRow()}</tr>
-						</thead>
-						<tbody className="trhover bg-white">{tableData()}</tbody>
-					</table>
-					<Pagination
-						pageSize={countPerPage}
-						onChange={updatePage}
-						current={currentPage}
-						total={allData.length}
-						style={{ marginTop: "20px", display: "flex", justifyContent: "center" }}
-					/>
-					
+					<ul className=' sm:w-[1133px] w-[414px] sm:flex hidden h-[38px] ml-5 sm:ml-auto sm:h-[50px] mx-auto  mt-10 mb-20 overflow-auto sm:overflow-visible'>
+						<li className='font-medium text-[15px] sm:text-[16px] sm:mr-8 md:mr-14 link-underline-list link-underline-black-list text-purple-700 ' style={{ lineHeight: "24px" }}>All Products</li>
+						<li className='font-medium text-[16px] sm:mr-8 md:mr-14 link-underline-list link-underline-black-list' style={{ lineHeight: "24px" }}>
+							<Link to="/pharma">
+								Pharma
+							</Link>
+						</li>
+						<li className='font-medium text-[16px] sm:mr-8 md:mr-14 link-underline-list link-underline-black-list' style={{ lineHeight: "24px" }}> Agro Chemical</li>
+						<li className='font-medium text-[16px] sm:mr-8 md:mr-14 link-underline-list link-underline-black-list' style={{ lineHeight: "24px" }}>Cosmetic & Personal Care</li>
+						<li className='font-medium text-[16px] sm:mr-8 md:mr-14 link-underline-list link-underline-black-list' style={{ lineHeight: "24px" }}>Nutrition & Suppliment</li>
+						<li className='font-medium text-[16px] link-underline-list link-underline-black-list' style={{ lineHeight: "24px" }}>Plastics & Polymers</li>
+					</ul>
+					<div className='ml-0 mr-0 sm:ml-[6%] sm:mr-[6%] relative '>
+						<div className="search">
+							<input
+								className="search lg:w-[995px] lg:h-[64px] md:w-[700px] md:h-[60px] h-[54px] w-[343px]"
+								placeholder="Search Productss....."
+								style={{ position: "absolute", left: "0", right: "0", top: "-90px", marginLeft: "auto", marginRight: "auto", marginTop: "20px", paddingLeft: "20px" }}
+								value={value}
+								onChange={e => setValue(e.target.value)}
+							/>
+							<button className="bg-[#8D2ED1] w-[66px] sm:w-[131px] h-[40px] sm:h-[44px] rounded text-white absolute  2xl:right-[11rem] xl:right-[8rem] right-[14px] md:right-[2rem] lg:right-[4rem] sm:right-0 top-[-65px] sm:top-[-60px] text-[13px]">Search</button>
+						</div>
+						<Table className="responsive-table">
+							<Thead >
+								<Tr className=" bg-[#FBF6FF]  border border-[#E9EFF4] ">{headRow()}</Tr>
+							</Thead>
+							<Tbody className="trhover bg-white">{tableData()}</Tbody>
+						</Table>
+						<Pagination
+							pageSize={countPerPage}
+							onChange={updatePage}
+							current={currentPage}
+							total={allData.length}
+							style={{ marginTop: "20px", display: "flex", justifyContent: "center" }}
+						/>
+
+					</div>
 				</div>
-				
-			<Contact />
-			<Footer />
+				<Contact />
+				<Footer />
 			</div>
 
 		</>

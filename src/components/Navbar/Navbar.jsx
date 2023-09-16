@@ -87,6 +87,8 @@ export default function NavBar() {
                     </div>
                     <button className="mt-10 float-left ml-2 font-medium text-xl">All Products</button>
                 </div>
+
+                {/*================================= grid ==================*/}
 				<div className="grid sm:grid-cols-2 grid-cols-1 gap-10 p-8">
                     <div className="block sm:hidden ">
                         <div className="flex">

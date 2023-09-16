@@ -29,7 +29,6 @@
   
  
   input {
-	width: 995px;
 	height: 64px;
 	border-radius: 4px;
 	padding: 10px;
@@ -38,38 +37,3 @@
   }
 
   
-  table {
-	width: 100%;
-	padding: 1em;
-	border-radius: 4px;
-	border-collapse: collapse;
-  }
-  
-  thead {
-	background-color: #FFFFFF !important;
-	font-size: 16px;
-	color: #BDBDBD;
-  }
-  
-  th {
-	text-align: left;
-	padding: 8px;
-	background-color: 1px solid #ffffff;
-	color: black;
-  }
-  td {
-	text-align: left;
-	padding: 8px;
-  }
-  
-  tr {
-	height: 50px;
-  }
-  
-  
-  tr:nth-child(odd) {
-	background-color: #FBF6FF;
-  }
-  tr:nth-child(even){
-	background-color: white;
-  }
