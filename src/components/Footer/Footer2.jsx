@@ -16,7 +16,7 @@ const Footer2 = () => {
               <div>Contact</div>
             </div>
           </div>
-          <div className="flex flex-col text-[14px] sm:text-[16px] sm:w-[780px] sm:max-w-[100%] sm:flex-row sm:flex justify-between mt-8 font-medium text-gray-400">
+          <div className="flex flex-col text-[14px] sm:text-[16px] sm:w-[810px] sm:max-w-[100%] sm:flex-row sm:flex justify-between mt-8 font-medium text-gray-400">
             <div className="flex mr-8">
               <div className="mr-8"  >Pharma</div>
               <div >Agrochemicals</div>

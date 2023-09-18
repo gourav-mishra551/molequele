@@ -7,6 +7,7 @@ import {  Route, Routes } from "react-router-dom";
 import Main from './pages/Industries/Main';
 import Pharma from './pages/Pharma/Pharma';
 import About from './pages/AboutUs/About';
+import PageNot from './pages/PageNotFound/PageNotFound';
 function App() {
   return (
     <>
@@ -19,6 +20,7 @@ function App() {
         <Route exact path='/industry' element={<Main/>}/>
         <Route exact path='/pharma' element={<Pharma/>}/>
         <Route exact path='/about' element={<About/>}/>
+        <Route exact path='*' element={<PageNot/>}/>
 
       </Routes>
     </HashRouter>
