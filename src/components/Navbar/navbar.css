@@ -1,5 +1,7 @@
 .group:focus .group-focus\:visible {
-	display: block;
+	top: 65px;
+    opacity: 1;
+    visibility: visible;
 }
 .link-underline {
 	border-bottom-width: 1;
@@ -9,6 +11,7 @@
 	background-repeat: no-repeat;
 	transition: background-size .5s ease-in-out;
 	padding: 2em;
+	
 }
 
 .link-underline-black {

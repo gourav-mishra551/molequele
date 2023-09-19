@@ -4,6 +4,9 @@
     background-color: rgba(251, 251, 251, 1);
     overflow: hidden;
 }
+.main img{
+    float: right;
+}
 .lefts{
     margin-left: 8%;
     margin-top: 30px;
@@ -39,7 +42,7 @@
             display: none;
         }
         .main{
-            background-image: url("./Background.png");
+            background-image: url("../../assets/Background.png");
         }
         
         .button{

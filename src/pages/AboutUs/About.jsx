@@ -11,11 +11,11 @@ const About = () => {
             <NavBar />
             <div >
                 <header className='headerAbout'>
-                    <div className="w-auto h-[195px] bg-repeat-round rounded-b-[20px] " style={{ backgroundImage: `url(${ImageBackGround})` }}>
+                    <div className="w-auto sm:h-[195px] h-[168px] sm:bg-repeat-round rounded-b-[20px] " style={{ backgroundImage: `url(${ImageBackGround})` }}>
                         <div className=' pt-5 sm:pt-8 '>
-                            <h1 className='text-white font-semibold text-[20px] sm:text-[32px] mt-8  w-auto  mx-auto flex justify-center' >About Us</h1>
+                            <h1 className='text-white font-semibold text-[20px] sm:text-[32px] mt-4 sm:mt-8  w-auto  mx-auto flex justify-center' >About Us</h1>
                         </div>
-                        <p className='font-[500] text-[16px] sm:text-[20px] mx-auto text-white w-auto flex justify-center mt-5 text-center' style={{ lineHeight: "32px", letterSpacing: "2%" }}>Need text let’s Discuss Get in touch & let us know how we can help Your Project </p>
+                        <p className='font-[500] text-[16px] sm:text-[20px] mx-auto text-white w-auto flex justify-center mt-2 sm:mt-5 text-center sm:mb-0 mb-4' style={{ lineHeight: "32px", letterSpacing: "2%" }}>Need text let’s Discuss Get in touch & let us know how we can help Your Project </p>
 
                     </div>
                 </header>
@@ -50,7 +50,7 @@ const About = () => {
                             <div className='sm:mt-16 mt-4 grid grid-cols-2 md:grid-cols-4 sm:gap-x-28 gap-x-4 w-[1198px] max-w-[100%] mx-auto '>
                                 <div className='sm:w-[205px] w-[151px] h-[92px] mx-auto'>
                                     <CountUp
-                                        className=" years font-[700] text-[22px] sm:text-[50px] font-mulish flex justify-centre w-[90px] mx-auto sm:w-[205px] text-[#8D2ED1]"
+                                        className="font-[mulish] years font-[700] text-[22px] sm:text-[50px] font-mulish flex justify-centre w-[90px] mx-auto sm:w-[205px] text-[#8D2ED1]"
                                         start={0}
                                         end={10}
                                         duration={2.75}
@@ -58,11 +58,11 @@ const About = () => {
                                         suffix='years'
 
                                     />
-                                    <p className='text-[#808080] font-[400] text-[14px] sm:text-[20px] flex justify-center' style={{ lineHeight: "30px" }}>In Business </p>
+                                    <p className='font-[mulish] text-[#808080] font-[400] text-[14px] sm:text-[20px] flex justify-center' style={{ lineHeight: "30px" }}>In Business </p>
                                 </div>
                                 <div className='sm:w-[205px] w-[151px] h-[92px] mx-auto'>
                                     <CountUp
-                                        className=" years font-[700] text-[22px] sm:text-[50px] font-mulish flex justify-center mx-auto text-center text-[#8D2ED1]"
+                                        className="font-[mulish] years font-[700] text-[22px] sm:text-[50px] font-mulish flex justify-center mx-auto text-center text-[#8D2ED1]"
                                         start={0}
                                         end={75000}
                                         duration={2.75}
@@ -70,11 +70,11 @@ const About = () => {
                                         suffix='+'
 
                                     />
-                                    <p className='text-[#808080] font-[400] sm:w-[205px] max-w-[100%] sm:text-[20px] text-[14px] text-center flex justify-center mx-auto' style={{ lineHeight: "30px" }}>Customers </p>
+                                    <p className='font-[mulish] text-[#808080] font-[400] sm:w-[205px] max-w-[100%] sm:text-[20px] text-[14px] text-center flex justify-center mx-auto' style={{ lineHeight: "30px" }}>Customers </p>
                                 </div>
                                 <div className='sm:w-[205px] w-[151px] h-[92px] mx-auto'>
                                     <CountUp
-                                        className=" years font-[700] text-[22px] sm:text-[50px] font-mulish text-center flex justify-center mx-auto text-[#8D2ED1]"
+                                        className="font-[mulish] years font-[700] text-[22px] sm:text-[50px] font-mulish text-center flex justify-center mx-auto text-[#8D2ED1]"
                                         start={0}
                                         end={100}
                                         duration={2.75}
@@ -82,11 +82,11 @@ const About = () => {
                                         suffix='k+'
 
                                     />
-                                    <p className='text-[#808080] font-[400] sm:w-[215px] max-w-[100%] sm:text-[18px] text-[12px] text-center' style={{ lineHeight: "30px" }}>Monthly Blog Readers</p>
+                                    <p className='font-[mulish] text-[#808080] font-[400] sm:w-[215px] max-w-[100%] sm:text-[18px] text-[12px] text-center' style={{ lineHeight: "30px" }}>Monthly Blog Readers</p>
                                 </div>
                                 <div className='sm:w-[205px] w-[151px] h-[92px] mx-auto'>
                                     <CountUp
-                                        className=" years font-[700] text-[22px] sm:text-[50px] font-mulish flex justify-center mx-auto w-[90px] sm:w-[205px] text-[#8D2ED1]"
+                                        className="font-[mulish] years font-[700] text-[22px] sm:text-[50px] font-mulish flex justify-center mx-auto w-[90px] sm:w-[205px] text-[#8D2ED1]"
                                         start={0}
                                         end={1.2}
                                         duration={1.75}
@@ -94,7 +94,7 @@ const About = () => {
                                         suffix='m+'
 
                                     />
-                                    <p className='text-[#808080] font-[400] text-[14px] sm:text-[20px] flex justify-center' style={{ lineHeight: "30px" }}>Social Followers</p>
+                                    <p className='font-[mulish] text-[#808080] font-[400] text-[14px] sm:text-[20px] flex justify-center' style={{ lineHeight: "30px" }}>Social Followers</p>
                                 </div>
                             </div>
                         </div>
@@ -105,32 +105,32 @@ const About = () => {
                                 <div className='sm:h-[326px] h-auto max-w-[100%]  hover:border hover:rounded-xl hover:border-[#DCDCDC]'>
                                     <img className=' sm:h-auto sm:w-auto h-[30px] w-[30px] flex justify-center mt-10 mx-auto' src="./Icon.svg" alt="icon" />
                                     <h1 className='sm:w-[300px] mx-auto sm:mt-5 mt-1 sm:mb-5 mb-1 flex  justify-center font-[600] text-[12.5px] sm:text-[26px]' style={{ lineHeight: "12px" }}>Innovation</h1>
-                                    <p className='sm:w-[300px] font-[400] mx-auto text-center text-[8.38px] sm:text-[17px] text-[#808080]'>Building an enterprisedoesnt need nightmare or cost your thousands Felix is purpose built.</p>
+                                    <p className='sm:w-[300px] font-[400] mx-auto text-center text-[8.38px] sm:text-[17px] text-[#808080] font-[mulish]'>Building an enterprisedoesnt need nightmare or cost your thousands Felix is purpose built.</p>
                                 </div>
                                 <div className='sm:h-[326px] h-auto max-w-[100%] hover:border hover:rounded-xl hover:border-[#DCDCDC]'>
                                     <img className='sm:h-auto sm:w-auto h-[30px] w-[30px] flex justify-center mx-auto mt-10' src="./Icon (1).svg" alt="icon" />
                                     <h1 className=' mx-auto sm:mt-5 mt-1 sm:mb-5 mb-1 flex  justify-center font-[600] text-[12.5px] sm:text-[26px]' style={{ lineHeight: "12px" }}>Growth</h1>
-                                    <p className=' mx-auto font-[400] text-center text-[8.38px] sm:text-[17px] text-[#808080]'>Building an enterprisedoesnt need nightmare or cost your thousands Felix is purpose built.</p>
+                                    <p className='sm:w-[300px] mx-auto font-[400] text-center text-[8.38px] sm:text-[17px] text-[#808080] font-[mulish]'>Building an enterprisedoesnt need nightmare or cost your thousands Felix is purpose built.</p>
                                 </div>
                                 <div className='sm:h-[326px] h-auto max-w-[100%] hover:border hover:rounded-xl hover:border-[#DCDCDC]'>
                                     <img className='sm:h-auto sm:w-auto h-[30px] w-[30px] flex justify-center mx-auto mt-10' src="./Icon (2).svg" alt="icon" />
                                     <h1 className=' mx-auto sm:mt-5 mt-1 sm:mb-5 mb-1 flex  justify-center font-[600] text-[12.5px] sm:text-[26px]' style={{ lineHeight: "12px" }}>Ownership</h1>
-                                    <p className=' mx-auto font-[400] text-center text-[8.38px] sm:text-[17px] text-[#808080]'>Building an enterprisedoesnt need nightmare or cost your thousands Felix is purpose built.</p>
+                                    <p className='sm:w-[300px] mx-auto font-[400] text-center text-[8.38px] sm:text-[17px] text-[#808080] font-[mulish]'>Building an enterprisedoesnt need nightmare or cost your thousands Felix is purpose built.</p>
                                 </div>
                                 <div className='sm:h-[326px] h-auto max-w-[100%] hover:border hover:rounded-xl hover:border-[#DCDCDC]'>
                                     <img className='sm:h-auto sm:w-auto h-[30px] w-[30px] flex justify-center mx-auto mt-10' src="./Icon (3).svg" alt="icon" />
                                     <h1 className=' mx-auto sm:mt-5 mt-1 sm:mb-5 mb-1 flex  justify-center font-[600] text-[12.5px] sm:text-[26px]' style={{ lineHeight: "12px" }}>Team Work</h1>
-                                    <p className=' mx-auto font-[400] text-center text-[8.38px] sm:text-[17px] text-[#808080]'>Building an enterprisedoesnt need nightmare or cost your thousands Felix is purpose built.</p>
+                                    <p className='sm:w-[300px] mx-auto font-[400] text-center text-[8.38px] sm:text-[17px] text-[#808080] font-[mulish]'>Building an enterprisedoesnt need nightmare or cost your thousands Felix is purpose built.</p>
                                 </div>
                                 <div className='sm:h-[326px] h-auto max-w-[100%] hover:border hover:rounded-xl hover:border-[#DCDCDC]'>
                                     <img className='sm:h-auto sm:w-auto h-[30px] w-[30px] flex justify-center mx-auto mt-10' src="./Icon (4).svg" alt="icon" />
                                     <h1 className=' mx-auto sm:mt-5 mt-1 sm:mb-5 mb-1 flex  justify-center font-[600] text-[12.5px] sm:text-[26px]' style={{ lineHeight: "12px" }}>Commitment</h1>
-                                    <p className=' mx-auto font-[400] text-center text-[8.38px] sm:text-[17px] text-[#808080]'>Building an enterprisedoesnt need nightmare or cost your thousands Felix is purpose built.</p>
+                                    <p className='sm:w-[300px] mx-auto font-[400] text-center text-[8.38px] sm:text-[17px] text-[#808080] font-[mulish]'>Building an enterprisedoesnt need nightmare or cost your thousands Felix is purpose built.</p>
                                 </div>
                                 <div className='sm:h-[326px] h-auto max-w-[100%] hover:border hover:border-[#DCDCDC] hover:rounded-xl'>
                                     <img className='sm:h-auto sm:w-auto h-[30px] w-[30px] flex justify-center mx-auto mt-10' src="./Icon (5).svg" alt="icon" />
                                     <h1 className=' mx-auto sm:mt-5 mt-1 sm:mb-5 mb-1 flex  justify-center font-[600] text-[12.5px] sm:text-[26px]' style={{ lineHeight: "12px" }}>Positivity</h1>
-                                    <p className=' mx-auto font-[400] text-center text-[8.38px] sm:text-[17px] text-[#808080]'>Building an enterprisedoesnt need nightmare or cost your thousands Felix is purpose built.</p>
+                                    <p className='sm:w-[300px] mx-auto font-[400] text-center text-[8.38px] sm:text-[17px] text-[#808080] font-[mulish]'>Building an enterprisedoesnt need nightmare or cost your thousands Felix is purpose built.</p>
                                 </div>
                             </div>
                         </div>

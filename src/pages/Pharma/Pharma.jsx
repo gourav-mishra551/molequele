@@ -1,5 +1,5 @@
 import React, { useRef, useState } from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import "./pharma.css";
 import cloneDeep from "lodash/cloneDeep";
 import throttle from "lodash/throttle";
@@ -14,6 +14,7 @@ import Impurities from "./Impurities";
 import NavBar from "../../components/Navbar/Navbar";
 import Contact from '../../components/Contact/Contact';
 import Footer from '../../components/Footer/Footer';
+import TopHeader from "../../components/TopHeader/TopHeader";
 
 const tableHead = {
   name: "Campaign Name",
@@ -127,17 +128,18 @@ function Pharma() {
 
   return (
     <div className="App">
+      <TopHeader/>
       <NavBar />
       <div className="bg-gray-100">
         <div className="pl-4 pr-4 sm:pl-0 sm:pr-0">
           <div style={{ backgroundImage: `url(${Group})` }}>
             <h1 className='flex justify-center font-semibold text-[20px] sm:text-[28px] sm:pt-14 pt-8' style={{ lineHeight: "42px" }}>Some heading will come here</h1>
-            <p className='sm:flex justify-center font-medium sm:text-[20px] text-[16px] pt-5 pb-8 text-black mb-12 sm:mb-0 ml' style={{ letterSpacingz: "2%" }}>Need text let’s Discuss Get in touch & let us <span className="flex justify-center">know how we can help Your Project</span> </p>
+            <p className='sm:flex justify-center font-medium sm:text-[20px] text-[16px] pt-5 pb-8 text-black mb-12 sm:mb-0 ml text-center' style={{ letterSpacingz: "2%" }}>Need text let’s Discuss Get in touch & let us <span className="flex justify-center">know how we can help Your Project</span> </p>
           </div>
           <div>
             <ul className=' sm:w-[1133px] w-[414px] sm:flex hidden h-[38px] ml-5 sm:ml-auto sm:h-[50px] mx-auto  mt-10 mb-20 overflow-auto sm:overflow-visible'>
-              <Link to = "/industry">
-              <li className='font-medium text-[15px] sm:text-[16px] sm:mr-8 md:mr-14 link-underline-list link-underline-black-list ' style={{ lineHeight: "24px" }}>All Products</li></Link>
+              
+              <li className='font-medium text-[15px] sm:text-[16px] sm:mr-8 md:mr-14 link-underline-list link-underline-black-list ' style={{ lineHeight: "24px" }}>All Products</li>
               <li className='font-medium text-[16px] sm:mr-8 md:mr-14 link-underline-list link-underline-black-list  text-purple-700' style={{ lineHeight: "24px" }}> Pharma</li>
               <li className='font-medium text-[16px] sm:mr-8 md:mr-14 link-underline-list link-underline-black-list' style={{ lineHeight: "24px" }}> Agro Chemical</li>
               <li className='font-medium text-[16px] sm:mr-8 md:mr-14 link-underline-list link-underline-black-list' style={{ lineHeight: "24px" }}>Cosmetic & Personal Care</li>
@@ -165,7 +167,7 @@ function Pharma() {
               className="accordion__header flex justify-between"
               onClick={() => handleAccordionClick(0)}
             >
-              <p className="accordion__name">Excipients, Catalysts and High Grade Solvents</p>
+              <p className="accordion__name text-[15px] sm:text-[20px]">Excipients, Catalysts and High Grade Solvents</p>
               <img src="./Groupup.svg" alt="up" />
             </div>
 
@@ -196,7 +198,7 @@ function Pharma() {
               className="accordion__header flex justify-between"
               onClick={() => handleAccordionClick(1)}
             >
-              <p className="accordion__name">
+              <p className="accordion__name text-[15px] sm:text-[20px]">
               Pharma Intermediates
               </p>
               <img src="./Groupup.svg" alt="up" />
@@ -214,7 +216,7 @@ function Pharma() {
               onClick={() => handleAccordionClick(2)}
             >
 
-              <p className="accordion__name">Impurities</p>
+              <p className="accordion__name text-[15px] sm:text-[20px]">Impurities</p>
               <img src="./Groupup.svg" alt="up" />
             </div>
             <div className="accordion__details">

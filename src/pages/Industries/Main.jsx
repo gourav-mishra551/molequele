@@ -14,6 +14,7 @@ import NavBar from '../../components/Navbar/Navbar';
 import Contact from '../../components/Contact/Contact';
 import Footer from '../../components/Footer/Footer';
 import Group from "../../assets/Group13.png";
+import TopHeader from "../../components/TopHeader/TopHeader";
 
 const tableHead = {
 	name: "Campaign Name",
@@ -80,12 +81,13 @@ const Main = () => {
 
 	return (
 		<>
+			<TopHeader/>
 			<NavBar />
 			<div className='bg-gray-100 '>
 				<div className="pl-4 pr-4 sm:pl-0 sm:pr-0">
 					<div style={{ backgroundImage: `url(${Group})` }}>
 						<h1 className='flex justify-center font-semibold text-[20px] sm:text-[28px] sm:pt-14 pt-8' style={{ lineHeight: "42px" }}>Some heading will come here</h1>
-						<p className='sm:flex justify-center font-medium sm:text-[20px] text-[16px] pt-5 pb-8 text-black mb-12 sm:mb-0 ml' style={{ letterSpacingz: "2%" }}>Need text let’s Discuss Get in touch & let us <span className="flex justify-center">know how we can help Your Project</span> </p>
+						<p className='sm:flex justify-center font-medium sm:text-[20px] text-[16px] pt-5 pb-8 text-black mb-12 sm:mb-0 ml text-center' style={{ letterSpacingz: "2%" }}>Need text let’s Discuss Get in touch & let us <span className="flex justify-center">know how we can help Your Project</span> </p>
 					</div>
 					<ul className=' sm:w-[1133px] w-[414px] sm:flex hidden h-[38px] ml-5 sm:ml-auto sm:h-[50px] mx-auto  mt-10 mb-20 overflow-auto sm:overflow-visible'>
 						<li className='font-medium text-[15px] sm:text-[16px] sm:mr-8 md:mr-14 link-underline-list link-underline-black-list text-purple-700 ' style={{ lineHeight: "24px" }}>All Products</li>

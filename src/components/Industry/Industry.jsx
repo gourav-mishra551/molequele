@@ -88,7 +88,7 @@ const Industry = () => {
                 </div>
             </div>
             {/* value chain ======================>>>>>>>>>>>>>>>>>>>>>>>>>> */}
-            <div className="w-auto bg-purple-50 mt-10 sm:mt-28 h-auto pt-5 pl-5 pr-5 sm:pl-0 sm:pr-0 pb-5 overflow-hidden" style={{ height: "auto" }}>
+            <div className="w-auto bg-purple-50 mt-10 sm:mt-28 h-auto pt-5 pl-8 pr-8 sm:pl-0 sm:pr-0 pb-5 overflow-hidden" style={{ height: "auto" }}>
                 <div className="sm:max-w-[100%-40px] sm:w-[1199px] m-auto w-[375px] max-w-[100%]">
                     <h1 className="text-xl font-medium sm:text-3xl mr-[0.4rem]">Redefining <span className="underline-text">Speciality  Chemicals</span>  value chain!</h1>
                     <p className="font-normal leading-7 tracking-[1%] text-[16px]  text-[#6A6A6A] mr-0 sm:mr-[4rem] sm:text-lg whitespace-pre-wrap  gap-3  mt-4 " >Molequle is your trusted gateway to best manufacturers from China, India, and beyond to fulfill all your chemical needs. We provide innovative and market driven products across industries with end-to-end logistics support.</p>

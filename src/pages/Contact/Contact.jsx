@@ -69,7 +69,7 @@ const Contact = () => {
       <header className='headerContact'>
         <div className="upper" style={{ backgroundImage: `url(${Image})` }}>
           <div className=' p-5 sm:p-10 '>
-            <h1 className='text-white font-semibold text-[20px] sm:text-[32px] mt-8 headerContact w-auto sm:w-[703px] mx-auto flex justify-center' >Get in touch & let us know how we can help</h1>
+            <h1 className='text-white font-semibold text-[20px] sm:text-[32px] mt-8 headerContact w-auto sm:w-[703px] mx-auto flex justify-center text-center' >Get in touch & let us know how we can help</h1>
           </div>
           <div className="socioIcon flex  flex-col-reverse justify-center sm:flex sm:flex-row w-auto sm:w-[754px] mx-auto">
             <div className="whatsapp flex flex-wrap mr-10">
@@ -91,7 +91,7 @@ const Contact = () => {
       <Footer2 />
       <div>
 
-        <form className='absolute top-80 sm:mt-10 mt-0   h-auto sm:w-3/4 w-auto mr-5 sm:mr-0 ml-4 sm:ml-40 bg-white rounded-xl drop-shadow' onSubmit={sendEmail} ref={form}>
+        <form className='absolute top-80 sm:mt-10 mt-6   h-auto sm:w-3/4 w-auto mr-5 sm:mr-0 ml-4 sm:ml-40 bg-white rounded-xl drop-shadow' onSubmit={sendEmail} ref={form}>
           <div className="text-gray-700  " >
             <div className="container px-5 sm:px-12 py-12  mx-auto" >
               <div className=" mx-auto">
@@ -112,11 +112,7 @@ const Contact = () => {
                         type="text"
                         name="from_name"
                         placeholder='jhon david'
-                        className="sm:w-full h-16 mt-5  font-normal rounded-2xl text-black border border-gray-300 focus:border-purple-500 text-base outline-none py-2 px-5 leading-8 transition-colors duration-200 ease-in-out  block w-full  bg-white  shadow-sm placeholder-slate-400
-                        focus:outline-none focus:ring-1
-                        disabled:bg-slate-50 disabled:text-slate-500 disabled:border-slate-200 disabled:shadow-none
-                        invalid:border-pink-500 invalid:text-pink-600
-                        focus:invalid:border-pink-500 focus:invalid:ring-pink-500"
+                        className="sm:w-full mt-5 rounded-2xl h-16 border font-normal border-gray-300 focus:border-purple-500 text-base outline-none text-gray-700 py-2 px-5 leading-8 transition-colors duration-200 ease-in-out w-[319px]"
                       />
                     </div>
                   </div>
