@@ -2,10 +2,12 @@
 
 const Footer2 = () => {
   return (
-    <div className="bg-purple-50 pt-1 ">
-      <img className="sm:block hidden p-5  sm:ml-auto sm:mr-[7em]" src="./Group 48702.svg" alt="logo" />
-      <hr className="border sm:block hidden sm:max-w-[100%-40px] sm:w-[1199px] m-auto w-[375px] max-w-[100%-40px]" />
-      <div className="flex flex-col justify-between pb-32  bg-purple-50   sm:max-w-[100%-40px] sm:w-[1199px] m-auto w-[375px] max-w-[100%-40px]  sm:flex sm:flex-row ">
+    <div className="bg-purple-50 pt-1 sm:pl-0 pl-5">
+      
+      <img className="sm:block hidden p-10  sm:ml-auto xl:mr-[3.6em] 2xl:mr-[7.6em]" src="./Group 48702.svg" alt="logo" />
+      <hr className="border border-[#e2c3f8] sm:block hidden sm:max-w-[100%-40px] sm:w-[1199px] m-auto w-[375px] max-w-[100%-40px]" />
+     
+      <div className="flex flex-col justify-between pb-20  bg-purple-50   sm:max-w-[100%-40px] sm:w-[1199px] m-auto w-[375px] max-w-[100%-40px]  sm:flex sm:flex-row ">
         <div className="w-auto ">
 
           <div className="flex flex-start ">
@@ -16,16 +18,16 @@ const Footer2 = () => {
               <div>Contact</div>
             </div>
           </div>
-          <div className="flex flex-col text-[14px] sm:text-[16px] sm:w-[810px] sm:max-w-[100%] sm:flex-row sm:flex justify-between mt-8 font-medium text-gray-400">
+          <div className="flex flex-col text-[14px] sm:text-[16px]  sm:max-w-[100%] sm:flex-row sm:flex  mt-8 font-medium text-gray-400">
             <div className="flex mr-8">
               <div className="mr-8"  >Pharma</div>
               <div >Agrochemicals</div>
             </div>
-            <div className="flex flex-1 justify-between mt-8 sm:mt-0 w-full">
-              <div className="w-8/12" >Plastics & Polymers</div>
-              <div className="w-8/12 ">Adhesives & Sealants</div>
+            <div className="flex mt-8 sm:mt-0 w-full">
+              <div >Personal Care</div>
+              <div className=" sm:ml-8 ml-5 sm:mt-0">Nutritional Suppliments</div>
             </div>
-            <div className="mt-8 sm:mt-0">Nutritional Suppliments</div>
+            
           </div>
         </div>
 

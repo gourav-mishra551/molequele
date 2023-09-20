@@ -5,6 +5,10 @@
 .width-input{
     width: auto;
 }
+.shadow{
+    box-shadow: 0px 59.04428482055664px 40px 0px #C8C8C826;
+
+}
 .upper{
     height: 595px;
     width: auto;

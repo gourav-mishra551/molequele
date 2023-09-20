@@ -68,41 +68,44 @@ const Contact = () => {
       <NavBar />
       <header className='headerContact'>
         <div className="upper" style={{ backgroundImage: `url(${Image})` }}>
-          <div className=' p-5 sm:p-10 '>
-            <h1 className='text-white font-semibold text-[20px] sm:text-[32px] mt-8 headerContact w-auto sm:w-[703px] mx-auto flex justify-center text-center' >Get in touch & let us know how we can help</h1>
+          <div className=' p-5 sm:p-8 '>
+            <h1 className='text-white font-semibold text-[20px] sm:text-[32px] mt-6 headerContact w-auto sm:w-[703px] mx-auto  text-center' >
+              Get in touch & let us know how we can help</h1>
           </div>
-          <div className="socioIcon flex  flex-col-reverse justify-center sm:flex sm:flex-row w-auto sm:w-[754px] mx-auto">
+          <div className="socioIcon flex  flex-col-reverse justify-center sm:flex sm:flex-row w-auto sm:w-[754px] mx-auto ">
             <div className="whatsapp flex flex-wrap mr-10">
-              <img className='hidden sm:block mb-6' src="./Vector.svg" alt="logo" />
-              <p className='text-white font-medium text-xl ml-4 hidden sm:block ' style={{ lineHeight: "33.3px" }}><a href="whatsapp.com">Chat With US</a></p>
+              <img className='sm:h-[28px] sm:w-[28px] h-[20px] w-[20px] hidden sm:block ' src="./Vector.svg" alt="logo" />
+              <p className='text-white font-medium  ml-4 hidden sm:block text-[16px] sm:text-[18px]' style={{ lineHeight: "30.3px" }}><a href="whatsapp.com">Chat With US</a></p>
             </div>
             <div className="phone  mx-auto sm:mx-0   flex flex-wrap ">
-              <img className='sm:mb-5 ml-10 sm:ml-0 mb-0 mt-2 sm:mt-0 sm:h-auto sm:w-auto h-[20px] w-[20px]' src="./Vector (1).svg" alt="logo" />
-              <p className='text-white font-medium text-base sm:text-xl ml-3 mx-auto mr-10' style={{ lineHeight: "33.3px" }}>+91 9876543210</p>
+              <img className=' ml-10 sm:ml-0 mb-0 mt-2 sm:mt-0 sm:h-[38px] sm:w-[28px] h-[20px] w-[20px]' src="./Vector (1).svg" alt="logo" />
+              <p className='text-white font-medium  ml-3 mx-auto mr-10 text-[16px] sm:text-[18px]' style={{ lineHeight: "33.3px" }}> +91 9560190710</p>
             </div>
             <div className="mail flex mx-auto sm:mx-0 mb-5">
-              <img className='sm:mb-1 mb-0 mt-2 sm:mt-0 sm:h-auto sm:w-auto h-[20px] w-[20px]' src="./Vector (2).svg" alt="logo" />
-              <p className='text-white ml-4 font-medium text-base sm:text-xl'style={{ lineHeight: "33.3px" }}>Ayush@molequle.biz</p>
+              <img className='sm:mb-1 mb-0 mt-2 sm:mt-0 sm:h-[36px] sm:w-[26px] h-[20px] w-[20px]' src="./Vector (2).svg" alt="logo" />
+              <p className='text-white ml-4 font-medium  text-[16px] sm:text-[18px]'style={{ lineHeight: "33.3px" }}>utpal@molequle.biz</p>
             </div>
           </div>
         </div>
       </header>
-      <div className='sm:h-[28rem] h-screen mb-0 sm:mb-20'></div>
+      <div className='sm:h-[28rem] h-screen mb-0 sm:mb-32'></div>
       <Footer2 />
       <div>
 
-        <form className='absolute top-80 sm:mt-10 mt-6   h-auto sm:w-3/4 w-auto mr-5 sm:mr-0 ml-4 sm:ml-40 bg-white rounded-xl drop-shadow' onSubmit={sendEmail} ref={form}>
+        <form className='absolute left-0 right-0 mx-auto top-80 sm:mt-12 mt-6 sm:w-[1198px] w-[343px] h-auto   bg-white rounded-xl shadow' onSubmit={sendEmail} ref={form}>
           <div className="text-gray-700  " >
             <div className="container px-5 sm:px-12 py-12  mx-auto" >
               <div className=" mx-auto">
                 <div className="flex flex-wrap -m-2">
                   <div className="p-2 w-auto sm:w-1/2 " >
                     <div className="relative " >
+                      <div className='flex'>
                       <label htmlFor="form_name" className="leading-7  text-sm text-black font-bold ">
                         Full Name*
                       </label>
-                      <div className={`expandable ${formik.touched.from_name && formik.errors.from_name ? 'show' : ''}`}>
+                      <div className={ `expandable ${formik.touched.from_name && formik.errors.from_name ? 'show' : ''}`} style={{marginLeft:"20px" , color:"red"}}>
                         {formik.errors.from_name}
+                      </div>
                       </div>
                       <input
 
@@ -118,14 +121,16 @@ const Contact = () => {
                   </div>
                   <div className="p-2 sm:w-1/2 w-auto">
                     <div className="relative">
+                      <div className='flex'>
                       <label
                         htmlFor="to_name"
                         className="leading-7 text-sm text-gray-600 font-bold"
                       >
                         Email*
                       </label>
-                      <div className={`expandable ${formik.touched.to_name && formik.errors.to_name ? 'show' : ''}`}>
+                      <div className={`expandable ${formik.touched.to_name && formik.errors.to_name ? 'show' : ''}`} style={{marginLeft:"20px" , color:"red"}}>
                         {formik.errors.to_name}
+                      </div>
                       </div>
                       <input
                         onChange={formik.handleChange}
@@ -140,11 +145,13 @@ const Contact = () => {
                   </div>
                   <div className="p-2 w-auto sm:w-1/2 mt-5">
                     <div className="relative">
+                      <div className='flex'>
                       <label htmlFor="Phone_NUmber" className="leading-7 text-sm font-bold text-gray-600">
                         Phone Number*
                       </label>
-                      <div className={`expandable ${formik.touched.form_phone && formik.errors.form_phone ? 'show' : ''}`}>
+                      <div className={`expandable ${formik.touched.form_phone && formik.errors.form_phone ? 'show' : ''}`} style={{marginLeft:"20px" , color:"red"}}>
                         {formik.errors.form_phone}
+                      </div>
                       </div>
                       <input
                         onChange={formik.handleChange}
@@ -157,16 +164,18 @@ const Contact = () => {
                       />
                     </div>
                   </div>
-                  <div className="p-2  w-auto sm:w-1/2 mt-5">
+                  <div className="p-2  w-auto sm:w-1/2 mt-5 ">
                     <div className="relative">
+                      <div className='flex'>
                       <label
                         htmlFor="subject"
                         className="leading-7 text-sm font-bold text-gray-600"
                       >
                         Company Name*
                       </label>
-                      <div className={`expandable ${formik.touched.subject && formik.errors.subject ? 'show' : ''}`}>
+                      <div className={`expandable ${formik.touched.subject && formik.errors.subject ? 'show' : ''}`} style={{marginLeft:"20px" , color:"red"}}>
                         {formik.errors.subject}
+                      </div>
                       </div>
                       <input
                         onChange={formik.handleChange}
@@ -181,14 +190,16 @@ const Contact = () => {
                   </div>
                   <div className="p-2 w-full mt-5">
                     <div className="relative">
+                      <div className='flex'>
                       <label
                         htmlFor="Messages"
                         className="leading-7 text-sm font-bold text-gray-600"
                       >
                         Message*
                       </label>
-                      <div className={`expandable ${formik.touched.message && formik.errors.message ? 'show' : ''}`}>
+                      <div className={`expandable ${formik.touched.message && formik.errors.message ? 'show' : ''}`} style={{marginLeft:"20px" , color:"red"}}>
                         {formik.errors.message}
+                      </div>
                       </div>
                       <textarea
                         autoComplete="off"
@@ -202,7 +213,7 @@ const Contact = () => {
                     </div>
                   </div>
                   <div className="p-2">
-                    <button type="submit" className=" text-white bg-purple-600 border-0 text-sm  py-2 px-[1rem] sm:px-8 focus:outline-none hover:bg-purple-800 sm:h-[68.59px]  sm:text-base rounded-lg font-medium float-left sm:w-[195px] w-[141px] h-[56px]">
+                    <button type="submit" className="mt-4 text-white bg-purple-600 border-0 text-sm  py-2 px-[1rem] sm:px-8 focus:outline-none hover:bg-purple-800 sm:h-[68.59px]  sm:text-base rounded-lg font-medium float-left sm:w-[195px] w-[141px] h-[56px]">
                       Send Message
                     </button>
                   </div>
