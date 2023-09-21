@@ -62,12 +62,10 @@ export default function NavBar() {
                         <ul className="items-center  justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
                             <div className="w-full ">
                                 <div className="flex flex-col sm:flex-row justify-center w-auto ">
-                                    <a className="flex items-center  mr-8 sm:hidden sm:text-xl text-[18px] font-medium hover:text-purple-600 link link-underline link-underline-black  text-purple-700 sm:text-black">
+                                    <a className="flex items-center   sm:mb-0 sm:text-base text-[18px] font-medium hover:text-purple-600 link link-underline link-underline-black  text-purple-700 sm:text-black">
                                         <Link to='/'>Home</Link>
                                     </a>
-                                    <a className="flex items-center   sm:mb-0 sm:text-base text-[18px] font-medium hover:text-purple-600 link link-underline link-underline-black  text-purple-700 sm:text-black">
-                                        <Link to="/about">About</Link></a>
-
+                                    
                                     <button className=" flex flex-col items-center group mega-menu " >
                                         <div className="my-auto sm:my-0 mr-auto sm:text-base text-[18px] sm:ml-2  font-medium hover:text-purple-600 link link-underline link-underline-black text-purple-700 sm:text-black "  >
                                             Products
@@ -82,7 +80,7 @@ export default function NavBar() {
                                                                     <Link to='/industry'>
                                                                         <p className="font-semibold text-lg flex ">
                                                                             Industries
-                                                                            {/* <a className="rounded-full h-[30px] w-[60px]  bg-green-100 drop-shadow-sm  text-center text-[10px] text-green-700 ml-5">PREMIUM</a> */}
+                                                                            <a className="rounded-full h-[30px] w-[60px]  bg-green-100 drop-shadow-sm  text-center text-[10px] text-green-700 ml-5">PREMIUM</a>
                                                                         </p>
 
                                                                     </Link>
@@ -187,6 +185,8 @@ export default function NavBar() {
                                         </div>
 
                                     </button>
+                                    <a className="flex items-center   sm:mb-0 sm:text-base text-[18px] font-medium hover:text-purple-600 link link-underline link-underline-black  text-purple-700 sm:text-black">
+                                        <Link to="/about">About</Link></a>
                                     <li className=" hover:text-purple-600 ml-0 sm:ml-2 font-medium sm:text-base text-[18px] link link-underline link-underline-black  text-purple-700 sm:text-black">
                                         <Link to="/contact">Contact</Link>
                                     </li>
