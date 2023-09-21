@@ -185,7 +185,7 @@
     /* drop down responsive */
   
     .nav_links .drop_menu {
-      position: static;
+      z-index: 30;
       opacity: 1;
       visibility: visible;
       top: 65px;
@@ -225,7 +225,7 @@
     /* Mega menu responsive */
   
     .mega_box {
-      position: static;
+      z-index: 30;
       top: 65px;
       width: 100%;
       padding: 0 20px;

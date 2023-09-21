@@ -63,11 +63,11 @@ const Contact = () => {
   }
   return (
 
-    <div className='relative'>
+    <div className='relative overflow-hidden'>
       <TopHeader />
       <NavBar />
-      <header className='headerContact'>
-        <div className="upper" style={{ backgroundImage: `url(${Image})` }}>
+      <header className='headerContact overflow-hidden'>
+        <div className="upper sm:h-[416px] h-[393px] rounded-b-[12px] sm:rounded-b-[20px]" style={{ backgroundImage: `url(${Image})` }}>
           <div className=' p-5 sm:p-8 '>
             <h1 className='text-white font-semibold text-[20px] sm:text-[32px] mt-6 headerContact w-auto sm:w-[703px] mx-auto  text-center' >
               Get in touch & let us know how we can help</h1>
@@ -88,11 +88,11 @@ const Contact = () => {
           </div>
         </div>
       </header>
-      <div className='sm:h-[28rem] h-screen mb-0 sm:mb-32'></div>
+      <div className='sm:h-[28rem] h-screen  sm:mb-64 mb-56'></div>
       <Footer2 />
       <div>
 
-        <form className='absolute left-0 right-0 mx-auto top-80 sm:mt-12 mt-6 sm:w-[1198px] w-[343px] h-auto   bg-white rounded-xl shadow' onSubmit={sendEmail} ref={form}>
+        <form className='absolute z-0 left-0 right-0 mx-auto sm:top-80 top-[350px] sm:mt-12 mt-6 sm:w-[1198px] w-[343px] h-auto   bg-white rounded-xl shadow' onSubmit={sendEmail} ref={form}>
           <div className="text-gray-700  " >
             <div className="container px-5 sm:px-12 py-12  mx-auto" >
               <div className=" mx-auto">

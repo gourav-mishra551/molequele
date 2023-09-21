@@ -18,7 +18,7 @@ export default function NavBar() {
                         </Link>
                         <div className="md:hidden">
                             <button
-                                className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
+                                className="p-2 h-248px text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
                                 onClick={() => setNavbar(!navbar)}
                             >
                                 {navbar ? (
@@ -56,25 +56,25 @@ export default function NavBar() {
                 </div>
                 <div>
                     <div
-                        className={` pb-3 mt-8 h-screen sm:h-auto sm:ml-56 ml-0 md:block md:pb-0 md:mt-0 leading-7 ${navbar ? "block" : "hidden"
+                        className={` pb-3 z-40 mt-0 h-screen sm:h-auto sm:ml-56 ml-0 md:block md:pb-0 md:mt-0 leading-7 ${navbar ? "block" : "hidden"
                             }`}
                     >
-                        <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
+                        <ul className="items-center  justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
                             <div className="w-full ">
                                 <div className="flex flex-col sm:flex-row justify-center w-auto ">
-                                    <a className="flex items-center h-16 mr-8 sm:hidden sm:text-xl text-2xl font-medium hover:text-purple-600 link link-underline link-underline-black  text-purple-700 sm:text-black">
+                                    <a className="flex items-center  mr-8 sm:hidden sm:text-xl text-[18px] font-medium hover:text-purple-600 link link-underline link-underline-black  text-purple-700 sm:text-black">
                                         <Link to='/'>Home</Link>
                                     </a>
-                                    <a className="flex items-center   sm:mb-0 sm:text-base text-2xl font-medium hover:text-purple-600 link link-underline link-underline-black  text-purple-700 sm:text-black">
+                                    <a className="flex items-center   sm:mb-0 sm:text-base text-[18px] font-medium hover:text-purple-600 link link-underline link-underline-black  text-purple-700 sm:text-black">
                                         <Link to="/about">About</Link></a>
 
                                     <button className=" flex flex-col items-center group mega-menu " >
-                                        <div className="my-auto sm:my-0 mr-auto sm:text-base text-2xl sm:ml-2  font-medium hover:text-purple-600 link link-underline link-underline-black text-purple-700 sm:text-black "  >
+                                        <div className="my-auto sm:my-0 mr-auto sm:text-base text-[18px] sm:ml-2  font-medium hover:text-purple-600 link link-underline link-underline-black text-purple-700 sm:text-black "  >
                                             Products
                                         </div>
-                                        <div className="absolute  w-screen   mt-16 bg-white border  shadow-lg group-focus:visible opacity-0" >
+                                        <div className="absolute  z-30 hidden w-screen   mt-16 bg-white border  shadow-lg group-focus:visible" >
                                             <div className=" flex flex-row  sm:flex ">
-                                                <div className="w-60 h-auto ml-44 mt-10  opacity-0 sm:opacity-100">
+                                                <div className="w-60 h-auto ml-44 mt-10 hidden sm:block">
                                                     <div className="flex flex-col">
                                                         <div>
                                                             <ul>
@@ -84,7 +84,7 @@ export default function NavBar() {
                                                                             Industries
                                                                             {/* <a className="rounded-full h-[30px] w-[60px]  bg-green-100 drop-shadow-sm  text-center text-[10px] text-green-700 ml-5">PREMIUM</a> */}
                                                                         </p>
-                                                            
+
                                                                     </Link>
                                                                 </li>
                                                             </ul>
@@ -187,23 +187,22 @@ export default function NavBar() {
                                         </div>
 
                                     </button>
-                                    <li className=" hover:text-purple-600 ml-0 sm:ml-2 font-medium sm:text-base text-2xl link link-underline link-underline-black  text-purple-700 sm:text-black">
+                                    <li className=" hover:text-purple-600 ml-0 sm:ml-2 font-medium sm:text-base text-[18px] link link-underline link-underline-black  text-purple-700 sm:text-black">
                                         <Link to="/contact">Contact</Link>
                                     </li>
                                 </div>
                             </div>
-
-                            <a className="fixed flex items-center justify-center   h-8 pr-2 pl-1 bg-[#F9F5FD] rounded-full bottom-[13.5rem] right-14 mr-4 mb-4 border border-[#E1B9FD]  text-purple-800 hover:bg-purple-100" href="http://wa.me/918010150164" target="_top">
+                        </ul>
+                        
+                    </div>
+                </div>
+            </div>
+            <a className=" fixed overflow-hidden  flex items-center justify-center   h-8 pr-2 pl-1 bg-[#F9F5FD] rounded-full sm:bottom-[13.5rem] sm:top-auto top-[330px] sm:right-14 right-6  mr-4 mb-4 border border-[#E1B9FD]  text-purple-800 hover:bg-purple-100 z-30" href="http://wa.me/918010150164" target="_top">
                                 <div className=" rounded-full">
                                     <img className="rounded-full" src="/Vector4.svg" alt="logo" />
                                 </div>
                                 <span className="text-sm  p-1 leading-none">Chat</span>
                             </a>
-
-                        </ul>
-                    </div>
-                </div>
-            </div>
         </nav>
     );
 }

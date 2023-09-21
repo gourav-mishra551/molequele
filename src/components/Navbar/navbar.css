@@ -1,7 +1,5 @@
 .group:focus .group-focus\:visible {
-	top: 65px;
-    opacity: 1;
-    visibility: visible;
+	display: block;
 }
 .link-underline {
 	border-bottom-width: 1;
