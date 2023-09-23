@@ -25,7 +25,7 @@ const tableHead = {
 	action: "Actions"
 };
 const Main = () => {
-	const countPerPage = 10;
+	const countPerPage = 30;
 	const [value, setValue] = React.useState("");
 	const [currentPage, setCurrentPage] = React.useState(1);
 	const [collection, setCollection] = React.useState(
@@ -37,7 +37,7 @@ const Main = () => {
 			setCurrentPage(1);
 			const data = cloneDeep(
 				allData
-					.filter(item => item.name.toLowerCase().indexOf(query) > -1)
+					.filter(item => item.name.toLowerCase().indexOf(query) > -1 || item.parentId.toLowerCase().indexOf(query) > -1 || item.status.toLowerCase().indexOf(query) > -1 || item.campaignType.toLowerCase().indexOf(query)> -1)
 					.slice(0, countPerPage)
 			);
 			setCollection(data);
@@ -63,9 +63,9 @@ const Main = () => {
 		const { key, index } = rowData;
 		const tableCell = Object.keys(tableHead);
 		const columnData = tableCell.map((keyD, i) => {
-			return <Td key={i}>{key[keyD]}</Td>;
+			return <Td className = 'sm:h-[63px] h-auto font-[500] text-[15px]' key={i}>{key[keyD]}</Td>;
 		});
-		return <Tr key={index}>{columnData}</Tr>;
+		return <Tr className = 'sm:h-[63px] h-auto  font-[500] text-[15px]' key={index}>{columnData}</Tr>;
 	};
 
 	const tableData = () => {
@@ -74,7 +74,7 @@ const Main = () => {
 
 	const headRow = () => {
 		return Object.values(tableHead).map((title, index) => (
-			<Td key={index}>{title}</Td>
+			<Td className = 'sm:h-[63px] h-auto font-[500] text-[15px]' key={index}>{title}</Td>
 		));
 	};
 
@@ -86,11 +86,12 @@ const Main = () => {
 			<div className='bg-gray-100 '>
 				<div className="pl-4 pr-4 sm:pl-0 sm:pr-0">
 					<div style={{ backgroundImage: `url(${Group})` }}>
-						<h1 className='flex justify-center font-semibold text-[20px] sm:text-[28px] sm:pt-14 pt-8' style={{ lineHeight: "42px" }}>Some heading will come here</h1>
-						<p className='sm:flex justify-center font-medium sm:text-[20px] text-[16px] pt-5 pb-8 text-black mb-12 sm:mb-0 ml text-center' style={{ letterSpacingz: "2%" }}>Need text let’s Discuss Get in touch & let us <span className="flex justify-center">know how we can help Your Project</span> </p>
+						<h1 className='flex justify-center font-semibold text-[20px] sm:text-[28px] sm:pt-10 pt-6' style={{ lineHeight: "42px" }}>Some heading will come here</h1>
+						<p className='sm:flex justify-center font-medium sm:text-[20px] text-[16px] pt-2 pb-8 text-black mb-12 sm:mb-0 ml text-center' style={{ letterSpacingz: "2%" }}>Need text let’s Discuss Get in touch & let us <span className="flex justify-center">know how we can help Your Project</span> </p>
 					</div>
-					<ul className=' sm:w-[1133px] w-[414px] sm:flex hidden h-[38px] ml-5 sm:ml-auto sm:h-[50px] mx-auto  mt-10 mb-20 overflow-auto sm:overflow-visible'>
-						<li className='font-medium text-[15px] sm:text-[16px] sm:mr-8 md:mr-14 link-underline-list link-underline-black-list text-purple-700 ' style={{ lineHeight: "24px" }}>All Products</li>
+					<ul className=' sm:w-[1133px] w-[414px] sm:flex hidden h-[38px] ml-5 sm:ml-auto sm:h-[50px] mx-auto  mt-2 mb-20 overflow-auto sm:overflow-visible'>
+						<Link to = '/industry'>
+						<li className='font-medium text-[15px] sm:text-[16px] sm:mr-8 md:mr-14 link-underline-list link-underline-black-list text-purple-700 ' style={{ lineHeight: "24px" }}>All Products</li></Link>
 						<li className='font-medium text-[16px] sm:mr-8 md:mr-14 link-underline-list link-underline-black-list' style={{ lineHeight: "24px" }}>
 							<Link to="/pharma">
 								Pharma
@@ -101,20 +102,20 @@ const Main = () => {
 						<li className='font-medium text-[16px] sm:mr-8 md:mr-14 link-underline-list link-underline-black-list' style={{ lineHeight: "24px" }}>Nutrition & Suppliment</li>
 						<li className='font-medium text-[16px] link-underline-list link-underline-black-list' style={{ lineHeight: "24px" }}>Plastics & Polymers</li>
 					</ul>
-					<div className='ml-0 mr-0 sm:ml-[6%] sm:mr-[6%] relative '>
-						<div className="search">
+					<div className='mx-auto sm:w-[1198px] max-w-[100%] sm:mr-[6%] relative '>
+					<div className="search">
 							<input
 								className="search lg:w-[995px] lg:h-[64px] md:w-[700px] md:h-[60px] h-[54px] w-[343px]"
-								placeholder="Search Productss....."
+								placeholder="Search Products....."
 								style={{ position: "absolute", left: "0", right: "0", top: "-90px", marginLeft: "auto", marginRight: "auto", marginTop: "20px", paddingLeft: "20px" }}
 								value={value}
 								onChange={e => setValue(e.target.value)}
 							/>
-							<button className="bg-[#8D2ED1] w-[66px] sm:w-[131px] h-[40px] sm:h-[44px] rounded text-white absolute  2xl:right-[11rem] xl:right-[8rem] right-[14px] md:right-[2rem] lg:right-[4rem] sm:right-0 top-[-65px] sm:top-[-60px] text-[13px]">Search</button>
+							{/* <button className="bg-[#8D2ED1] w-[66px] sm:w-[131px] h-[40px] sm:h-[44px] rounded text-white absolute  2xl:right-[11rem] xl:right-[8rem] right-[14px] md:right-[2rem] lg:right-[4rem] sm:right-0 top-[-65px] sm:top-[-60px] text-[13px]">Search</button> */}
 						</div>
-						<Table className="responsive-table">
-							<Thead >
-								<Tr className=" bg-[#FBF6FF]  border border-[#E9EFF4] ">{headRow()}</Tr>
+						<Table className="responsive-table rounded-t-[18px]">
+							<Thead className = "rounded-t-[18px]" >
+								<Tr className="rounded-t-[18px]  bg-[#FBF6FF] text-[14px] h-auto sm:h-[63px] text-[#BDBDBD] border border-[#E9EFF4] ">{headRow()}</Tr>
 							</Thead>
 							<Tbody className="trhover bg-white">{tableData()}</Tbody>
 						</Table>

@@ -1,37 +1,40 @@
 import "./Indusrty.css"
+import { Link } from "react-router-dom"
 const Industry = () => {
     return (
         <>
             <div className="pl-5 sm:pl-0 overflow-hidden">
                 <h1 className="text-2xl font-medium sm:text-3xl mt-[4%] mb-[1%] sm:max-w-[100%-40px] sm:w-[1199px] m-auto w-[375px] max-w-[100%]" >Industry </h1>
-                <div className="grid grid-cols-2 sm:grid-cols-6  sm:max-w-[100%-40px] sm:w-[1199px] m-auto w-[375px] max-w-[100%]  pt-5">
+                <div className="grid grid-cols-2 sm:grid-cols-6  sm:max-w-[100%-40px] sm:w-[1199px] m-auto w-[375px] max-w-[100%]  pt-5 ">
                     <div className="h-[158px] w-[163px] sm:w-auto sm:h-auto overflow-hidden mb-5">
+                        <Link to='/pharma'>
                         <div className="containers">
-                            <img className="mt-0 ml-0 mb-5 sm:w-[156px] sm:h-[208px] mr-0 sm:m-4 image overflow-hidden" src="./Frame 550.svg" alt="img1" />
+                            <img className="mt-0 ml-0 mb-5 sm:w-[156px] sm:h-[208px] mr-0 sm:m-0 image overflow-hidden" src="./Frame 550.svg" alt="img1" />
                             <div className="bottom-right sm:top-[137px] top-[108px]">Pharma</div>
                         </div>
+                        </Link>
                     </div>
                     <div className="h-[158px] w-[163px] sm:w-auto sm:h-auto overflow-hidden">
                         <div className="containers">
-                            <img className="mt-0 ml-0 mb-5 mr-0 sm:m-4 image" src="./Rectangle 28635.svg" alt="img2" />
+                            <img className="mt-0 ml-0 mb-5 mr-0 sm:m-0 image" src="./Rectangle 28635.svg" alt="img2" />
                             <div className="bottom-right sm:top-[137px] top-[108px]">Agro Chemical</div>
                         </div>
                     </div>
                     <div className="h-[158px] w-[163px] sm:w-auto sm:h-auto overflow-hidden mb-5">
                         <div className="containers">
-                            <img className="m-0 sm:m-4 image" src="./Rectangle 28636.svg" alt="img3" />
+                            <img className="m-0 sm:m-0 image" src="./Rectangle 28636.svg" alt="img3" />
                             <div className="bottom-right  sm:top-[137px] top-[108px]">Cosmetics & Personal Care</div>
                         </div>
                     </div>
                     <div className="h-[158px] w-[163px] sm:w-auto sm:h-auto overflow-hidden">
                         <div className="containers">
-                            <img className="m-0 sm:m-4 image" src="./Rectangle 28637.svg" alt="img5" />
+                            <img className="m-0 sm:m-0 image" src="./Rectangle 28637.svg" alt="img5" />
                             <div className="bottom-right sm:top-[135px] top-[108px]">Nutrition & Supplements</div>
                         </div>
                     </div>
                     <div className="h-[158px] w-[163px] sm:w-auto sm:h-auto overflow-hidden">
                         <div className="containers overflow-hidden">
-                            <img className="m-0 sm:m-4 image overflow-hidden" src="./Rectangle 28638.svg" alt="img6" />
+                            <img className="m-0 sm:m-0 image overflow-hidden" src="./Rectangle 28638.svg" alt="img6" />
                             <div className="bottom-right sm:top-[150px] top-[108px]">Plastics & Polymers</div>
                         </div>
                     </div>
@@ -54,8 +57,9 @@ const Industry = () => {
                 {/* second  =================================================>>>>>>>>>>>>>>*/}
 
                 <div className="flex justify-between flex-col mt-20 sm:flex sm:flex-row sm:max-w-[100%-40px] sm:w-[1199px] m-auto w-[375px] max-w-[100%] h-auto" >
-                    <div className="left  ">
-                        <img src="./Mask group.jpg" alt="mask group" />
+                    <div className="left relative top-0 left-0 ">
+                        <img className="z-40 relative" src="./Mask group.jpg" alt="mask group" />
+                        <img className="absolute top-[316px] left-[-50px] z-0 hidden sm:block" src="./Group 48669.jpg" alt="bg-dot" />
                     </div>
                     <div className="right w-auto sm:w-[524px]  mt-10 sm:mt-1" >
                         <h2 className="text-xl font-medium sm:text-3xl sm:leading-relaxed mr-3 sm:mr-0 ">Reliable suppliers with consistent performance</h2>
@@ -67,7 +71,9 @@ const Industry = () => {
                                 <li>Efficient lead times</li>
                                 <li>Custom Manufacturing</li>
                             </ul>
+                            <Link to='/industry'>
                             <button className="float-left text-white text-sm sm:font-medium mt-5 ml-2 w-[81px] h-[51px] sm:h-[50px] sm:w-[122px]" style={{ backgroundColor: "rgba(141, 46, 209, 1)", borderRadius: "5px" }}>Explore</button>
+                            </Link>
                         </div>
                     </div>
                 </div>
@@ -88,7 +94,7 @@ const Industry = () => {
                 </div>
             </div>
             {/* value chain ======================>>>>>>>>>>>>>>>>>>>>>>>>>> */}
-            <div className="w-auto bg-purple-50 mt-10 sm:mt-28 h-auto pt-5 pl-8 pr-8 sm:pl-0 sm:pr-0 pb-5 overflow-hidden" style={{ height: "auto" }}>
+            <div className="w-auto bg-purple-50 mt-10 sm:mt-28 h-auto pt-5 pl-8 pr-8 sm:pl-0 sm:pr-0 pb-8 overflow-hidden" style={{ height: "auto" }}>
                 <div className="sm:max-w-[100%-40px] sm:w-[1199px] m-auto w-[375px] max-w-[100%]">
                     <h1 className="text-xl font-medium sm:text-3xl mr-[0.4rem]">Redefining <span className="underline-text">Speciality  Chemicals</span>  value chain!</h1>
                     <p className="font-normal leading-7 tracking-[1%] text-[16px]  text-[#6A6A6A] mr-0 sm:mr-[4rem] sm:text-lg whitespace-pre-wrap  gap-3  mt-4 " >Molequle is your trusted gateway to best manufacturers from China, India, and beyond to fulfill all your chemical needs. We provide innovative and market driven products across industries with end-to-end logistics support.</p>

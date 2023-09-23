@@ -1,4 +1,4 @@
-export const allData = [
+export const catalystsData = [
     {
       name: "Sale",
       parentId: "12",

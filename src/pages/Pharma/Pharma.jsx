@@ -1,12 +1,12 @@
 import React, { useRef, useState } from "react";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./pharma.css";
 import cloneDeep from "lodash/cloneDeep";
 import throttle from "lodash/throttle";
 import Pagination from "rc-pagination";
 import Group from "../../assets/Group13.png";
 import { gsap } from "gsap";
-import { allData } from "./data";
+import { catalystsData ,PharmaIntermidatesData , ImpuritesData } from "./data";
 import { Table, Thead, Tbody, Tr, Td } from 'react-super-responsive-table'
 import 'react-super-responsive-table/dist/SuperResponsiveTableStyle.css'
 import PharmaIntermidates from "./PharmaIntermidates";
@@ -27,18 +27,18 @@ const tableHead = {
 
 function Pharma() {
   // ========================search bar
-  const countPerPage = 10;
+  const countPerPage = 15;
   const [value, setValue] = React.useState("");
   const [currentPage, setCurrentPage] = React.useState(1);
   const [collection, setCollection] = React.useState(
-    cloneDeep(allData.slice(0, countPerPage))
+    cloneDeep(catalystsData.slice(0, countPerPage))
   );
   const searchData = React.useRef(
     throttle(val => {
       const query = val.toLowerCase();
       setCurrentPage(1);
       const data = cloneDeep(
-        allData
+        catalystsData
           .filter(item => item.name.toLowerCase().indexOf(query) > -1)
           .slice(0, countPerPage)
       );
@@ -58,16 +58,16 @@ function Pharma() {
     setCurrentPage(p);
     const to = countPerPage * p;
     const from = to - countPerPage;
-    setCollection(cloneDeep(allData.slice(from, to)));
+    setCollection(cloneDeep(catalystsData.slice(from, to)));
   };
 
   const tableRows = rowData => {
     const { key, index } = rowData;
     const tableCell = Object.keys(tableHead);
     const columnData = tableCell.map((keyD, i) => {
-      return <Td key={i}>{key[keyD]}</Td>;
+      return <Td className = 'sm:h-[63px] h-auto font-[500] text-[15px]' key={i}>{key[keyD]}</Td>;
     });
-    return <Tr key={index}>{columnData}</Tr>;
+    return <Tr className = 'sm:h-[63px] h-auto font-[500] text-[15px]' key={index}>{columnData}</Tr>;
   };
 
   const tableData = () => {
@@ -76,7 +76,7 @@ function Pharma() {
 
   const headRow = () => {
     return Object.values(tableHead).map((title, index) => (
-      <Td key={index}>{title}</Td>
+      <Td className = 'sm:h-[63px] h-auto font-[500] text-[15px]' key={index}>{title}</Td>
     ));
   };
 
@@ -133,13 +133,13 @@ function Pharma() {
       <div className="bg-gray-100">
         <div className="pl-4 pr-4 sm:pl-0 sm:pr-0">
           <div style={{ backgroundImage: `url(${Group})` }}>
-            <h1 className='flex justify-center font-semibold text-[20px] sm:text-[28px] sm:pt-14 pt-8' style={{ lineHeight: "42px" }}>Some heading will come here</h1>
-            <p className='sm:flex justify-center font-medium sm:text-[20px] text-[16px] pt-5 pb-8 text-black mb-12 sm:mb-0 ml text-center' style={{ letterSpacingz: "2%" }}>Need text let’s Discuss Get in touch & let us <span className="flex justify-center">know how we can help Your Project</span> </p>
+            <h1 className='flex justify-center font-semibold text-[20px] sm:text-[28px] sm:pt-10 pt-6' style={{ lineHeight: "42px" }}>Some heading will come here</h1>
+            <p className='sm:flex justify-center font-medium sm:text-[20px] text-[16px] pt-2 pb-8 text-black mb-12 sm:mb-0 ml text-center' style={{ letterSpacingz: "2%" }}>Need text let’s Discuss Get in touch & let us <span className="flex justify-center">know how we can help Your Project</span> </p>
           </div>
           <div>
-            <ul className=' sm:w-[1133px] w-[414px] sm:flex hidden h-[38px] ml-5 sm:ml-auto sm:h-[50px] mx-auto  mt-10 mb-20 overflow-auto sm:overflow-visible'>
-              
-              <li className='font-medium text-[15px] sm:text-[16px] sm:mr-8 md:mr-14 link-underline-list link-underline-black-list ' style={{ lineHeight: "24px" }}>All Products</li>
+            <ul className=' sm:w-[1133px] w-[414px] sm:flex hidden h-[38px] ml-5 sm:ml-auto sm:h-[50px] mx-auto  mt-2 mb-5 overflow-auto sm:overflow-visible'>
+              <Link to = '/industry'>
+              <li className='font-medium text-[15px] sm:text-[16px] sm:mr-8 md:mr-14 link-underline-list link-underline-black-list ' style={{ lineHeight: "24px" }}>All Products</li></Link>
               <li className='font-medium text-[16px] sm:mr-8 md:mr-14 link-underline-list link-underline-black-list  text-purple-700' style={{ lineHeight: "24px" }}> Pharma</li>
               <li className='font-medium text-[16px] sm:mr-8 md:mr-14 link-underline-list link-underline-black-list' style={{ lineHeight: "24px" }}> Agro Chemical</li>
               <li className='font-medium text-[16px] sm:mr-8 md:mr-14 link-underline-list link-underline-black-list' style={{ lineHeight: "24px" }}>Cosmetic & Personal Care</li>
@@ -167,7 +167,7 @@ function Pharma() {
               className="accordion__header flex justify-between"
               onClick={() => handleAccordionClick(0)}
             >
-              <p className="accordion__name text-[15px] sm:text-[20px]">Excipients, Catalysts and High Grade Solvents</p>
+              <p className="accordion__name text-[15px] sm:text-[20px] font-[600] text-black">Excipients, Catalysts and High Grade Solvents <a href="#" className="text-[#666666] font-[400] text-[14px] ml-5"> {catalystsData.length} items</a></p>
               <img src="./Groupup.svg" alt="up" />
             </div>
 
@@ -175,7 +175,7 @@ function Pharma() {
               <div className='ml-0 mr-0  relative sm:w-auto w-auto'>
                 <Table className="responsive-table">
                   <Thead >
-                    <Tr className=" bg-[#FBF6FF]  border border-[#E9EFF4] ">{headRow()}</Tr>
+                    <Tr className="rounded-t-[18px]  bg-[#FBF6FF] text-[14px] h-auto sm:h-[63px] text-[#BDBDBD] border border-[#E9EFF4]  ">{headRow()}</Tr>
                   </Thead>
                   <Tbody className="trhover bg-white">{tableData()}</Tbody>
                 </Table>
@@ -183,7 +183,7 @@ function Pharma() {
                   pageSize={countPerPage}
                   onChange={updatePage}
                   current={currentPage}
-                  total={allData.length}
+                  total={catalystsData.length}
                   style={{ marginTop: "20px", display: "flex", justifyContent: "center" }}
                 />
               </div>
@@ -198,8 +198,9 @@ function Pharma() {
               className="accordion__header flex justify-between"
               onClick={() => handleAccordionClick(1)}
             >
-              <p className="accordion__name text-[15px] sm:text-[20px]">
+              <p className="accordion__name text-[15px] sm:text-[20px] font-[600] text-black">
               Pharma Intermediates
+              <a href="#" className="text-[#666666] font-[400] text-[14px] ml-5"> {PharmaIntermidatesData.length} items</a>
               </p>
               <img src="./Groupup.svg" alt="up" />
             </div>
@@ -216,7 +217,7 @@ function Pharma() {
               onClick={() => handleAccordionClick(2)}
             >
 
-              <p className="accordion__name text-[15px] sm:text-[20px]">Impurities</p>
+              <p className="accordion__name text-[15px] sm:text-[20px] font-[600] text-black">Impurities  <a href="#" className="text-[#666666] font-[400] text-[14px] ml-5"> {ImpuritesData.length} items</a></p>
               <img src="./Groupup.svg" alt="up" />
             </div>
             <div className="accordion__details">

@@ -43,27 +43,28 @@ const Contact = () => {
             <div className="workik-contact-box">
               <div className="flex mb-5">
                 <img className="contact-svg  mr-5 sm:h-[28px] sm:w-[28px] h-[24px] w-[24px]" src="./Group 48772.svg"/>
-                <p className="contact-text underline font-medium ">
+                <a className="contact-text underline font-medium" href="http://wa.me/918010150164" target="_blank" rel="noreferrer">
                   Chat With Us
-                </p>
+                </a>
                 </div>
                 <div className="flex mb-5">
                 <img className="contact-svg  mr-5 sm:h-auto sm:w-auto h-[24px] w-[24px]" src="./Group 48735.svg"/>
                 <p className="contact-text font-medium ">
-                +91 9876543210
+                +91 9560190710
                 </p>
                 </div>
                 <div className="flex mb-5">
                 <img className="contact-svg  mr-5 sm:h-auto sm:w-auto h-[24px] w-[24px]" src="./Group 48736.svg"/>
                 <p className="contact-text font-medium">
-                Ayush@molequle.biz
+                  
+                utpal@molequle.biz
                 </p>
                 </div>
                 <div className="flex">
                 <img className="contact-svg  mr-5 sm:h-auto sm:w-auto h-[24px] w-[24px]" src="./Group 9044.svg"/>
-                <p className="contact-text font-medium">
+                <a className="contact-text font-medium" href="https://maps.app.goo.gl/ew4BKbf9ZwWxu3qK6" target="_blank" rel="noreferrer">
                 BPTP Centra One, Sector 61, Gurgaon, Haryana - 122001
-                </p>
+                </a>
                 </div>
             </div>
           </div>

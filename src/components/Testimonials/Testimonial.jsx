@@ -86,9 +86,9 @@ class Carousel extends React.Component {
             <h1 className='text-xl font-medium sm:text-3xl overflow-hidden'> <span className='underline-text'>Trusted by leaders</span> across industries...</h1>
             <p className='font-normal leading-7 tracking-[1%] text-[15px] text-[#6A6A6A]  sm:text-lg whitespace-pre-wrap  gap-3  mt-4'>Over 80% of our customers find us remarkably great to work with. Service Excellence lies in the emotions we <br /> evoke and the relationships we forge. Every customer, every day!</p>
           </div>
-            <div className="carousel-container mt-5 w-[1199pxpx]">
+            <div className="carousel-container mt-5 mx-auto xl:w-[1198px] 2xl:w-[1298px] w-auto px-0 max-w-[100%] ">
                 <div className="cards">
-                    <div className="card leftCard 2xl:ml-[9.5rem] xl:ml-[6rem] ml-0">
+                    <div className="card leftCard ">
                       <div className='flex'>
                         <img className="avatars" src={items[this.state.leftCard].imgSrc} alt="avatar"></img>
                         <span className="fa fa-star checked"></span>
@@ -103,7 +103,7 @@ class Carousel extends React.Component {
                             <p className="testimony font-normal text">{items[this.state.leftCard].quote}</p>
                         </div>
                     </div>
-                    <div className="card active">
+                    <div className="card active ml-5 sm:ml-0">
                       <div className='flex'>
                         <img className="avatars" src={items[this.state.activeIndex].imgSrc} alt="avatar"></img>
                         <span className="fa fa-star checked"></span>

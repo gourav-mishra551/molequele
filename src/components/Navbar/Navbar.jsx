@@ -70,7 +70,7 @@ export default function NavBar() {
                                         <div className="my-auto sm:my-0 mr-auto sm:text-base text-[18px] sm:ml-2  font-medium hover:text-purple-600 link link-underline link-underline-black text-purple-700 sm:text-black "  >
                                             Products
                                         </div>
-                                        <div className="absolute  z-30 hidden w-screen   mt-16 bg-white border  shadow-lg group-focus:visible" >
+                                        <div className="absolute  z-30 hidden w-screen   mt-[5.6rem] bg-white border  shadow-lg group-focus:visible" >
                                             <div className=" flex flex-row  sm:flex ">
                                                 <div className="w-60 h-auto ml-44 mt-10 hidden sm:block">
                                                     <div className="flex flex-col">
@@ -88,9 +88,9 @@ export default function NavBar() {
                                                             </ul>
                                                         </div>
 
-                                                        <p className="text-gray-500 leading-5 text-sm font-normal w-full mt-3 ">Demo Description non deserunt ullamco est sit aliqua amet sint. </p>
+                                                        <p className="text-gray-500 leading-5 text-sm font-normal  mt-3  sm:w-[231px]  w-[177px] text-left">Customized products to match industry specific needs & use cases </p>
                                                     </div>
-                                                    <button className="mt-10 float-left ml-2 font-medium text-xl">All Products</button>
+                                                    <button className="mt-10 float-left ml-2 font-medium text-xl text-left">All Products</button>
                                                 </div>
 
                                                 {/*================================= grid ==================*/}
@@ -107,11 +107,11 @@ export default function NavBar() {
                                                         <li><Link to="/pharma">
                                                             <a className="flex">
                                                                 <span className="flex-shrink-0">
-                                                                    <img src=".\Group 1000003216.svg " alt="first" />
+                                                                    <img src=".\Frame 551.svg " alt="first" />
                                                                 </span>
                                                                 <div className="flex flex-col ml-4">
                                                                     <span className="text-left font-medium leading-none text-lg">Pharma</span>
-                                                                    <span className="text-left mt-1 text-sm font-normal text-gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                                                                    <span className="text-left mt-1 text-sm font-normal text-gray-500 sm:w-[231px]  w-[177px]">APIs, Intermediates, Excipients & more</span>
                                                                 </div>
                                                             </a>
                                                         </Link></li>
@@ -121,8 +121,8 @@ export default function NavBar() {
                                                                     <img src=".\Group 1000003216.svg " alt="second" />
                                                                 </span>
                                                                 <div className="flex flex-col ml-4">
-                                                                    <span className="text-left font-medium leading-none text-lg">Cosmetics & Personal Care</span>
-                                                                    <span className="text-left mt-1 text-sm font-normal text-gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                                                                    <span className="text-left font-medium leading-none text-lg ">Agro Chemicals</span>
+                                                                    <span className="text-left mt-1 text-sm font-normal text-gray-500 sm:w-[231px]  w-[177px]">Range of actives, extracts, oils & surfactants</span>
                                                                 </div>
                                                             </a>
                                                         </li>
@@ -132,9 +132,8 @@ export default function NavBar() {
                                                                     <img src=".\Group 1000003217.svg " alt="third" />
                                                                 </span>
                                                                 <div className="flex flex-col ml-4">
-                                                                    <span className="text-left font-medium leading-none text-lg">Plastics & Polymers</span>
-                                                                    <span className="text-left mt-1 text-sm font-normal text-gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing
-                                                                        elit.</span>
+                                                                    <span className="text-left font-medium leading-none text-lg">Cosmetics & Personal Care</span>
+                                                                    <span className="text-left mt-1 text-sm font-normal text-gray-500 sm:w-[231px]  w-[177px]">Resins, pigments, & other plastic additives</span>
                                                                 </div>
                                                             </a>
                                                         </li>
@@ -144,20 +143,19 @@ export default function NavBar() {
                                                                     <img src=".\Group 1000003218.svg " alt="Fourth" />
                                                                 </span>
                                                                 <div className="flex flex-col ml-4">
-                                                                    <span className="text-left font-medium leading-none text-lg">Agro Chemicals</span>
-                                                                    <span className="text-left mt-1 text-sm font-normal text-gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing
-                                                                        elit.</span>
+                                                                    <span className="text-left font-medium leading-none text-lg">Nutrition & Supplements</span>
+                                                                    <span className="text-left mt-1 text-sm font-normal text-gray-500 sm:w-[231px]  w-[177px]">Crop protection, plant nutrition, & soil health solutions</span>
                                                                 </div>
                                                             </a>
                                                         </li>
                                                         <li>
                                                             <a className="flex" href="/indusrty">
                                                                 <span className="flex-shrink-0 ">
-                                                                    <img src=".\Group 1000003218.svg " alt="fifth" />
+                                                                    <img src=".\Group 1000003219.svg " alt="fifth" />
                                                                 </span>
                                                                 <div className="flex flex-col ml-4">
-                                                                    <span className="text-left font-medium leading-none texxt-lg">Nutrition & Supplements</span>
-                                                                    <span className="text-left mt-1 text-sm font-normal text-gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                                                                    <span className="text-left font-medium leading-none texxt-lg">Plastics & Polymers</span>
+                                                                    <span className="text-left mt-1 text-sm font-normal text-gray-500 sm:w-[231px]  w-[177px]">All types of plants, dairy & meat based solutions</span>
                                                                 </div>
                                                             </a>
                                                         </li>
@@ -169,7 +167,7 @@ export default function NavBar() {
                                                                 </span>
                                                                 <div className="flex flex-col ml-4">
                                                                     <span className="text-left font-medium  leading-none text-lg">Adhesives & Sealants</span>
-                                                                    <span className="text-left mt-1 text-sm font-normal text-gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                                                    <span className="text-left mt-1 text-sm font-normal text-gray-500 sm:w-[231px]  w-[177px]">Lorem ipsum dolor sit amet, consectetur adipiscing
                                                                         elit.</span>
                                                                 </div>
                                                             </a>
@@ -197,7 +195,7 @@ export default function NavBar() {
                     </div>
                 </div>
             </div>
-            <a className=" fixed overflow-hidden  flex items-center justify-center   h-8 pr-2 pl-1 bg-[#F9F5FD] rounded-full sm:bottom-[13.5rem] sm:top-auto top-[330px] sm:right-14 right-6  mr-4 mb-4 border border-[#E1B9FD]  text-purple-800 hover:bg-purple-100 z-30" href="http://wa.me/918010150164" target="_top">
+            <a className=" fixed overflow-hidden  flex items-center justify-center   h-8 pr-2 pl-1 bg-[#F9F5FD] rounded-full sm:bottom-[13.5rem] sm:top-auto top-[330px] sm:right-14 right-6  mr-4 mb-4 border border-[#E1B9FD]  text-purple-800 hover:bg-purple-100 z-30" href="http://wa.me/918010150164" target="_blank" rel="noreferrer">
                                 <div className=" rounded-full">
                                     <img className="rounded-full" src="/Vector4.svg" alt="logo" />
                                 </div>

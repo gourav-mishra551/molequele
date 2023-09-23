@@ -5,8 +5,7 @@
   }
   .bottom-right {
     position: absolute;
-bottom: 10px;
-left: 15px;
+    bottom: 10px;
     height: 72px;
     width: 156px;
     font-weight: 500;

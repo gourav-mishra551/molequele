@@ -17,7 +17,7 @@ const tableHead = {
   };
 const PharmaIntermidates = () => {
     // ========================search bar
-  const countPerPage = 10;
+  const countPerPage = 15;
   const [value, setValue] = React.useState("");
   const [currentPage, setCurrentPage] = React.useState(1);
   const [collection, setCollection] = React.useState(
@@ -55,9 +55,9 @@ const PharmaIntermidates = () => {
     const { key, index } = rowData;
     const tableCell = Object.keys(tableHead);
     const columnData = tableCell.map((keyD, i) => {
-      return <Td key={i}>{key[keyD]}</Td>;
+      return <Td className = 'sm:h-[63px] h-auto font-[500] text-[15px]' key={i}>{key[keyD]}</Td>;
     });
-    return <Tr key={index}>{columnData}</Tr>;
+    return <Tr className = 'sm:h-[63px] h-auto font-[500] text-[15px]' key={index}>{columnData}</Tr>;
   };
 
   const tableData = () => {
@@ -66,7 +66,7 @@ const PharmaIntermidates = () => {
 
   const headRow = () => {
     return Object.values(tableHead).map((title, index) => (
-      <Td key={index}>{title}</Td>
+      <Td className = 'sm:h-[63px] h-auto font-[500] text-[15px]' key={index}>{title}</Td>
     ));
   };
 
@@ -76,7 +76,7 @@ const PharmaIntermidates = () => {
     <div className='ml-0 mr-0  relative w-auto'>
                 <Table className="responsive-table">
                   <Thead >
-                    <Tr className=" bg-[#FBF6FF]  border border-[#E9EFF4] ">{headRow()}</Tr>
+                    <Tr className="rounded-t-[18px]  bg-[#FBF6FF] text-[14px] h-auto sm:h-[63px] text-[#BDBDBD] border border-[#E9EFF4]  ">{headRow()}</Tr>
                   </Thead>
                   <Tbody className="trhover bg-white">{tableData()}</Tbody>
                 </Table>
