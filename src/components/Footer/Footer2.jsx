@@ -38,9 +38,9 @@ const Footer2 = () => {
             <div className="tweeter mr-5">
               <img src="./Group 38552.svg" alt="tweeter" />
             </div>
-            <div className="linkdin mr-5">
+            <a href="https://www.linkedin.com/company/molequle/" className="linkdin mr-5" target="_blank" rel="noreferrer">
               <img src="./Linkdin.svg" alt="linkdin" />
-            </div>
+            </a>
             <div className="whastaap sm:h-auto">
               <img src="./Group 38548.svg" alt="tweeter" />
             </div>
