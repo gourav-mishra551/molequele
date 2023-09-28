@@ -104,7 +104,7 @@ const Main = () => {
 						<li className='font-medium w-max text-[16px] link-underline-list link-underline-black-list' style={{ lineHeight: "24px" }}>Plastics & Polymers</li>
 					</ul>
 					</div>
-					<div className='mx-auto sm:w-[1198px] max-w-[100%] sm:mr-[6%] relative '>
+					<div className='mx-auto sm:w-[1198px] max-w-[100%]  relative '>
 					<div className="search">
 							<input
 								className="search lg:w-[995px] lg:h-[64px] md:w-[700px] md:h-[60px] h-[54px] w-[343px]"

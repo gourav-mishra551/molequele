@@ -162,7 +162,8 @@ function Pharma() {
         </div>
         <div className="accordion__container">
           <div
-            className={`accordion__item  ${openAccordion === 0 ? "open" : ""}`}
+            className={`accordion__item  ${openAccordion === 0
+               ? "open" : ""}`}
             ref={(el) => (accordionRefs.current[0] = el)}
           >
             <div

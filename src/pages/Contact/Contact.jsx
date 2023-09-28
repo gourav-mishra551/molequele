@@ -75,7 +75,7 @@ const Contact = () => {
           <div className="socioIcon flex  flex-col-reverse justify-center sm:flex sm:flex-row w-auto sm:w-[754px] mx-auto ">
             <div className="whatsapp flex flex-wrap mr-10">
               <img className='sm:h-[28px] sm:w-[28px] h-[20px] w-[20px] hidden sm:block ' src="./Vector.svg" alt="logo" />
-              <p className='text-white font-medium  ml-4 hidden sm:block text-[16px] sm:text-[18px]' style={{ lineHeight: "30.3px" }}><a href="whatsapp.com">Chat With US</a></p>
+              <p className='text-white font-medium  ml-4 hidden sm:block text-[16px] sm:text-[18px]' style={{ lineHeight: "30.3px" }}><a href="whatsapp.com">Chat with us</a></p>
             </div>
             <div className="phone  mx-auto sm:mx-0   flex flex-wrap ">
               <img className=' ml-10 sm:ml-0 mb-0 mt-2 sm:mt-0 sm:h-[38px] sm:w-[28px] h-[20px] w-[20px]' src="./Vector (1).svg" alt="logo" />
