@@ -69,7 +69,7 @@ const Contact = () => {
       <header className='headerContact overflow-hidden'>
         <div className="upper sm:h-[416px] h-[393px] rounded-b-[12px] sm:rounded-b-[20px]" style={{ backgroundImage: `url(${Image})` }}>
           <div className=' p-5 sm:p-8 '>
-            <h1 className='text-white font-semibold text-[20px] sm:text-[32px] mt-6 headerContact w-auto sm:w-[703px] mx-auto  text-center' >
+            <h1 className='text-white font-semibold leading-[32px] text-[20px] sm:text-[32px] mt-6 headerContact w-auto sm:w-[703px] mx-auto  text-center' >
               Get in touch & let us know how we can help</h1>
           </div>
           <div className="socioIcon flex  flex-col-reverse justify-center sm:flex sm:flex-row w-auto sm:w-[754px] mx-auto ">
@@ -115,7 +115,7 @@ const Contact = () => {
                         type="text"
                         name="from_name"
                         placeholder='jhon david'
-                        className="sm:w-full mt-5 rounded-2xl h-16 border font-normal border-gray-300 focus:border-purple-500 text-base outline-none text-gray-700 py-2 px-5 leading-8 transition-colors duration-200 ease-in-out w-[319px]"
+                        className="sm:w-full sm:mt-5 mt-2 rounded-2xl h-16 border font-normal border-gray-300 focus:border-purple-500 text-base outline-none text-gray-700 py-2 px-5 leading-8 transition-colors duration-200 ease-in-out w-[319px]"
                       />
                     </div>
                   </div>
@@ -139,7 +139,7 @@ const Contact = () => {
                         id="to_name"
                         name="to_name"
                         placeholder='example@youremail.com'
-                        className="sm:w-full mt-5 rounded-2xl h-16 border font-normal border-gray-300 focus:border-purple-500 text-base outline-none text-gray-700 py-2 px-5 leading-8 transition-colors duration-200 ease-in-out w-[319px]"
+                        className="sm:w-full sm:mt-5 mt-2 rounded-2xl h-16 border font-normal border-gray-300 focus:border-purple-500 text-base outline-none text-gray-700 py-2 px-5 leading-8 transition-colors duration-200 ease-in-out w-[319px]"
                       />
                     </div>
                   </div>
@@ -160,7 +160,7 @@ const Contact = () => {
                         id="form_phone"
                         name="form_phone"
                         placeholder='your phone number'
-                        className="sm:w-full mt-5 h-16 rounded-2xl font-normal border border-gray-300 focus:border-purple-500 text-base outline-none text-gray-700 py-2 px-5 leading-8 transition-colors duration-200 ease-in-out w-[319px]"
+                        className="sm:w-full sm:mt-5 mt-2 h-16 rounded-2xl font-normal border border-gray-300 focus:border-purple-500 text-base outline-none text-gray-700 py-2 px-5 leading-8 transition-colors duration-200 ease-in-out w-[319px]"
                       />
                     </div>
                   </div>
@@ -184,7 +184,7 @@ const Contact = () => {
                         id="subject"
                         name="subject"
                         placeholder='your company name'
-                        className="sm:w-full mt-5 h-16 font-normal rounded-2xl border border-gray-300 focus:border-purple-500 text-base outline-none text-gray-700 py-1 px-5 leading-8 transition-colors duration-200 ease-in-out w-[319px]"
+                        className="sm:w-full sm:mt-5 mt-2 h-16 font-normal rounded-2xl border border-gray-300 focus:border-purple-500 text-base outline-none text-gray-700 py-1 px-5 leading-8 transition-colors duration-200 ease-in-out w-[319px]"
                       />
                     </div>
                   </div>
@@ -208,7 +208,7 @@ const Contact = () => {
                         id="message"
                         name="message"
                         placeholder='Hello there,I would like to talk about how to...'
-                        className="w-full mt-5 h-64 rounded-2xl border border-gray-300 focus:border-purple-500  text-base outline-none font-normal text-gray-700 py-5 px-6 resize-none leading-6 transition-colors duration-200 ease-in-out"
+                        className="w-full sm:mt-5 mt-2 h-64 rounded-2xl border border-gray-300 focus:border-purple-500  text-base outline-none font-normal text-gray-700 py-5 px-6 resize-none leading-6 transition-colors duration-200 ease-in-out"
                       ></textarea>
                     </div>
                   </div>
