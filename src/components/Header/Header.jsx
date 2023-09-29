@@ -2,7 +2,7 @@ import "./header.css"
 import { Link } from "react-router-dom"
 const Header = () => {
   return (
-    <div className="main flex xl:pl-[7%] 2xl:pl-[10%] overflow-hidden">
+    <div className="main flex pl-[1%]  2xl:pl-[8%] xl:pl-[6%] sm:pl-[6%] overflow-hidden">
         <div className="lefts sm:w-[898px] sm:max-w-[auto] ml-auto">
             <h1 className="text-3xl ml-5 sm:ml-0 font-bold heading sm:text-5xl sm:leading-loosen leading-relaxed ">Your Speciality chemicals 
                 <span className="flex flex-col sm:flex sm:flex-row sm:leading-loose md:leading-relaxed leading-relaxed">procuments

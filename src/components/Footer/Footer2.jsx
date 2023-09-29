@@ -5,9 +5,9 @@ const Footer2 = () => {
     <div className="bg-purple-50 pt-1 sm:pl-0 pl-5">
       
       <img className="sm:block hidden p-10  sm:ml-auto xl:mr-[3.6em] 2xl:mr-[7.6em]" src="./Group 48702.svg" alt="logo" />
-      <hr className="border border-[#e2c3f8] sm:block hidden sm:max-w-[100%-40px] sm:w-[1199px] m-auto w-[375px] max-w-[100%-40px]" />
+      <hr className="border sm:block hidden ml-[6%] mr-[6%] 2xl:ml-[8%] xl:ml-[6%] sm:ml-[6%] sm:w-[auto] m-auto w-[375px] max-w-[100%]  dark:bg-[#8D2ED1]" />
      
-      <div className="flex flex-col justify-between pb-20  bg-purple-50   sm:max-w-[100%-40px] sm:w-[1199px] m-auto w-[375px] max-w-[100%-40px]  sm:flex sm:flex-row ">
+      <div className="flex flex-col justify-between pb-20  bg-purple-50 pl-[6%] pr-[6%] 2xl:pl-[8%] xl:pl-[6%] sm:pl-[6%]   w-[375px] max-w-[100%-40px]  sm:flex sm:flex-row ">
         <div className="w-auto ">
 
           <div className="flex flex-start ">

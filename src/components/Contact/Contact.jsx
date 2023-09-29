@@ -6,8 +6,8 @@ const Contact = () => {
   <div className="responsive-container-block big-container mt-[30px]">
     <div className="responsive-container-block container">
       <div className="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-7 wk-ipadp-10 line" id="i69b-2">
-        <form className="form-box sm:max-w-[100%-40px] sm:w-[1199px] m-auto w-[375px] max-w-[100%] mt-20">
-          <div className="container-block form-wrapper ">
+        <form className="form-box  sm:w-[auto] m-auto w-[375px] max-w-[100%] mt-20">
+          <div className="container-block form-wrapper  2xl:pl-[6%] xl:pl-[6%] sm:pl-[6%]">
             <h1 className="text-2xl font-semibold text-black flex flex-initial">We are here to help</h1>
               <h3 className="font-normal leading-7 tracking-[2%] text-[15px] text-[#6A6A6A]  sm:text-lg whitespace-pre-wrap  gap-3  mt-2">Get in touch & let us know how we can help</h3>
             <div className="responsive-container-block ">

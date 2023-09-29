@@ -82,11 +82,11 @@ class Carousel extends React.Component {
         }
         return (
         <>
-          <div className='sm:max-w-[100%-40px] sm:w-[1199px] m-auto w-[375px] max-w-[100%] sm:mt-20 mt-10 pl-5 sm:pl-0 overflow-hidden'>
+          <div className='sm:w-[auto] pr-[6%] 2xl:pl-[8%] xl:pl-[6%]  w-[375px] max-w-[100%] sm:mt-20 mt-10 pl-5 sm:pl-0 overflow-hidden'>
             <h1 className='text-xl font-medium sm:text-3xl overflow-hidden'> <span className='underline-text'>Trusted by leaders</span> across industries...</h1>
             <p className='font-normal leading-7 tracking-[1%] text-[15px] text-[#6A6A6A]  sm:text-lg whitespace-pre-wrap  gap-3  mt-4'>Over 80% of our customers find us remarkably great to work with. Service Excellence lies in the emotions we <br /> evoke and the relationships we forge. Every customer, every day!</p>
           </div>
-            <div className="carousel-container mt-5 mx-auto xl:w-[1198px] 2xl:w-[1298px] w-auto px-0 max-w-[100%] ">
+            <div className="carousel-container mt-5 2xl:ml-[8%] xl:ml-[6%] w-auto px-0 max-w-[100%] ">
                 <div className="cards">
                     <div className="card leftCard ">
                       <div className='flex'>

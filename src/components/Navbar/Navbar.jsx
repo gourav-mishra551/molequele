@@ -10,7 +10,7 @@ export default function NavBar() {
 
     return (
         <nav className="w-auto text-black shadow">
-            <div className="  px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
+            <div className="sm:px-0  px-4 mx-auto  md:items-center md:flex pr-[6%] 2xl:pl-[8%] xl:pl-[6%] sm:pl-[6%] ">
                 <div>
                     <div className="flex items-center justify-between py-3 md:py-5 md:block">
                         <Link to="/">
@@ -70,7 +70,7 @@ export default function NavBar() {
                                         <div className="my-auto sm:my-0 mr-auto sm:text-base text-[18px] sm:ml-2  font-medium hover:text-purple-600 link link-underline link-underline-black text-purple-700 sm:text-black "  >
                                             Products
                                         </div>
-                                        <div className="absolute  z-30 hidden w-screen   mt-[5.6rem] bg-white border  shadow-lg group-focus:visible" >
+                                        <div className="absolute sm:ml-32  z-30 hidden w-screen   mt-[5.6rem] bg-white border  shadow-lg group-focus:visible" >
                                             <div className=" flex flex-row  sm:flex ">
                                                 <div className="w-60 h-auto ml-44 mt-10 hidden sm:block">
                                                     <div className="flex flex-col">
