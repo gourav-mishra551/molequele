@@ -1,4 +1,4 @@
-import Navbar from "../../components/Navbar/Navbar";
+import Navbar2 from "../../components/Navbar/Navbar2";
 import TopHeader from "../../components/TopHeader/TopHeader";
 import Header from "../../components/Header/Header";
 import Contact from "../../components/Contact/Contact";
@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <div>
         <TopHeader/>
-        <Navbar/>
+        <Navbar2/>
         <Header/>
         <Industry/>
         <Testimonial/>

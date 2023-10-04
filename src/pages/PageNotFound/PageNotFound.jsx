@@ -1,13 +1,13 @@
 import TopHeader from '../../components/TopHeader/TopHeader'
-import NavBar from '../../components/Navbar/Navbar'
 import Footer2 from '../../components/Footer/Footer2';
 import { Link } from "react-router-dom";
+import NavBar2 from '../../components/Navbar/Navbar2';
 
 const PageNot = () => {
     return (
         <>
             <TopHeader />
-            <NavBar />
+            <NavBar2/>
             <div>
                 <div className='sm:w-[396px] w-[255px] mx-auto mt-10'>
                     <img src="./404.svg" alt="404" />

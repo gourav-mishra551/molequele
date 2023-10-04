@@ -10,7 +10,7 @@ import { Table, Thead, Tbody, Tr, Td } from 'react-super-responsive-table'
 import 'react-super-responsive-table/dist/SuperResponsiveTableStyle.css'
 
 import { allData } from "./constants";
-import NavBar from '../../components/Navbar/Navbar';
+import NavBar2 from '../../components/Navbar/Navbar2';
 import Contact from '../../components/Contact/Contact';
 import Footer from '../../components/Footer/Footer';
 import Group from "../../assets/Group13.png";
@@ -82,7 +82,7 @@ const Main = () => {
 	return (
 		<>
 			<TopHeader/>
-			<NavBar />
+			<NavBar2 />
 			<div className='bg-gray-100 overflow-hidden'>
 				<div className="pl-4 pr-4 sm:pl-0 sm:pr-0">
 					<div style={{ backgroundImage: `url(${Group})` }}>

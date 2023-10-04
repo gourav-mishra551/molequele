@@ -11,10 +11,10 @@ import { Table, Thead, Tbody, Tr, Td } from 'react-super-responsive-table'
 import 'react-super-responsive-table/dist/SuperResponsiveTableStyle.css'
 import PharmaIntermidates from "./PharmaIntermidates";
 import Impurities from "./Impurities";
-import NavBar from "../../components/Navbar/Navbar";
 import Contact from '../../components/Contact/Contact';
 import Footer from '../../components/Footer/Footer';
 import TopHeader from "../../components/TopHeader/TopHeader";
+import NavBar2 from "../../components/Navbar/Navbar2";
 
 const tableHead = {
   name: "Campaign Name",
@@ -129,7 +129,7 @@ function Pharma() {
   return (
     <div className="App">
       <TopHeader/>
-      <NavBar />
+      <NavBar2 />
       <div className="bg-gray-100">
         <div className="pl-4 pr-4 sm:pl-0 sm:pr-0">
           <div style={{ backgroundImage: `url(${Group})` }}>

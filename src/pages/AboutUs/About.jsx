@@ -1,5 +1,5 @@
 import TopHeader from '../../components/TopHeader/TopHeader'
-import NavBar from '../../components/Navbar/Navbar'
+import NavBar2 from '../../components/Navbar/Navbar2'
 import ImageBackGround from '../../assets/ImageBackGround.svg'
 import CountUp from 'react-countup';
 import Footer2 from '../../components/Footer/Footer2';
@@ -8,7 +8,7 @@ const About = () => {
     return (
         <div>
             <TopHeader />
-            <NavBar />
+            <NavBar2 />
             <div >
                 <header className='headerAbout'>
                     <div className="w-auto sm:h-[195px] h-[168px] sm:bg-repeat-round rounded-b-[20px] " style={{ backgroundImage: `url(${ImageBackGround})` }}>
