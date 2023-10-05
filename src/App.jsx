@@ -8,7 +8,11 @@ import Main from './pages/Industries/Main';
 import Pharma from './pages/Pharma/Pharma';
 import About from './pages/AboutUs/About';
 import PageNot from './pages/PageNotFound/PageNotFound';
+
+
+
 function App() {
+ 
   return (
     <>
     

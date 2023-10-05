@@ -3,8 +3,12 @@ import NavBar2 from '../../components/Navbar/Navbar2'
 import ImageBackGround from '../../assets/ImageBackGround.svg'
 import CountUp from 'react-countup';
 import Footer2 from '../../components/Footer/Footer2';
+import React from 'react';
 
 const About = () => {
+    React.useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
     return (
         <div>
             <TopHeader />

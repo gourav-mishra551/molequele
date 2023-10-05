@@ -26,6 +26,9 @@ const tableHead = {
 };
 
 function Pharma() {
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   // ========================search bar
   const countPerPage = 15;
   const [value, setValue] = React.useState("");

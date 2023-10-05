@@ -1,5 +1,4 @@
 .navbar a {
-    float: left;
     color: white;
     text-align: center;
     padding: 14px 16px;
@@ -7,7 +6,6 @@
   }
   
   .dropdown {
-    float: left;
     overflow: hidden;
     margin-top: 30px;
     font-weight: 500;
@@ -48,11 +46,8 @@
   }
   
   .column a {
-    float: none;
-    padding-bottom: 8px;
     text-decoration: none;
     display: flex;
-    text-align: left;
   }
   
   
