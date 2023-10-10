@@ -93,7 +93,7 @@ const Main = () => {
 						<p className='sm:flex justify-center font-medium sm:text-[20px] text-[16px] pt-2 pb-8 text-black mb-0 ml text-center' style={{ letterSpacingz: "2%" }}>Need text let’s Discuss Get in touch & let us <span className="flex justify-center">know how we can help Your Project</span> </p>
 					</div>
 					<div className="overflow-auto">
-						<ul className=' sm:w-[1133px]  sm:flex flex  h-[38px] w-max overflow-y-auto ml-5 sm:ml-auto sm:h-[50px] mx-auto  mt-2 mb-20 overflow-x-auto sm:overflow-visible'>
+						<ul className=' sm:w-[995px] sm:pl-10  sm:flex flex  h-[38px] w-max overflow-y-auto ml-5 sm:ml-auto sm:h-[50px] mx-auto  mt-2 mb-20 overflow-x-auto sm:overflow-visible'>
 							<Link to='/industry'>
 								<li className='font-medium w-max text-[15px] sm:text-[16px] sm:mr-8 md:mr-14 link-underline-list link-underline-black-list text-purple-700 ' style={{ lineHeight: "24px" }}>All Products</li></Link>
 							<li className='font-medium w-max text-[16px] sm:mr-8 md:mr-14 link-underline-list link-underline-black-list' style={{ lineHeight: "24px" }}>
@@ -104,7 +104,7 @@ const Main = () => {
 							<li className='font-medium w-max text-[16px] sm:mr-8 md:mr-14 link-underline-list link-underline-black-list' style={{ lineHeight: "24px" }}> Agro Chemical</li>
 							<li className='font-medium w-max text-[16px] sm:mr-8 md:mr-14 link-underline-list link-underline-black-list' style={{ lineHeight: "24px" }}>Cosmetic & Personal Care</li>
 							<li className='font-medium w-max text-[16px] sm:mr-8 md:mr-14 link-underline-list link-underline-black-list' style={{ lineHeight: "24px" }}>Nutrition & Suppliment</li>
-							<li className='font-medium w-max text-[16px] link-underline-list link-underline-black-list' style={{ lineHeight: "24px" }}>Plastics & Polymers</li>
+							
 						</ul>
 					</div>
 					<div className='mx-auto sm:w-[1198px] max-w-[100%]  relative '>

@@ -32,12 +32,7 @@ const Industry = () => {
                             <div className="bottom-right sm:top-[135px] top-[108px]">Nutrition & Supplements</div>
                         </div>
                     </div>
-                    <div className="h-[158px] w-[163px] sm:w-auto sm:h-auto overflow-hidden hover:border-purple-700  border-transparent border-2 hover:border-current hover:rounded-[4px] sm:mb-0 mb-2">
-                        <div className="containers overflow-hidden">
-                            <img className="m-0 sm:m-0 image overflow-hidden" src="./Rectangle 28638.svg" alt="img6" />
-                            <div className="bottom-right sm:top-[140px] top-[108px]  ">Plastics & Polymers</div>
-                        </div>
-                    </div>
+                   
                 </div>
                 {/* first =====================================>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/}
 
@@ -94,8 +89,8 @@ const Industry = () => {
                 </div>
             </div>
             {/* value chain ======================>>>>>>>>>>>>>>>>>>>>>>>>>> */}
-            <div className="w-auto bg-purple-50 mt-10 sm:mt-28 h-auto pt-10 pl-8 pr-8 sm:pl-0 sm:pr-0 sm:pb-10 pb-5 overflow-hidden" style={{ height: "auto" }}>
-                <div className="sm:pr-[6%] pr-[0%] 2xl:pl-[8%] xl:pl-[6%] sm:pl-[6%] sm:w-[auto] m-auto w-[375px] max-w-[100%]">
+            <div className="w-auto bg-purple-50 mt-10 sm:mt-28 h-auto pt-10 pl-[5%] pr-[5%] sm:pl-0 sm:pr-0 sm:pb-10 pb-5 overflow-hidden" style={{ height: "auto" }}>
+                <div className="sm:pr-[6%] pr-[0%] pl-[1%] 2xl:pl-[8%] xl:pl-[6%] sm:pl-[6%] sm:w-[auto] m-auto w-[375px] max-w-[100%]">
                     <h1 className="text-xl font-medium sm:text-3xl sm:w-auto w-[375px] leading-[27px]">Redefining <span className="underline-text">Speciality  Chemicals</span>  value chain!</h1>
                     <p className="font-normal leading-7 tracking-[1%] text-[16px]  text-[#6A6A6A] mr-0 sm:mr-[4rem] sm:text-lg whitespace-pre-wrap  gap-3  mt-3 " >Molequle is your trusted gateway to best manufacturers from China, India, and beyond to fulfill all your chemical needs. We provide innovative and market driven products across industries with end-to-end logistics support.</p>
 
@@ -128,7 +123,7 @@ const Industry = () => {
                 </div>
             </div>
 
-            <div className="2xl:ml-[8%] 2xl:mr-[8%] xl:ml-[6%] xl:mr-[6%]  sm:w-[auto] m-auto w-[375px] max-w-[100%] sm:mt-20 mt-10 pl-3 pr-3 sm:pl-0 sm:pr-0 overflow-hidden">
+            <div className="2xl:ml-[8%] 2xl:mr-[8%] xl:ml-[6%] xl:mr-[6%]  sm:w-[auto] m-auto w-[375px] max-w-[100%] sm:mt-20 mt-10 pl-[5%] pr-[5%] sm:pl-0 sm:pr-0 overflow-hidden">
                 <h1 className="text-xl sm:text-3xl font-medium pt-5 sm:pt-0"> <span className="underline-text">Uncompromising quality </span> with right compliances...</h1>
                 <p className="font-normal leading-7 tracking-[1%] text-[15px] text-[#6A6A6A]  sm:text-lg whitespace-pre-wrap  gap-3  mt-2">From Indian & US Pharmacopoeia to Reach & Toy Safety, our vast suppliers network meets highly rigid and extensive regulatory compliances.  </p>
                 <div className="grid grid-cols-3 gap-x-3 gap-y-3 sm:grid-cols-5 mt-10 sm:mt-10 mb-5 ">

@@ -38,19 +38,16 @@
 }
 .accordion__details {
     overflow: hidden;
-    height: 0;
+    height: auto;
   }
   .open {
     border-color: purple;
   }
   
-  .open .accordion__header,
-  .open .accordion__number {
-    color: #FBF6FF;
-  }
+ 
   
   .open .accordion__details {
-    height: auto;
+    height: 0;
   }
   @media only screen and (max-width: 600px){
     .accordion__item{

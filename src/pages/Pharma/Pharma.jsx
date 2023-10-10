@@ -6,7 +6,7 @@ import throttle from "lodash/throttle";
 import Pagination from "rc-pagination";
 import Group from "../../assets/Group13.png";
 import { gsap } from "gsap";
-import { catalystsData ,PharmaIntermidatesData , ImpuritesData } from "./data";
+import { catalystsData, PharmaIntermidatesData, ImpuritesData } from "./data";
 import { Table, Thead, Tbody, Tr, Td } from 'react-super-responsive-table'
 import 'react-super-responsive-table/dist/SuperResponsiveTableStyle.css'
 import PharmaIntermidates from "./PharmaIntermidates";
@@ -68,9 +68,9 @@ function Pharma() {
     const { key, index } = rowData;
     const tableCell = Object.keys(tableHead);
     const columnData = tableCell.map((keyD, i) => {
-      return <Td className = 'sm:h-[63px] h-auto font-[500] text-[15px]' key={i}>{key[keyD]}</Td>;
+      return <Td className='sm:h-[63px] h-auto font-[500] text-[15px]' key={i}>{key[keyD]}</Td>;
     });
-    return <Tr className = 'sm:h-[63px] h-auto font-[500] text-[15px]' key={index}>{columnData}</Tr>;
+    return <Tr className='sm:h-[63px] h-auto font-[500] text-[15px]' key={index}>{columnData}</Tr>;
   };
 
   const tableData = () => {
@@ -79,7 +79,7 @@ function Pharma() {
 
   const headRow = () => {
     return Object.values(tableHead).map((title, index) => (
-      <Td className = 'sm:h-[63px] h-auto font-[500] text-[15px]' key={index}>{title}</Td>
+      <Td className='sm:h-[63px] h-auto font-[500] text-[15px]' key={index}>{title}</Td>
     ));
   };
 
@@ -96,7 +96,7 @@ function Pharma() {
       gsap.to(
         accordionRefs.current[index].querySelector(".accordion__details"),
         {
-          height: 0,
+          height: "auto",
           duration: 1,
           ease: "power1.inOut",
           onComplete: () => setOpenAccordion(null),
@@ -113,15 +113,16 @@ function Pharma() {
             height: 0,
             duration: 1,
             ease: "power1.inOut",
+
           }
         );
       }
       setOpenAccordion(index);
       gsap.fromTo(
         accordionRefs.current[index].querySelector(".accordion__details"),
-        { height: 0 },
+        { height: "auto" },
         {
-          height: "auto",
+          height: 0,
           duration: 1,
           ease: "power1.inOut",
         }
@@ -131,7 +132,7 @@ function Pharma() {
 
   return (
     <div className="App">
-      <TopHeader/>
+      <TopHeader />
       <NavBar2 />
       <div className="bg-gray-100">
         <div className="pl-4 pr-4 sm:pl-0 sm:pr-0">
@@ -139,41 +140,47 @@ function Pharma() {
             <h1 className='flex justify-center font-semibold text-[20px] sm:text-[28px] sm:pt-10 pt-6' style={{ lineHeight: "42px" }}>Some heading will come here</h1>
             <p className='sm:flex justify-center font-medium sm:text-[20px] text-[16px] pt-2 pb-8 text-black mb-0 ml text-center' style={{ letterSpacingz: "2%" }}>Need text let’s Discuss Get in touch & let us <span className="flex justify-center">know how we can help Your Project</span> </p>
           </div>
+         
           <div>
             <div className="overflow-auto">
-            <ul className=' sm:w-[1133px] w-max sm:flex flex  h-[38px] ml-5 sm:ml-auto sm:h-[50px] mx-auto  mt-2 mb-5 overflow-auto sm:overflow-visible'>
-              <Link to = '/industry'>
-              <li className='font-medium text-[15px] sm:text-[16px] sm:mr-8 md:mr-14 link-underline-list link-underline-black-list ' style={{ lineHeight: "24px" }}>All Products</li></Link>
-              <li className='font-medium text-[16px] sm:mr-8 md:mr-14 link-underline-list link-underline-black-list  text-purple-700' style={{ lineHeight: "24px" }}> Pharma</li>
-              <li className='font-medium text-[16px] sm:mr-8 md:mr-14 link-underline-list link-underline-black-list' style={{ lineHeight: "24px" }}> Agro Chemical</li>
-              <li className='font-medium text-[16px] sm:mr-8 md:mr-14 link-underline-list link-underline-black-list' style={{ lineHeight: "24px" }}>Cosmetic & Personal Care</li>
-              <li className='font-medium text-[16px] sm:mr-8 md:mr-14 link-underline-list link-underline-black-list' style={{ lineHeight: "24px" }}>Nutrition & Suppliment</li>
-              <li className='font-medium text-[16px] link-underline-list link-underline-black-list' style={{ lineHeight: "24px" }}>Plastics & Polymers</li>
-            </ul>
+              <ul className=' sm:w-[995px]   w-max sm:flex flex sm:pl-10 h-[38px] ml-5 sm:ml-auto sm:h-[50px] mx-auto  mt-2 mb-5 overflow-auto sm:overflow-visible'>
+                <Link to='/industry'>
+                  <li className='font-medium  text-[15px] sm:text-[16px] sm:mr-8 md:mr-14 link-underline-list link-underline-black-list ' style={{ lineHeight: "24px" }}>All Products</li></Link>
+                <li className='font-medium text-[16px] sm:mr-8 md:mr-14 link-underline-list link-underline-black-list  text-purple-700' style={{ lineHeight: "24px" }}> Pharma</li>
+                <li className='font-medium text-[16px] sm:mr-8 md:mr-14 link-underline-list link-underline-black-list' style={{ lineHeight: "24px" }}> Agro Chemical</li>
+                <li className='font-medium text-[16px] sm:mr-8 md:mr-14 link-underline-list link-underline-black-list' style={{ lineHeight: "24px" }}>Cosmetic & Personal Care</li>
+                <li className='font-medium text-[16px] sm:mr-8 md:mr-14 link-underline-list link-underline-black-list' style={{ lineHeight: "24px" }}>Nutrition & Suppliment</li>
+               
+              </ul>
             </div>
           </div>
+
         </div>
-        <div className="search">
-          <input
-            className="search lg:w-[995px] lg:h-[64px] md:w-[700px] md:h-[60px] h-[54px] w-[343px]"
-            placeholder="Search Productss....."
-            style={{ position: "absolute", left: "0", right: "0", top: "-90px", marginLeft: "auto", marginRight: "auto", marginTop: "20px", paddingLeft: "20px" }}
-            value={value}
-            onChange={e => setValue(e.target.value)}
-          />
-          {/* <button className="bg-[#8D2ED1] sm:block hidden  w-[131px] h-[44px] rounded text-white absolute  2xl:right-[11rem] md:right-[-2rem] lg:right-[5rem]  top-[-60px] ">Search</button> */}
-        </div>
+         {/* seacrh bar */}
+         
+         <div className="search mx-auto flex justify-center mb-2 ">
+         <Link to= '/industry'>
+            <input
+              className="search lg:w-[995px] pl-5 lg:h-[64px] md:w-[700px] md:h-[60px] h-[54px] w-[343px]"
+              placeholder="Search Productss....."
+              style={{ position: "relative", }}
+
+            />
+             </Link>
+            {/* <button className="bg-[#8D2ED1] sm:block hidden  w-[131px] h-[44px] rounded text-white absolute  2xl:right-[11rem] md:right-[-2rem] lg:right-[5rem]  top-[-60px] ">Search</button> */}
+          </div>
+         
         <div className="accordion__container">
           <div
             className={`accordion__item  ${openAccordion === 0
-               ? "open" : ""}`}
+              ? "open" : ""}`}
             ref={(el) => (accordionRefs.current[0] = el)}
           >
             <div
               className="accordion__header flex justify-between"
               onClick={() => handleAccordionClick(0)}
             >
-              <p className="accordion__name text-[15px] sm:text-[20px] font-[600] text-black">Excipients, Catalysts and High Grade Solvents <a  className="text-[#666666] font-[400] text-[14px] ml-5"> {catalystsData.length} items</a></p>
+              <p className="accordion__name text-[15px] sm:text-[20px] font-[600] text-black">Excipients, Catalysts and High Grade Solvents <a className="text-[#666666] font-[400] text-[14px] ml-5"> {catalystsData.length} items</a></p>
               <img src="./Groupup.svg" alt="up" />
             </div>
 
@@ -205,8 +212,8 @@ function Pharma() {
               onClick={() => handleAccordionClick(1)}
             >
               <p className="accordion__name text-[15px] sm:text-[20px] font-[600] text-black">
-              Pharma Intermediates
-              <a  className="text-[#666666] font-[400] text-[14px] ml-5"> {PharmaIntermidatesData.length} items</a>
+                Pharma Intermediates
+                <a className="text-[#666666] font-[400] text-[14px] ml-5"> {PharmaIntermidatesData.length} items</a>
               </p>
               <img src="./Groupup.svg" alt="up" />
             </div>
@@ -227,7 +234,7 @@ function Pharma() {
               <img src="./Groupup.svg" alt="up" />
             </div>
             <div className="accordion__details">
-              <Impurities/>
+              <Impurities />
             </div>
           </div>
         </div>
