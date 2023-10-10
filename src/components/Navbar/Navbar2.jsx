@@ -8,7 +8,7 @@ export default function NavBar2() {
 
     return (
         <nav className="w-auto text-black shadow">
-            <div className="sm:px-0  px-4 mx-auto  md:items-center md:flex pr-[6%] 2xl:pl-[8%] xl:pl-[6%] sm:pl-[6%] ">
+            <div className="sm:px-0  px-[5%] mx-auto  md:items-center md:flex  2xl:pl-[8%] xl:pl-[6%] sm:pl-[6%] ">
                 <div>
                     <div className="flex items-center justify-between py-3 md:py-5 md:block">
                         <Link to="/">
@@ -16,37 +16,13 @@ export default function NavBar2() {
                         </Link>
                         <div className="md:hidden">
                             <button
-                                className="p-2 h-248px text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border z-30"
+                                className="p-2 h-248px  rounded-md outline-none   z-30"
                                 onClick={() => setNavbar(!navbar)}
                             >
                                 {navbar ? (
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        className="w-6 h-6 text-black"
-                                        viewBox="0 0 20 20"
-                                        fill="currentColor"
-                                    >
-                                        <path
-                                            fillRule="evenodd"
-                                            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                                            clipRule="evenodd"
-                                        />
-                                    </svg>
+                                   <img src = './Close.svg'/>
                                 ) : (
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        className="w-6 h-6 text-black"
-                                        fill="none"
-                                        viewBox="0 0 24 24"
-                                        stroke="currentColor"
-                                        strokeWidth={2}
-                                    >
-                                        <path
-                                            strokeLinecap="round"
-                                            strokeLinejoin="round"
-                                            d="M4 6h16M4 12h16M4 18h16"
-                                        />
-                                    </svg>
+                                    <img src= './Group 47789.svg'/>
                                 )}
                             </button>
                         </div>
@@ -60,15 +36,17 @@ export default function NavBar2() {
                         <ul className="items-center  justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
                             <div className="w-full ">
                                 <div className="flex flex-col  sm:flex-row justify-center w-auto ">
-                                    <a className="flex  items-center  sm:mb-0 sm:text-base text-[18px] font-medium hover:text-purple-600 link link-underline link-underline-black  text-purple-700 sm:text-black pl-6 pr-6">
-                                        <Link to='/'>Home</Link>
+                                <Link className=" items-center" to='/'>
+                                    <a className="flex   sm:pb-[26px] sm:mt-[30px] sm:mb-0 sm:text-base text-[18px] font-medium hover:text-purple-600 link link-underline link-underline-black  text-purple-700 sm:text-black pl-6 pr-6">
+                                        Home
                                     </a>
+                                    </Link>
                                     {/* drop down ++++++++++++++++++++=========== */}
                                     <div className="dropdown">
-                                        <button className="dropbtn  sm:my-0 mr-auto sm:text-base text-[18px] sm:ml-8  font-medium hover:text-purple-600 link link-underline link-underline-black text-purple-700 sm:text-black sm:pb-[27px]">Products
+                                        <button className="dropbtn  sm:my-0 mr-auto sm:text-base text-[18px] sm:ml-8  font-medium hover:text-purple-600 link link-underline link-underline-black text-purple-700 sm:text-black sm:pb-[27px]  ml-[2px]">Products
                                             <i className="fa fa-caret-down ml-2"></i>
                                         </button>
-                                        <div className="dropdown-content ">
+                                        <div className="dropdown-content pb-10">
                                             <div className="row sm:pl-0 sm:pr-0 pl-[6%] pr-[6%]">
                                                 <div className="column sm:pl-[8%] flex flex-row sm:flex-col">
                                                 <div className="flex sm:flex-col flex-row sm:mt-5">
@@ -78,8 +56,7 @@ export default function NavBar2() {
                                                                     <Link to='/industry'>
                                                                         <p className="font-semibold text-[14px] sm:text-lg flex sm:mt-[20px]">
                                                                             Industries
-                                                                            <a className="rounded-full h-[30px] w-[60px]  bg-green-100 drop-shadow-sm  text-center text-[10px] text-green-700  ml-5  p-1 sm:block hidden ">PREMIUM</a>
-                                                                        </p>
+                                                                            </p>
                                                                         
                                                                     </Link>
                                                                 
@@ -87,7 +64,8 @@ export default function NavBar2() {
 
                                                         <p className="text-gray-500 leading-5 text-sm font-normal  mt-3  sm:w-[231px]  w-[177px] text-left sm:block hidden">Customized products to match industry specific needs & use cases </p>
                                                     </div>
-                                                    <button className="sm:mt-10 sm:float-left  sm:font-medium text-[14px] w-[122px] h-[35px] bg-[#EDEDED] sm:bg-transparent sm:text-xl sm:text-left rounded-full sm:ml-0 ml-5">All Products</button>
+                                                    <Link to= "/industry">
+                                                    <button className="sm:mt-10 sm:float-left  sm:font-medium text-[14px] w-[122px] h-[35px] bg-[#EDEDED] sm:bg-transparent sm:text-xl sm:text-left rounded-full sm:ml-0 ml-5">All Products</button></Link>
                                                 </div>
                                                
                                                
@@ -112,15 +90,7 @@ export default function NavBar2() {
                                                                     <span className="text-left  sm:text-sm text-[11px] font-normal text-gray-500 sm:w-[231px] sm:leading-[18.3px] leading-[14.3px] w-[177px] sm:mt-1 mt-2">Range of actives, extracts, oils & surfactants</span>
                                                                 </div>
                                                             </a>
-                                                            <a className="flex sm:pt-[20px] sm:pb-[10px] sm:mt-0 mt-3" href="/industry">
-                                                                <span className="flex-shrink-0 ">
-                                                                    <img src=".\Group 1000003217.svg " alt="third" />
-                                                                </span>
-                                                                <div className="flex flex-col ml-4">
-                                                                    <span className="text-left sm:font-medium font-[400]  leading-none sm:text-lg text-[14px] ">Cosmetics & Personal Care</span>
-                                                                    <span className="text-left  sm:text-sm text-[11px] font-normal text-gray-500 sm:w-[231px] sm:leading-[18.3px] leading-[14.3px] w-[177px] sm:mt-1 mt-2">Resins, pigments, & other plastic additives</span>
-                                                                </div>
-                                                            </a>
+                                                            
                                                 </div>
                                                 <div className="column sm:mt-5">
                                                     <a className="flex sm:pt-[20px] sm:pb-[10px]" href="/industry">
@@ -133,34 +103,28 @@ export default function NavBar2() {
                                                                 </div>
                                                             </a>
                                                             <a className="flex  sm:pt-[20px] sm:pb-[10px] sm:mt-0 mt-5" href="/indusrty">
-                                                                <span className="flex-shrink-0 ">
-                                                                    <img src=".\Group 1000003219.svg " alt="fifth" />
+                                                            <span className="flex-shrink-0 ">
+                                                                    <img src=".\Group 1000003217.svg " alt="third" />
                                                                 </span>
                                                                 <div className="flex flex-col ml-4">
-                                                                    <span className="text-left sm:font-medium font-[400]  leading-none sm:text-lg text-[14px]">Plastics & Polymers</span>
-                                                                    <span className="text-left  sm:text-sm text-[11px] font-normal text-gray-500 sm:w-[231px] sm:leading-[18.3px] leading-[14.3px] w-[177px] sm:mt-1 mt-2">All types of plants, dairy & meat based solutions</span>
+                                                                    <span className="text-left sm:font-medium font-[400]  leading-none sm:text-lg text-[14px] ">Cosmetics & Personal Care</span>
+                                                                    <span className="text-left  sm:text-sm text-[11px] font-normal text-gray-500 sm:w-[231px] sm:leading-[18.3px] leading-[14.3px] w-[177px] sm:mt-1 mt-2">Resins, pigments, & other plastic additives</span>
                                                                 </div>
                                                             </a>
-                                                            <a className="flex pt-5 pb-8 sm:pt-[20px] sm:pb-[10px]" href="#">
-                                                                <span className="flex-shrink-0 ">
-                                                                    <img src=".\Group 1000003220.svg " alt="six" />
-                                                                </span>
-                                                                <div className="flex flex-col ml-4">
-                                                                    <span className="text-left sm:font-medium font-[400]  leading-none sm:text-lg text-[14px]">Adhesives & Sealants</span>
-                                                                    <span className="text-left  sm:text-sm text-[11px] font-normal text-gray-500 sm:w-[231px] sm:leading-[18.3px] leading-[14.3px] w-[177px] sm:mt-1 mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing
-                                                                        elit.</span>
-                                                                </div>
-                                                            </a>
+                                                            
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 {/* dropdown end  =======================================================                             */}
-                                <a className="flex items-center sm:ml-4  sm:mb-0 sm:text-base text-[18px] font-medium hover:text-purple-600 link link-underline link-underline-black  text-purple-700 sm:text-black pl-6 pr-6">
-                                    <Link to="/about">About</Link></a>
-                                <li className=" hover:text-purple-600 ml-1 sm:ml-5 font-medium sm:text-base text-[18px] link link-underline link-underline-black  text-purple-700 sm:text-black sm:pt-[29px] sm:pb-[auto] sm:w-28 sm:text-center ">
-                                    <Link to="/contact">Contact</Link>
+                                <Link to="/about">
+                                <a className="flex sm:pb-[26px] sm:mt-[30px] items-center sm:ml-4  sm:mb-0 sm:text-base text-[18px] font-medium hover:text-purple-600 link link-underline link-underline-black  text-purple-700 sm:text-black pl-6 pr-6">
+                                    About</a></Link>
+                                    <Link to="/contact">
+                                <li className=" hover:text-purple-600 ml-1 sm:pb-[26px] sm:mt-[30px] sm:ml-5 font-medium sm:text-base text-[18px] link link-underline link-underline-black  text-purple-700 sm:text-black   sm:w-28 sm:text-center ">
+                                    Contact
                                 </li>
+                                </Link>
                             </div>
                     </div>
                 </ul>
@@ -168,7 +132,7 @@ export default function NavBar2() {
             </div>
         </div>
             </div >
-        <a className=" fixed overflow-hidden  flex items-center justify-center   h-8 pr-2 pl-1 bg-[#F9F5FD] rounded-full sm:bottom-[13.5rem] sm:top-auto top-[330px] sm:right-14 right-6  mr-4 mb-4 border border-[#E1B9FD]  text-purple-800 hover:bg-purple-100 z-30" href="http://wa.me/918010150164" target="_blank" rel="noreferrer">
+        <a className=" fixed overflow-hidden  flex items-center justify-center   h-8 pr-2 pl-1 bg-[#F9F5FD] rounded-full sm:bottom-[2.5rem] sm:top-auto top-[330px] sm:right-14 right-6  mr-4 mb-4 border border-[#E1B9FD]  text-purple-800 hover:bg-purple-100 z-30" href="http://wa.me/918010150164" target="_blank" rel="noreferrer">
             <div className=" rounded-full">
                 <img className="rounded-full" src="/Vector4.svg" alt="logo" />
             </div>

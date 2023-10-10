@@ -58,7 +58,7 @@ const Contact = () => {
       <Footer2 />
       <div>
 
-        <form className='absolute z-0 left-0 right-0 mx-auto sm:top-80 top-[350px] sm:mt-12 mt-6 sm:w-[1198px] w-[343px] h-auto   bg-white rounded-xl shadow' action="https://fabform.io/f/f4THnaE" method="post">
+        <form className='absolute z-0 left-0 right-0 mx-auto sm:top-80 top-[320px] sm:mt-6 mt-0 sm:w-[1198px] w-[343px] h-auto   bg-white rounded-xl shadow' action="https://fabform.io/f/f4THnaE" method="post">
           <div className="text-gray-700  " >
             <div className="container px-5 sm:px-12 py-12  mx-auto" >
               <div className=" mx-auto">

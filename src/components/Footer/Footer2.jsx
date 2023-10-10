@@ -6,7 +6,7 @@ const Footer2 = () => {
 
       <img className="sm:block hidden p-10  sm:ml-auto xl:mr-[8%] 2xl:mr-[8%]" src="./Group 48702.svg" alt="logo" />
       <hr className="border sm:block hidden ml-[6%] sm:mr-[10%] 2xl:ml-[10%] xl:ml-[10%]  sm:ml-[6%] sm:w-[auto] m-auto w-[375px] max-w-[100%] " />
-      <div className="flex flex-col justify-between pb-32 pl-[6%] sm:pr-[10%] 2xl:pl-[10%] xl:pl-[10%] sm:pl-[6%]  bg-purple-50   sm:w-[auto] m-auto w-[375px] max-w-[100%]  sm:flex sm:flex-row  ">
+      <div className="flex flex-col justify-between pb-16 pl-[6%] sm:pr-[10%] 2xl:pl-[10%] xl:pl-[10%] sm:pl-[6%]  bg-purple-50   sm:w-[auto] m-auto w-[375px] max-w-[100%]  sm:flex sm:flex-row  ">
         <div className="w-auto ">
           <div className="flex flex-start ">
             <div className="grid grid-cols-4 text-[14px] sm:text-[16px]  sm:grid-cols-4 mt-10 sm:mt-10 font-medium leading-7 text-gray-400 ">
@@ -35,9 +35,7 @@ const Footer2 = () => {
 
         <div className="right mt-8 flex justify-start flex-col overflow-hidden">
           <div className="socioicon flex sm:flex place-content-start sm:place-content-end">
-            <div className="tweeter mr-5">
-              <img src="./Group 38552.svg" alt="tweeter" />
-            </div>
+            
             <a href="https://www.linkedin.com/company/molequle/" className="linkdin mr-5" target="_blank" rel="noreferrer">
               <img src="./Linkdin.svg" alt="linkdin" />
             </a>

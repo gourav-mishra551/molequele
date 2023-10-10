@@ -2,11 +2,11 @@ import "./Indusrty.css"
 import { Link } from "react-router-dom"
 const Industry = () => {
     return (
-        <>
-            <div className="pl-[6%] pr-[6%] 2xl:pl-[8%] xl:pl-[6%] sm:pl-[6%] overflow-hidden ">
-                <h1 className="text-2xl font-medium sm:text-3xl mt-[4%] mb-[1%]  sm:w-[auto]  w-[375px] max-w-[100%]" >Industry </h1>
+        <>  
+            <div className="pl-[6%] pr-[6%]  w-auto 2xl:flex-col   2xl:pl-[8%] xl:pl-[6%] sm:pl-[6%] overflow-hidden ">
+                <h1 className="text-2xl mx-auto font-medium sm:text-3xl mt-[4%] mb-[1%]  sm:w-[auto]  w-[375px] max-w-[100%]" >Industry </h1>
                 <div className="grid sm:gap-x-6 gap-x-2 grid-cols-2 sm:grid-cols-6 sm:w-[fit-content]  w-[375px] max-w-[100%]  pt-5 ">
-                    <div className="h-[158px] w-auto sm:w-auto sm:h-auto overflow-hidden mb-5">
+                    <div className="h-[158px] w-auto sm:w-auto sm:h-auto overflow-hidden hover:border-purple-700  border-transparent border-2 hover:border-current hover:rounded-[4px] sm:mb-0 mb-2">
                         <Link to='/pharma'>
                         <div className="containers">
                             <img className="mt-0 ml-0 mb-5 sm:w-[156px] sm:h-[208px] mr-0 sm:m-0 image overflow-hidden" src="./Frame 550.svg" alt="img1" />
@@ -14,28 +14,28 @@ const Industry = () => {
                         </div>
                         </Link>
                     </div>
-                    <div className="h-[158px] w-[163px] sm:w-auto sm:h-auto overflow-hidden">
+                    <div className="h-[158px] w-[163px] sm:w-auto sm:h-auto overflow-hidden hover:border-purple-700  border-transparent border-2 hover:border-current hover:rounded-[4px] sm:mb-0 mb-2">
                         <div className="containers">
-                            <img className="mt-0 ml-0 mb-5 mr-0 sm:m-0 image" src="./Rectangle 28635.svg" alt="img2" />
+                            <img className="mt-0 ml-0  mr-0 sm:m-0 image" src="./Rectangle 28635.svg" alt="img2" />
                             <div className="bottom-right sm:top-[137px] top-[108px]">Agro Chemical</div>
                         </div>
                     </div>
-                    <div className="h-[158px] w-[163px] sm:w-auto sm:h-auto overflow-hidden mb-5">
+                    <div className="h-[158px] w-[163px] sm:w-auto sm:h-auto overflow-hidden hover:border-purple-700  border-transparent border-2 hover:border-current hover:rounded-[4px] sm:mb-0 mb-2">
                         <div className="containers">
                             <img className="m-0 sm:m-0 image" src="./Rectangle 28636.svg" alt="img3" />
                             <div className="bottom-right  sm:top-[137px] top-[108px]">Cosmetics & Personal Care</div>
                         </div>
                     </div>
-                    <div className="h-[158px] w-[163px] sm:w-auto sm:h-auto overflow-hidden">
+                    <div className="h-[158px] w-[163px] sm:w-auto sm:h-auto overflow-hidden hover:border-purple-700  border-transparent border-2 hover:border-current hover:rounded-[4px] sm:mb-0 mb-2">
                         <div className="containers">
                             <img className="m-0 sm:m-0 image" src="./Rectangle 28637.svg" alt="img5" />
                             <div className="bottom-right sm:top-[135px] top-[108px]">Nutrition & Supplements</div>
                         </div>
                     </div>
-                    <div className="h-[158px] w-[163px] sm:w-auto sm:h-auto overflow-hidden">
+                    <div className="h-[158px] w-[163px] sm:w-auto sm:h-auto overflow-hidden hover:border-purple-700  border-transparent border-2 hover:border-current hover:rounded-[4px] sm:mb-0 mb-2">
                         <div className="containers overflow-hidden">
                             <img className="m-0 sm:m-0 image overflow-hidden" src="./Rectangle 28638.svg" alt="img6" />
-                            <div className="bottom-right sm:top-[150px] top-[108px]">Plastics & Polymers</div>
+                            <div className="bottom-right sm:top-[140px] top-[108px]  ">Plastics & Polymers</div>
                         </div>
                     </div>
                 </div>
@@ -72,7 +72,7 @@ const Industry = () => {
                                 <li>Custom Manufacturing</li>
                             </ul>
                             <Link to='/industry'>
-                            <button className="float-left text-white text-sm sm:font-medium sm:mt-5 mt-2 sm:ml-2 w-[81px] h-[51px] sm:h-[50px] sm:w-[122px]" style={{ backgroundColor: "rgba(141, 46, 209, 1)", borderRadius: "5px" }}>Explore</button>
+                            <button className="float-left text-white text-sm sm:font-medium sm:mt-5 mt-4  ml-1 sm:ml-2 w-[81px] h-[51px] sm:h-[50px] sm:w-[122px]" style={{ backgroundColor: "rgba(141, 46, 209, 1)", borderRadius: "5px" }}>Explore</button>
                             </Link>
                         </div>
                     </div>
@@ -101,25 +101,25 @@ const Industry = () => {
 
                     <div className="grid grid-cols-1 sm:grid-cols-4 mt-10 mr-0 sm:mr-14">
                         {/* value chain first  card*/}
-                        <div className="first w-auto sm:w-[265px]" style={{ height: "236px" }}>
+                        <div className="first w-auto sm:w-[265px] sm:h-[236px] h-[215px]" >
                             <img className="sm:h-auto sm:w-auto h-[46px] w-[46px]" src="./Group 487366.svg" alt="first" />
                             <h2 className="text-base sm:text-xl font-medium mt-5">Formulation</h2>
                             <p className="font-normal leading-7 tracking-[1%] text-[16px] text-black sm:mr-4 sm:text-lg    mt-2 "> In-house formulation to ensure equivalent grades compatible to current process</p>
                         </div>
                         {/* value chain second card */}
-                        <div className="second w-auto sm:w-[265px]" style={{ height: "236px" }}>
+                        <div className="second w-auto sm:w-[265px] sm:h-[236px] h-[215px]" >
                             <img className="sm:h-auto sm:w-auto h-[46px] w-[46px]" src="./Group 48733.svg" alt="second" />
                             <h2 className="text-base sm:text-xl font-medium mt-5">Production testing</h2>
                             <p className="font-normal leading-7 tracking-[1%] text-[16px] text-black sm:mr-4 sm:text-lg   mt-2 ">100% quality assurance via our 3 step production & post-production testing</p>
                         </div>
                         {/* value chain third card */}
-                        <div className="third w-auto sm:w-[265px]" style={{ height: "236px" }}>
+                        <div className="third w-auto sm:w-[265px] sm:h-[236px] h-[205px]" >
                             <img className="sm:h-auto sm:w-auto h-[46px] w-[46px]" src="./Group 48738.svg" alt="Third" />
                             <h2 className="text-base sm:text-xl font-medium mt-5">Logistics</h2>
                             <p className="font-normal leading-7 tracking-[1%] text-[16px] text-black sm:mr-4 sm:text-lg   mt-2 ">Efficient & Cost-effective logistics for fast turnaround time </p>
                         </div>
                         {/* value chain fourth card */}
-                        <div className="fourth w-auto sm:w-[265px]" style={{ height: "236px" }}>
+                        <div className="fourth w-auto sm:w-[265px] sm:h-[236px] h-[215px]" >
                             <img className="sm:h-auto sm:w-auto h-[46px] w-[46px]" src="./Group 48739.svg" alt="fourth" />
                             <h2 className="text-base sm:text-xl font-medium mt-5">Payment</h2>
                             <p className="font-normal leading-7 tracking-[1%] text-[16px] text-black sm:mr-4 sm:text-lg  mt-2 ">Best payment terms along with Credit support for your growth. </p>
@@ -139,7 +139,7 @@ const Industry = () => {
                     <img src="./Group 48685.svg" alt="fourth" />
                 </div>
             </div>
-
+          
 
         </>
     )

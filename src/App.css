@@ -12,6 +12,7 @@
      * the same as the height of the cap images. Don't specify the
      * units! This is because of some of the calculations we do later on. */
   --underline-intrinsic-width: 14;
+  --tw-ring-color: rgb(149, 1, 255) !important;
 
   /* The actual width of the underline stroke we want to render (in pixels).
      * You can modify this, and the sizing and positioning should be calculated
@@ -95,3 +96,12 @@ hr {
   color: rgba(141, 46, 209, 1) !important;
 }
 
+.rc-pagination-item{
+  border: 1px solid  rgba(141, 46, 209, 1) !important;
+}
+.rc-pagination-item:hover{
+  color: rgba(141, 46, 209, 1) !important;
+}
+/* .rc-pagination-item-link{
+  border: rgba(141, 46, 209, 1) !important;
+} */

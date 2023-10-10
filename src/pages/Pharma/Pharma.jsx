@@ -173,7 +173,7 @@ function Pharma() {
               className="accordion__header flex justify-between"
               onClick={() => handleAccordionClick(0)}
             >
-              <p className="accordion__name text-[15px] sm:text-[20px] font-[600] text-black">Excipients, Catalysts and High Grade Solvents <a href="#" className="text-[#666666] font-[400] text-[14px] ml-5"> {catalystsData.length} items</a></p>
+              <p className="accordion__name text-[15px] sm:text-[20px] font-[600] text-black">Excipients, Catalysts and High Grade Solvents <a  className="text-[#666666] font-[400] text-[14px] ml-5"> {catalystsData.length} items</a></p>
               <img src="./Groupup.svg" alt="up" />
             </div>
 
@@ -206,7 +206,7 @@ function Pharma() {
             >
               <p className="accordion__name text-[15px] sm:text-[20px] font-[600] text-black">
               Pharma Intermediates
-              <a href="#" className="text-[#666666] font-[400] text-[14px] ml-5"> {PharmaIntermidatesData.length} items</a>
+              <a  className="text-[#666666] font-[400] text-[14px] ml-5"> {PharmaIntermidatesData.length} items</a>
               </p>
               <img src="./Groupup.svg" alt="up" />
             </div>
@@ -223,7 +223,7 @@ function Pharma() {
               onClick={() => handleAccordionClick(2)}
             >
 
-              <p className="accordion__name text-[15px] sm:text-[20px] font-[600] text-black">Impurities  <a href="#" className="text-[#666666] font-[400] text-[14px] ml-5"> {ImpuritesData.length} items</a></p>
+              <p className="accordion__name text-[15px] sm:text-[20px] font-[600] text-black">Impurities  <a className="text-[#666666] font-[400] text-[14px] ml-5"> {ImpuritesData.length} items</a></p>
               <img src="./Groupup.svg" alt="up" />
             </div>
             <div className="accordion__details">

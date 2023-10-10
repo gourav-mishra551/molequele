@@ -145,7 +145,7 @@
   
   .contact_us_green .submit-btn {
     min-width: 132px;
-    height: 41px;
+    height: 40px;
     padding: 10px;
     background-color: rgba(141, 46, 209, 1);
     font-size: 14px;
@@ -154,7 +154,7 @@
     cursor: pointer;
     position: absolute;
     top: 16mm !important;
-    right: 0;
+    right: 3px;
     z-index: 2;
     top: 2px;
     cursor: pointer;
