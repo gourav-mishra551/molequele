@@ -108,30 +108,30 @@ const About = () => {
                             <div className='w-[1199px] max-w-[100%] grid grid-cols-2 sm:gap-x-20 gap-x-10 md:grid-cols-3'>
                                 <div className='sm:h-[326px] h-auto max-w-[100%]  hover:border hover:rounded-xl hover:border-[#DCDCDC]'>
                                     <img className=' sm:h-auto sm:w-auto h-[30px] w-[30px] flex justify-center mt-10 mx-auto' src="./Icon.svg" alt="icon" />
-                                    <h1 className='sm:w-[300px] mx-auto sm:mt-5 mt-1 sm:mb-5 mb-1 flex  justify-center font-[600] text-[12.5px] sm:text-[26px]' style={{ lineHeight: "12px" }}>Innovation</h1>
-                                    <p className='sm:w-[300px] font-[400] mx-auto text-center text-[8.38px] sm:text-[17.18px] leading-[25.85px] text-[#808080] font-[Mulish] '>Innovation propels us to explore new horizons and reimagine possibilities in the world of specialty chemicals</p>
+                                    <h1 className='sm:w-[300px] mx-auto sm:mt-5 mt-1 sm:mb-5 mb-1 flex  justify-center font-[600] text-[12.5px] sm:text-[26px] ' style={{ lineHeight: "12px" }}>Innovation</h1>
+                                    <p className='sm:w-[300px] font-[400] mx-auto text-center text-[8.38px] sm:text-[17.18px] sm:leading-[25.85px] leading-3 text-[#808080] font-[Mulish] '>Innovation propels us to explore new horizons and reimagine possibilities in the world of specialty chemicals</p>
                                 </div>
                                 <div className='sm:h-[326px] h-auto max-w-[100%] hover:border hover:rounded-xl hover:border-[#DCDCDC]'>
                                     <img className='sm:h-auto sm:w-auto h-[30px] w-[30px] flex justify-center mx-auto mt-10' src="./Icon (1).svg" alt="icon" />
                                     <h1 className=' mx-auto sm:mt-5 mt-1 sm:mb-5 mb-1 flex  justify-center font-[600] text-[12.5px] sm:text-[26px]' style={{ lineHeight: "12px" }}>Growth</h1>
-                                    <p className='sm:w-[300px] font-[400] mx-auto text-center text-[8.38px] sm:text-[17.18px] leading-[25.85px] text-[#808080] font-[Mulish]'>We are committed to fostering growth, for our clients as we journey toward success together</p>
+                                    <p className='sm:w-[300px] font-[400] mx-auto text-center text-[8.38px] sm:text-[17.18px] sm:leading-[25.85px] leading-3 text-[#808080] font-[Mulish]'>We are committed to fostering growth, for our clients as we journey toward success together</p>
                                 </div>
                                 <div className='sm:h-[326px] h-auto max-w-[100%] hover:border hover:rounded-xl hover:border-[#DCDCDC]'>
                                     <img className='sm:h-auto sm:w-auto h-[30px] w-[30px] flex justify-center mx-auto mt-10' src="./Icon (2).svg" alt="icon" />
                                     <h1 className=' mx-auto sm:mt-5 mt-1 sm:mb-5 mb-1 flex  justify-center font-[600] text-[12.5px] sm:text-[26px]' style={{ lineHeight: "12px" }}>Ownership</h1>
-                                    <p className='sm:w-[300px] font-[400] mx-auto text-center text-[8.38px] sm:text-[17.18px] leading-[25.85px] text-[#808080] font-[Mulish]'>We take pride in every action and decision, owning our commitments and driving excellence at every step</p>
+                                    <p className='sm:w-[300px] font-[400] mx-auto text-center text-[8.38px] sm:text-[17.18px] sm:leading-[25.85px] leading-3 text-[#808080] font-[Mulish]'>We take pride in every action and decision, owning our commitments and driving excellence at every step</p>
                                 </div>
                             </div>
                             <div className='flex justify-center'>
                                 <div className='sm:h-[326px] sm:px-10 px-0 sm:pl-0 mr-8 sm:mr-0 h-auto max-w-[100%] hover:border hover:rounded-xl hover:border-[#DCDCDC]'>
                                     <img className='sm:h-auto sm:w-auto h-[30px] w-[30px] flex justify-center mx-auto mt-10' src="./Icon (3).svg" alt="icon" />
                                     <h1 className=' mx-auto sm:mt-5 mt-1 sm:mb-5 mb-1 flex  justify-center font-[600] text-[12.5px] sm:text-[26px]' style={{ lineHeight: "12px" }}>Team Work</h1>
-                                    <p className='sm:w-[300px] font-[400] mx-auto text-center text-[8.38px] sm:text-[17.18px] leading-[25.85px] text-[#808080] font-[Mulish]'>By Collaborating seamlessly, we achieve remarkable outcomes and build lasting relationships</p>
+                                    <p className='sm:w-[300px] font-[400] mx-auto text-center text-[8.38px] sm:text-[17.18px] sm:leading-[25.85px] leading-3 text-[#808080] font-[Mulish]'>By Collaborating seamlessly, we achieve remarkable outcomes and build lasting relationships</p>
                                 </div>
                                 <div className='sm:h-[326px] sm:px-10 px-0 h-auto max-w-[100%] hover:border hover:rounded-xl hover:border-[#DCDCDC]'>
                                     <img className='sm:h-auto sm:w-auto h-[30px] w-[30px] flex justify-center mx-auto mt-10' src="./Icon (4).svg" alt="icon" />
                                     <h1 className=' mx-auto sm:mt-5 mt-1 sm:mb-5 mb-1 flex  justify-center font-[600] text-[12.5px] sm:text-[26px]' style={{ lineHeight: "12px" }}>Commitment</h1>
-                                    <p className='sm:w-[300px] font-[400] mx-auto text-center text-[8.38px] sm:text-[17.18px] leading-[25.85px] text-[#808080] font-[Mulish]'>Commitment is the bedrock of our actions, an unwavering promise to prioritize excellence in all endeavours</p>
+                                    <p className='sm:w-[300px] font-[400] mx-auto text-center text-[8.38px] sm:text-[17.18px] sm:leading-[25.85px] leading-3 text-[#808080] font-[Mulish]'>Commitment is the bedrock of our actions, an unwavering promise to prioritize excellence in all endeavours</p>
                                 </div>
                             </div>
                            
