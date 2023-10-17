@@ -2,7 +2,7 @@ import { Link } from "react-router-dom"
 
 const Footer2 = () => {
   return (
-    <div className="bg-purple-50 pt-1 sm:pl-0 pl-5">
+    <div className="bg-purple-50 pt-1 sm:pl-0 ">
 
       <img className="sm:block hidden p-10  sm:ml-auto xl:mr-[8%] 2xl:mr-[8%]" src="./Group 48702.svg" alt="logo" />
       <hr className="border sm:block hidden ml-[6%] sm:mr-[10%] 2xl:ml-[10%] xl:ml-[10%]  sm:ml-[6%] sm:w-[auto] m-auto w-[375px] max-w-[100%] " />
