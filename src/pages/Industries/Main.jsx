@@ -68,7 +68,7 @@ const Main = () => {
 		const columnData = tableCell.map((keyD, i) => {
 			return <Td className='sm:h-[63px] h-auto font-[500] text-[15px]' key={i}>{key[keyD]}</Td>;
 		});
-		return <Tr className='sm:h-[63px] h-auto  font-[500] text-[15px]' key={index}>{columnData}</Tr>;
+		return <Tr className='sm:h-[63px] h-auto pl-5 font-[500] text-[15px]' key={index}>{columnData}</Tr>;
 	};
 
 	const tableData = () => {
