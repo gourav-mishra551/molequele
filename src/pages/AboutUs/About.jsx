@@ -12,7 +12,11 @@ const About = () => {
     return (
         <div>
             <TopHeader />
-            <NavBar2 />
+            <div className="bg-white">
+        <div className="sm:mx-auto sm:w-[1280px]">
+          <NavBar2 />
+          </div>
+        </div>
             <div >
                 <header className='headerAbout'>
                     <div className="w-auto sm:h-[195px] h-[168px] sm:bg-repeat-round rounded-b-[20px] " style={{ backgroundImage: `url(${ImageBackGround})` }}>

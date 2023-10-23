@@ -2,7 +2,7 @@ import "./header.css"
 import { Link } from "react-router-dom"
 const Header = () => {
   return (
-    <div className="main flex pl-[4%]  2xl:pl-[8%] xl:pl-[6%] sm:pl-[6%] overflow-hidden">
+    <div className="main flex  overflow-hidden">
         <div className="lefts sm:w-[898px] sm:max-w-[auto] ">
             <h1 className="text-3xl  sm:ml-0 font-bold heading sm:text-5xl sm:leading-loosen leading-relaxed ">Your Speciality chemicals 
                 <span className="flex flex-col sm:flex sm:flex-row sm:leading-loose md:leading-relaxed leading-relaxed">procuments
@@ -15,9 +15,7 @@ const Header = () => {
             </Link>
 
         </div>
-        <div className="rights float-right mt-2 relative">
-            <img className="h-auto w-[100%] " src="\Mask group.png" alt="chemical-svg" />
-        </div>
+        
     </div>
   )
 }

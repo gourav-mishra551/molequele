@@ -31,7 +31,11 @@ const Contact = () => {
 
     <div className='relative overflow-hidden'>
       <TopHeader />
-      <NavBar2 />
+      <div className="bg-white">
+        <div className="sm:mx-auto sm:w-[1280px]">
+          <NavBar2 />
+          </div>
+        </div>
       <header className='headerContact overflow-hidden'>
         <div className="upper sm:h-[416px] h-[393px] rounded-b-[12px] sm:rounded-b-[20px]" style={{ backgroundImage: `url(${Image})` }}>
           <div className=' p-5 sm:p-8 '>

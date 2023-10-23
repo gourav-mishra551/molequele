@@ -13,7 +13,7 @@ import { allData } from "./constants";
 import NavBar2 from '../../components/Navbar/Navbar2';
 import Contact from '../../components/Contact/Contact';
 import Footer from '../../components/Footer/Footer';
-import Group from "../../assets/Group13.png";
+
 import TopHeader from "../../components/TopHeader/TopHeader";
 
 const tableHead = {
@@ -85,10 +85,14 @@ const Main = () => {
 	return (
 		<>
 			<TopHeader />
-			<NavBar2 />
-			<div className='bg-gray-100 overflow-hidden'>
+			<div className="bg-white">
+        <div className="sm:mx-auto sm:w-[1280px]">
+          <NavBar2 />
+          </div>
+        </div>
+			<div className='bg-gray-100 overflow-hidden '>
 				<div className="pl-4 pr-4 sm:pl-0 sm:pr-0">
-					<div style={{ backgroundImage: `url(${Group})` }}>
+					<div className="industrybg">
 						<h1 className='flex justify-center font-semibold text-[20px] sm:text-[28px] sm:pt-10 pt-6' style={{ lineHeight: "42px" }}>Some heading will come here</h1>
 						<p className='sm:flex justify-center font-medium sm:text-[20px] text-[16px] pt-2 pb-8 text-black mb-0 ml text-center' style={{ letterSpacingz: "2%" }}>Need text let’s Discuss Get in touch & let us <span className="flex justify-center">know how we can help Your Project</span> </p>
 					</div>
@@ -112,6 +116,7 @@ const Main = () => {
 							<input
 								className="search lg:w-[995px] lg:h-[64px] md:w-[700px] md:h-[60px] h-[54px] w-[343px]"
 								placeholder="Search Products....."
+								autoFocus
 								style={{ position: "absolute", left: "0", right: "0", top: "-90px", marginLeft: "auto", marginRight: "auto", marginTop: "20px", paddingLeft: "20px" }}
 								value={value}
 								onChange={e => setValue(e.target.value)}

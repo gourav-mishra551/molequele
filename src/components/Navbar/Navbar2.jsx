@@ -7,8 +7,8 @@ export default function NavBar2() {
     const [navbar, setNavbar] = useState(false);
 
     return (
-        <nav className="w-auto text-black shadow">
-            <div className="sm:px-0  px-[5%] mx-auto  md:items-center md:flex  2xl:pl-[8%] xl:pl-[6%] sm:pl-[6%] ">
+        <nav className="w-auto text-black ">
+            <div className="sm:px-0  px-[5%] mx-auto  md:items-center md:flex  ">
                 <div>
                     <div className="flex items-center justify-between py-3 md:py-5 md:block">
                         <Link to="/">
