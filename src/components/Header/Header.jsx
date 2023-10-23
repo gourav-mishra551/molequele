@@ -2,9 +2,9 @@ import "./header.css"
 import { Link } from "react-router-dom"
 const Header = () => {
   return (
-    <div className="main flex  overflow-hidden">
+    <div className="main flex  overflow-hidden h-auto">
         <div className="lefts sm:w-[898px] sm:max-w-[auto] ">
-            <h1 className="text-3xl  sm:ml-0 font-bold heading sm:text-5xl sm:leading-loosen leading-relaxed ">Your Speciality chemicals 
+            <h1 className="text-3xl sm:mt-0 mt-[38px] sm:ml-0 font-bold heading sm:text-5xl sm:leading-loosen leading-relaxed ">Your Speciality chemicals 
                 <span className="flex flex-col sm:flex sm:flex-row sm:leading-loose md:leading-relaxed leading-relaxed">procuments
                 <span className= "flex flex-col sm:flex sm:flex-row sm:ml-4 ml-0">partner</span></span>
             </h1>

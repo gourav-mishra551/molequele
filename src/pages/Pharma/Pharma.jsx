@@ -131,7 +131,7 @@ function Pharma() {
   };
 
   return (
-    <div className="App">
+    <div className="App ">
       <TopHeader />
       <div className="bg-white">
         <div className="sm:mx-auto sm:w-[1280px]">
@@ -165,7 +165,7 @@ function Pharma() {
          <div className="search mx-auto flex justify-center mb-2 ">
          <Link to= '/industry'>
             <input
-              className="search lg:w-[995px] pl-5 lg:h-[64px] md:w-[700px] md:h-[60px] h-[54px] w-[343px]"
+              className="search lg:w-[995px] pl-5 lg:h-[64px] md:w-[700px] md:h-[60px] h-[54px] w-[353px]"
               placeholder="Search Productss....."
               style={{ position: "relative", }}
 
@@ -242,7 +242,7 @@ function Pharma() {
             </div>
           </div>
         </div>
-        <div >
+        <div className="mt-10">
           <Contact />
           <Footer />
         </div>

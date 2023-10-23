@@ -114,7 +114,7 @@ const Main = () => {
 					<div className='mx-auto sm:w-[1198px] max-w-[100%]  relative '>
 						<div className="search">
 							<input
-								className="search lg:w-[995px] lg:h-[64px] md:w-[700px] md:h-[60px] h-[54px] w-[343px]"
+								className="search lg:w-[995px] lg:h-[64px] md:w-[700px] md:h-[60px] h-[54px] w-[353px]"
 								placeholder="Search Products....."
 								autoFocus
 								style={{ position: "absolute", left: "0", right: "0", top: "-90px", marginLeft: "auto", marginRight: "auto", marginTop: "20px", paddingLeft: "20px" }}
@@ -138,7 +138,7 @@ const Main = () => {
 						/>
 
 					</div>
-				</div>
+				</div >
 				<Contact />
 				<Footer />
 			</div>

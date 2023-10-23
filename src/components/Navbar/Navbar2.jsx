@@ -8,7 +8,7 @@ export default function NavBar2() {
 
     return (
         <nav className="w-auto text-black ">
-            <div className="sm:px-0  px-[5%] mx-auto  md:items-center md:flex  ">
+            <div className="sm:px-0  px-[5%] mx-auto  md:items-center md:flex hh ">
                 <div>
                     <div className="flex items-center justify-between py-3 md:py-5 md:block">
                         <Link to="/">
@@ -30,7 +30,7 @@ export default function NavBar2() {
                 </div>
                 <div>
                     <div
-                        className={` pb-3 z-40 mt-0 h-screen sm:h-auto sm:ml-56 ml-0 md:block md:pb-0 md:mt-0 leading-7 ${navbar ? "block z-30" : "hidden z-30"
+                        className={` pb-3 z-40 mt-0 h-screen sm:h-auto   sm:ml-[10rem] ml-0 md:block md:pb-0 md:mt-0 leading-7 ${navbar ? "block z-30" : "hidden z-30"
                             }`}
                     >
                         <ul className="items-center  justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
@@ -46,8 +46,8 @@ export default function NavBar2() {
                                         <button className="dropbtn  sm:my-0 mr-auto sm:text-base text-[18px] sm:ml-8  font-medium hover:text-purple-600 link link-underline link-underline-black text-purple-700 sm:text-black sm:pb-[27px]  ml-[2px]">Products
                                             <i className="fa fa-caret-down ml-2"></i>
                                         </button>
-                                        <div className="dropdown-content pb-10">
-                                            <div className="row sm:pl-0 sm:pr-0 pl-[6%] pr-[6%]">
+                                        <div className="dropdown-content pb-10 w-[100vw]">
+                                            <div className="row sm:pl-0 sm:pr-0  pr-[6%]">
                                                 <div className="column sm:pl-[8%] flex flex-row sm:flex-col">
                                                 <div className="flex sm:flex-col flex-row sm:mt-5">
                                                     <div className="block sm:hidden h-[35px] text-center pt-2
