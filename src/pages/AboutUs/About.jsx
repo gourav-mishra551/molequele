@@ -18,7 +18,7 @@ const About = () => {
           </div>
         </div>
             <div >
-                <header className='headerAbout'>
+                <header className='headerAbout sm:pt-0 pt-14'>
                     <div className="w-auto sm:h-[195px] h-[168px] sm:bg-repeat-round rounded-b-[20px] " style={{ backgroundImage: `url(${ImageBackGround})` }}>
                         <div className=' pt-5 sm:pt-8 '>
                             <h1 className='text-white font-semibold text-[20px] sm:text-[32px] mt-4 sm:mt-8  w-auto  mx-auto flex justify-center' >Molequle:

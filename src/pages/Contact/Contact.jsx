@@ -36,7 +36,7 @@ const Contact = () => {
           <NavBar2 />
           </div>
         </div>
-      <header className='headerContact overflow-hidden'>
+      <header className='headerContact overflow-hidden sm:pt-0 pt-14'>
         <div className="upper sm:h-[416px] h-[393px] rounded-b-[12px] sm:rounded-b-[20px]" style={{ backgroundImage: `url(${Image})` }}>
           <div className=' p-5 sm:p-8 '>
             <h1 className='text-white font-semibold leading-[32px] text-[20px] sm:text-[32px] mt-6 headerContact w-auto sm:w-[703px] mx-auto  text-center' >

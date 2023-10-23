@@ -133,12 +133,12 @@ function Pharma() {
   return (
     <div className="App ">
       <TopHeader />
-      <div className="bg-white">
-        <div className="sm:mx-auto sm:w-[1280px]">
+      <div className="bg-white ">
+        <div className="sm:mx-auto sm:w-[1280px] ">
           <NavBar2 />
           </div>
         </div>
-      <div className="bg-gray-100">
+      <div className="bg-gray-100 sm:pt-0 pt-14">
         <div className="pl-4 pr-4 sm:pl-0 sm:pr-0">
           <div className="industrybg">
             <h1 className='flex justify-center font-semibold text-[20px] sm:text-[28px] sm:pt-10 pt-6' style={{ lineHeight: "42px" }}>Some heading will come here</h1>
