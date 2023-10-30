@@ -22,7 +22,7 @@ const Home = () => {
         </div>
 
         <div className="bg-[#FBFBFB]  sm:pt-4 backgroundMain" >
-        <div className="mx-auto sm:w-[1280px] w-[360px] sm:pb-[20px]">
+        <div className="mx-auto sm:w-[1280px] w-[360px] sm:pb-[20px] pb-[10px]">
           <Header />
           </div>
         </div>

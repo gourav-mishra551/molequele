@@ -4,7 +4,6 @@ import "./pharma.css";
 import cloneDeep from "lodash/cloneDeep";
 import throttle from "lodash/throttle";
 import Pagination from "rc-pagination";
-import Group from "../../assets/Group13.png";
 import { gsap } from "gsap";
 import { catalystsData, PharmaIntermidatesData, ImpuritesData } from "./data";
 import { Table, Thead, Tbody, Tr, Td } from 'react-super-responsive-table'
@@ -139,7 +138,7 @@ function Pharma() {
           </div>
         </div>
       <div className="bg-gray-100 sm:pt-0 pt-14">
-        <div className="pl-4 pr-4 sm:pl-0 sm:pr-0">
+        <div className=" sm:pl-0 sm:pr-0">
           <div className="industrybg">
             <h1 className='flex justify-center font-semibold text-[20px] sm:text-[28px] sm:pt-10 pt-6' style={{ lineHeight: "42px" }}>List of the key products we offer</h1>
             <p className='sm:flex justify-center font-medium sm:text-[20px] text-[16px] pt-2 pb-8 text-black mb-0 ml text-center' style={{ letterSpacingz: "2%" }}>If you can’t find the product  <span className="flex justify-center">you are looking for, please contact us.</span> </p>
