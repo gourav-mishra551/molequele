@@ -28,7 +28,7 @@ const About = () => {
 
                     </div>
                 </header>
-                <div className='flex sm:flex flex-col-reverse sm:flex-col'>
+                <div >
                     <div className="child1">
                         <div className="mission mx-auto sm:w-[1198px] w-[343px] flex sm:flex-row flex-col-reverse mt-5 sm:mt-20">
                             <div className="lefts sm:w-[504px] w-[343px] max-w-[100%] mx-auto">

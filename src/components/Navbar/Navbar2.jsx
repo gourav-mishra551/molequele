@@ -132,7 +132,7 @@ export default function NavBar2() {
             </div>
         </div>
             </div >
-        <a className=" fixed overflow-hidden  flex items-center justify-center   h-8 pr-2 pl-1 bg-[#F9F5FD] rounded-full sm:bottom-[2.5rem] sm:top-auto top-[740px] sm:right-14 right-6  mr-4 mb-4 border border-[#E1B9FD]  text-purple-800 hover:bg-purple-100 z-30" href="http://wa.me/918010150164" target="_blank" rel="noreferrer">
+        <a className=" fixed overflow-hidden  flex items-center justify-center   h-8 pr-2 pl-1 bg-[#F9F5FD] rounded-full sm:bottom-[2.5rem] sm:top-auto top-[670px] sm:right-14 right-6  mr-4 mb-4 border border-[#E1B9FD]  text-purple-800 hover:bg-purple-100 z-30" href="http://wa.me/91956019070" target="_blank" rel="noreferrer">
             <div className=" rounded-full">
                 <img className="rounded-full" src="/Vector4.svg" alt="logo" />
             </div>

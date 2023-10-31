@@ -164,7 +164,7 @@ function Pharma() {
          <Link to= '/industry'>
             <input
               className="search lg:w-[995px] pl-5 lg:h-[64px] md:w-[700px] md:h-[60px] h-[54px] w-[353px]"
-              placeholder="Search Productss....."
+              placeholder="Search Products....."
               style={{ position: "relative", }}
 
             />

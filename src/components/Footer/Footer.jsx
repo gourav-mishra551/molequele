@@ -4,7 +4,7 @@ import { Link } from "react-router-dom"
 const Footer = () => {
   return (
     <div className="bg-purple-50  pl-5 sm:pl-0 overflow-hidden">
-      <hr className="border sm:w-[1280px]   w-[330px] max-w-[100%] sm:mt-0 mt-10  "></hr>
+      <hr className="border sm:w-[1280px]   w-[330px] max-w-[100%] sm:mt-0 mt-10 mx-auto   "></hr>
       <div className="flex flex-col justify-between pb-[4rem]   bg-purple-50   sm:w-[1280px] m-auto w-[375px] max-w-[100%]  sm:flex sm:flex-row  ">
         <div className="w-auto ">
           <div className="flex flex-start ">
@@ -33,7 +33,7 @@ const Footer = () => {
             <a href="https://www.linkedin.com/company/molequle/" className="linkdin mr-5" target="_blank" rel="noreferrer">
               <img src="./Linkdin.svg" alt="linkdin" />
             </a>
-            <a className="whastaap sm:h-auto" href="http://wa.me/918010150164" target="_blank" rel="noreferrer">
+            <a className="whastaap sm:h-auto" href="http://wa.me/91956019070" target="_blank" rel="noreferrer">
               <img src="./Group 38548.svg" alt="tweeter" />
             </a>
           </div>
