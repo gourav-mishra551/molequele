@@ -111,3 +111,9 @@ hr {
 .rc-pagination-item:focus a, .rc-pagination-item:hover a{
   color: rgba(141, 46, 209, 1) !important;
 }
+
+.responsive-table tr {
+ border: 0 !important;
+ border-width: 0 !important;
+ border-bottom: 0 !important;
+}

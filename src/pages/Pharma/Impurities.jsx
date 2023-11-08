@@ -55,7 +55,7 @@ const Impurities = () => {
       const columnData = tableCell.map((keyD, i) => {
         return <Td className = 'sm:h-[63px] h-auto font-[500] text-[15px]' key={i}>{key[keyD]}</Td>;
       });
-      return <Tr className = 'sm:h-[63px] h-auto font-[500] text-[15px]' key={index}>{columnData}</Tr>;
+      return <Tr className = 'sm:h-[63px] h-auto font-[500] text-[15px] bg-white' key={index}>{columnData}</Tr>;
     };
   
     const tableData = () => {
@@ -76,7 +76,7 @@ const Impurities = () => {
                     <Thead >
                       <Tr className="rounded-t-[18px]  bg-[#FBF6FF] text-[14px] h-auto sm:h-[63px] text-[#BDBDBD] border border-[#E9EFF4]  ">{headRow()}</Tr>
                     </Thead>
-                    <Tbody className="trhover bg-white">{tableData()}</Tbody>
+                    <Tbody className="trhover sm:bg-white bg-gray-100">{tableData()}</Tbody>
                   </Table>
                   <Pagination
                     pageSize={countPerPage}

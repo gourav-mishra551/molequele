@@ -1,6 +1,6 @@
 import TopHeader from '../../components/TopHeader/TopHeader'
 import NavBar2 from '../../components/Navbar/Navbar2'
-import Image from '../../assets/Image.svg';
+import Image from '../../assets/BackgroundContact.png';
 import "./contactpage.css"
 import Footer2 from '../../components/Footer/Footer2';
 import { useFormik } from 'formik';
@@ -48,7 +48,7 @@ const Contact = () => {
               <p className='text-white font-medium  ml-4 hidden sm:block text-[16px] sm:text-[18px] underline underline-offset-8' style={{ lineHeight: "30.3px" }}><a href="http://wa.me/91956019070" target="_blank" rel="noreferrer">Chat with us</a></p>
             </div>
             <div className="phone  mx-auto sm:mx-0   flex flex-wrap ">
-              <img className=' ml-10 sm:ml-0 mb-0 mt-2 sm:mt-0 sm:h-[38px] sm:w-[28px] h-[20px] w-[20px]' src="./Vector (1).svg" alt="logo" />
+              <img className=' ml-10 sm:ml-0 mb-0 mt-2 sm:mt-0 sm:h-[38px] sm:w-[28px] h-[20px] w-[20px] stroke-slate-50'src="./Vector (1).svg" alt="logo" />
               <p className='text-white font-medium  ml-3 mx-auto mr-10 text-[16px] sm:text-[18px]' style={{ lineHeight: "33.3px" }}> +91 9560190710</p>
             </div>
             <div className="mail flex mx-auto sm:mx-0 mb-5">
@@ -62,8 +62,8 @@ const Contact = () => {
       <Footer2 />
       <div>
 
-        <form className='absolute z-0 left-0 right-0 mx-auto sm:top-80 top-[320px] sm:mt-6 mt-0 sm:w-[1198px] w-[343px] h-auto   bg-white rounded-xl shadow' action="https://fabform.io/f/f4THnaE" method="post">
-          <div className="text-gray-700  " >
+        <form className='absolute z-0 left-0 right-0 mx-auto sm:top-80 top-[320px] sm:mt-6 mt-0 sm:w-[1198px] w-[343px] h-auto   bg-white rounded-xl shadow' action="https://fabform.io/f/IycCbfB" method="post">
+          <div className="text-gray-700" >
             <div className="container px-5 sm:px-12 py-12  mx-auto" >
               <div className=" mx-auto">
                 <div className="flex flex-wrap -m-2">
@@ -82,7 +82,7 @@ const Contact = () => {
                         name="from_name"
                         placeholder='full name'
                         required
-                        className="sm:w-full sm:mt-5 mt-2 rounded-2xl h-16 border font-normal border-gray-300 focus:border-purple-500 text-base outline-none text-gray-700 py-2 px-5 leading-8 transition-colors duration-200 ease-in-out w-[319px]"
+                        className="sm:w-full sm:mt-5 mt-2 rounded-[8px] h-16 border font-normal border-gray-300 focus:border-purple-500 text-base outline-none text-gray-700 py-2 px-5 leading-8 transition-colors duration-200 ease-in-out w-[300px]"
                       />
                     </div>
                   </div>
@@ -104,11 +104,11 @@ const Contact = () => {
                         name="to_name"
                         placeholder='example@youremail.com'
                         required
-                        className="sm:w-full sm:mt-5 mt-2 rounded-2xl h-16 border font-normal border-gray-300 focus:border-purple-500 text-base outline-none text-gray-700 py-2 px-5 leading-8 transition-colors duration-200 ease-in-out w-[319px]"
+                        className="sm:w-full sm:mt-5 mt-2 rounded-[8px] h-16 border font-normal border-gray-300 focus:border-purple-500 text-base outline-none text-gray-700 py-2 px-5 leading-8 transition-colors duration-200 ease-in-out w-[300px]"
                       />
                     </div>
                   </div>
-                  <div className="p-2 w-auto sm:w-1/2 mt-5">
+                  <div className="p-2 w-auto sm:w-1/2 sm:mt-5">
                     <div className="relative">
                       <div className='flex'>
                         <label htmlFor="Phone_NUmber" className="leading-7 text-sm font-bold text-gray-600">
@@ -123,11 +123,11 @@ const Contact = () => {
                         name="form_phone"
                         placeholder='your phone number'
                         required
-                        className="sm:w-full sm:mt-5 mt-2 h-16 rounded-2xl font-normal border border-gray-300 focus:border-purple-500 text-base outline-none text-gray-700 py-2 px-5 leading-8 transition-colors duration-200 ease-in-out w-[319px]"
+                        className="sm:w-full sm:mt-5 mt-2 h-16 rounded-[8px] font-normal border border-gray-300 focus:border-purple-500 text-base outline-none text-gray-700 py-2 px-5 leading-8 transition-colors duration-200 ease-in-out w-[300px]"
                       />
                     </div>
                   </div>
-                  <div className="p-2  w-auto sm:w-1/2 mt-5 ">
+                  <div className="p-2  w-auto sm:w-1/2  sm:mt-5">
                     <div className="relative">
                       <div className='flex'>
                         <label
@@ -145,11 +145,11 @@ const Contact = () => {
                         name="subject"
                         placeholder='your company name'
                         required
-                        className="sm:w-full sm:mt-5 mt-2 h-16 font-normal rounded-2xl border border-gray-300 focus:border-purple-500 text-base outline-none text-gray-700 py-1 px-5 leading-8 transition-colors duration-200 ease-in-out w-[319px]"
+                        className="sm:w-full sm:mt-5 mt-2 h-16 font-normal rounded-[8px] border border-gray-300 focus:border-purple-500 text-base outline-none text-gray-700 py-1 px-5 leading-8 transition-colors duration-200 ease-in-out w-[300px]"
                       />
                     </div>
                   </div>
-                  <div className="p-2 w-full mt-5">
+                  <div className="p-2 w-full sm:mt-5">
                     <div className="relative">
                       <div className='flex'>
                         <label
@@ -167,7 +167,7 @@ const Contact = () => {
                         name="message"
                         placeholder='Message'
                         required
-                        className="w-full sm:mt-5 mt-2 h-64 rounded-2xl border border-gray-300 focus:border-purple-500  text-base outline-none font-normal text-gray-700 py-5 px-6 resize-none leading-6 transition-colors duration-200 ease-in-out"
+                        className="w-full sm:mt-5 mt-2 h-64 rounded-[8px] border border-gray-300 focus:border-purple-500  text-base outline-none font-normal text-gray-700 py-5 px-6 resize-none leading-6 transition-colors duration-200 ease-in-out"
                       ></textarea>
                     </div>
                   </div>
