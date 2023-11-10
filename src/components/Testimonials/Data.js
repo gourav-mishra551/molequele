@@ -4,7 +4,7 @@ export const items = [
         imgSrc: "./Ellipse 74.png",
         name: "Vishal Deshmukh",
         position: "Pune, Maharashtra",
-        quote: "Molequle has made our sourcing super easy, and their support is top-notch. Our products have gotten a major boost in quality thanks to them. "
+        quote: "Molequle has made our sourcing super easy, and their support is top-notch. Our products have gotten a major boost in quality thanks to them. Best Supplier"
     },
     {
         status: "inactive",
@@ -30,9 +30,9 @@ export const items = [
     {
         status: "inactive",
         imgSrc: "./Ellipse 74 (2).png",
-        name: "Sumit",
-        position: "Bhagalpur , Bihar",
-        quote: "Molequle supplier network simplified our sourcing process but have elevated product quality ,operationally active and make timely payments. "
+        name: "Ishan Mehta",
+        position: "Baddi, Himachal Pradesh",
+        quote: "We rely on Molequle's strong supplier network and operational excellence. They've not only simplified our sourcing process but have elevated product quality."
     }
 ];
 

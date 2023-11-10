@@ -135,43 +135,47 @@ function Pharma() {
       <div className="bg-white ">
         <div className="sm:mx-auto sm:w-[1280px] ">
           <NavBar2 />
-          </div>
         </div>
+      </div>
       <div className="bg-gray-100 sm:pt-0 pt-14">
         <div className=" sm:pl-0 sm:pr-0">
           <div className="industrybg">
             <h1 className='flex justify-center font-semibold text-[20px] sm:text-[28px] sm:pt-10 pt-6' style={{ lineHeight: "42px" }}>List of the key products we offer</h1>
             <p className='sm:flex justify-center font-medium sm:text-[20px] text-[16px] pt-2 pb-8 text-black mb-0 ml text-center' style={{ letterSpacingz: "2%" }}>If you can’t find the product  <span className="flex justify-center ml-2">you are looking for, please contact us.</span> </p>
           </div>
-         
-          <div>
-            <div className="overflow-auto">
-              <ul className=' sm:w-[580px]   w-max sm:flex flex sm:pl-16 h-[38px] ml-5 sm:ml-auto sm:h-[50px] mx-auto  mt-2 mb-5 overflow-auto sm:overflow-visible '>
-                <Link to='/industry'>
-                  <li className='font-medium sm:pb-[25px] text-[15px] sm:text-[16px] sm:mr-8 md:mr-14 link-underline-list link-underline-black-list ' style={{ lineHeight: "24px" }}>All Products</li></Link>
-                <li className='font-medium text-[16px] sm:mr-8 md:mr-14 link-underline-list link-underline-black-list  text-purple-700' style={{ lineHeight: "24px" }}> Pharma</li>
-               
-                <li className='font-medium text-[16px] sm:mr-8 md:mr-14 link-underline-list link-underline-black-list' style={{ lineHeight: "24px" }}>Nutrition & Suppliment</li>
-               
-              </ul>
-            </div>
-          </div>
-
         </div>
-         {/* seacrh bar */}
-         
-         <div className="search mx-auto flex justify-center mb-2 ">
-         <Link to= '/industry'>
-            <input
-              className="search lg:w-[995px] pl-5 lg:h-[64px] md:w-[700px] md:h-[60px] h-[54px] w-[353px]"
-              placeholder="Search Products....."
-              style={{ position: "relative", }}
+        {/* search bar */}
+        <Link to = '/industry'>
+        <div>
+          <input
+            className="mx-auto lg:w-[995px] lg:h-[64px] md:w-[700px]  md:h-[60px] h-[54px] w-[353px] flex justify-center sm:pl-5"
+            placeholder="Search Products....."
+            value={value}
+            onChange={e => setValue(e.target.value)}
+          />
+          {/* <button className="bg-[#8D2ED1] w-[66px] sm:w-[131px] h-[40px] sm:h-[44px] rounded text-white absolute  2xl:right-[11rem] xl:right-[8rem] right-[14px] md:right-[2rem] lg:right-[4rem] sm:right-0 top-[-65px] sm:top-[-60px] text-[13px]">Search</button> */}
+        </div>
+        </Link>
+        {/* list */}
+        <div className="overflow-auto mt-6 sm:mb-2">
+          <ul className=' sm:w-[580px] sm:pl-16  sm:flex flex  h-[38px] w-max overflow-y-auto ml-5 sm:ml-auto sm:h-[50px] mx-auto  mt-2  overflow-x-auto sm:overflow-visible'>
+            <Link to='/industry'>
+              <li className='font-medium w-max text-[15px] sm:text-[16px] sm:mr-8 md:mr-14 link-underline-list link-underline-black-list sm:pb-[25px] ' style={{ lineHeight: "24px" }}>All Products</li></Link>
+            <li className='font-medium w-max text-[16px] sm:mr-8 md:mr-14 link-underline-list link-underline-black-list text-purple-700 ' style={{ lineHeight: "24px" }}>
+              <Link to="/pharma">
+                Pharma
+              </Link>
+            </li>
 
-            />
-             </Link>
-            {/* <button className="bg-[#8D2ED1] sm:block hidden  w-[131px] h-[44px] rounded text-white absolute  2xl:right-[11rem] md:right-[-2rem] lg:right-[5rem]  top-[-60px] ">Search</button> */}
-          </div>
-         
+            <li className='font-medium w-max text-[16px] sm:mr-8 md:mr-14 link-underline-list link-underline-black-list' style={{ lineHeight: "24px" }}>Nutrition & Suppliment</li>
+
+          </ul>
+        </div>
+
+
+
+
+
         <div className="accordion__container">
           <div
             className={`accordion__item  ${openAccordion === 0

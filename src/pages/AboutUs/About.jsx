@@ -48,7 +48,7 @@ const About = () => {
                                 </div>
                             </div>
                             <div className="sm:w-auto w-[343px] mx-auto sm:mt-0 mt-10">
-                                <img src="./Imagetalk.svg" alt="persons" />
+                                <img src="./Image.svg" alt="persons" />
                             </div>
                         </div>
 
@@ -100,6 +100,7 @@ const About = () => {
                                         end={5000}
                                         duration={5.75}
                                         useEasing={true}
+                                        suffix='+'
                                         
 
                                     />

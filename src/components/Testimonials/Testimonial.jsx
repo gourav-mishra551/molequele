@@ -5,7 +5,7 @@ import { ReactComponent as ArrowLeft } from '../../assets/arrow-left.svg';
 import { ReactComponent as ArrowRight } from '../../assets/arrow-right.svg';
 import { ReactComponent as Circle } from '../../assets/circle-solid.svg';
 const inactiveColour = 'hsla(221, 0%, 88%, 0.81)';
-const activeColour = 'rgba(141, 46, 209, 1)';
+const activeColour = 'purple';
 
 class Carousel extends React.Component {
     constructor() {
@@ -106,8 +106,8 @@ class Carousel extends React.Component {
                         <span className="fa fa-star checked"></span>
                         <span className="fa fa-star checked"></span>
                         <span className="fa fa-star checked"></span>
-                        <span className="fa fa-star"></span>
-                        <span className="fa fa-star"></span>
+                        <span className="fa fa-star checked"></span>
+                        <span className="fa fa-star checked"></span>
                         </div>
                         <div className="">
                             <h3 className="name font-semibold">{items[this.state.leftCard].name} </h3>
@@ -130,7 +130,7 @@ class Carousel extends React.Component {
                                 <p className="position" >{items[this.state.activeIndex].position}</p>
                                 <p className="testimony text">{items[this.state.activeIndex].quote}</p>
                             </div>
-                            <div className="arrow-container">
+                            <div className="arrow-container  relative">
                                 <ArrowLeft className="arrow arrow-left" fill="hsla(221, 0%, 49%, 0.98)" onClick={this.activatePreviousSlide.bind(this)}></ArrowLeft>
                                 <ArrowRight className="arrow arrow-right" fill="hsla(221, 0%, 49%, 0.98)" onClick={this.activateNextSlide.bind(this)}></ArrowRight>
                             </div>

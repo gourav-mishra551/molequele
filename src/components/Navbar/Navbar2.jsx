@@ -41,8 +41,14 @@ export default function NavBar2() {
                                         Home
                                     </a>
                                     </Link>
+                                    <Link className=" items-center" to='/industry'>
+                                    <a className="flex   sm:pb-[26px] sm:mt-[30px] sm:mb-0 sm:text-base text-[18px] font-medium hover:text-purple-600 link link-underline link-underline-black  text-purple-700 sm:text-black pl-6 pr-4">
+                                        Products
+                                    </a>
+                                    </Link>
+
                                     {/* drop down ++++++++++++++++++++=========== */}
-                                    <div className="dropdown">
+                                    {/* <div className="dropdown">
                                         <button className="dropbtn  sm:my-0 mr-auto sm:text-base text-[18px] sm:ml-8  font-medium hover:text-purple-600 link link-underline link-underline-black text-purple-700 sm:text-black sm:pb-[27px]  ml-[2px]">Products
                                             <i className="fa fa-caret-down ml-2"></i>
                                         </button>
@@ -115,13 +121,13 @@ export default function NavBar2() {
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div> */}
                                 {/* dropdown end  =======================================================                             */}
                                 <Link to="/about">
-                                <a className="flex sm:pb-[26px] sm:mt-[30px] items-center sm:ml-4  sm:mb-0 sm:text-base text-[18px] font-medium hover:text-purple-600 link link-underline link-underline-black  text-purple-700 sm:text-black pl-6 pr-6">
+                                <a className="flex sm:pb-[26px] sm:mt-[30px] items-center sm:ml-2  sm:mb-0 sm:text-base text-[18px] font-medium hover:text-purple-600 link link-underline link-underline-black  text-purple-700 sm:text-black pl-6 pr-6">
                                     About</a></Link>
                                     <Link to="/contact">
-                                <li className=" hover:text-purple-600 ml-1 sm:pb-[26px] sm:mt-[30px] sm:ml-5 font-medium sm:text-base text-[18px] link link-underline link-underline-black  text-purple-700 sm:text-black   sm:w-28 sm:text-center ">
+                                <li className=" hover:text-purple-600 ml-1 sm:pb-[26px] sm:mt-[30px] sm:ml-2 font-medium sm:text-base text-[18px] link link-underline link-underline-black  text-purple-700 sm:text-black   sm:w-28 sm:text-center ">
                                     Contact
                                 </li>
                                 </Link>
