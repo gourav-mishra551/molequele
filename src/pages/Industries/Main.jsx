@@ -120,7 +120,7 @@ const Main = () => {
 								</Link>
 							</li>
 					
-							<li className='font-medium w-max text-[16px] sm:mr-8 md:mr-14 link-underline-list link-underline-black-list' style={{ lineHeight: "24px" }}>Nutrition & Suppliment</li>
+							<li className='font-medium w-max text-[16px] sm:mr-8 md:mr-14 link-underline-list link-underline-black-list' style={{ lineHeight: "24px" }}>Nutraceuticals</li>
 							
 						</ul>
 					</div>

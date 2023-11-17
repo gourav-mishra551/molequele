@@ -40,7 +40,7 @@ const Industry = () => {
                 <div className="flex justify-between  flex-col-reverse mt-20 sm:mt-20 sm:flex sm:flex-row  sm:w-[fit-content]  w-[375px] max-w-[100%] h-auto" >
                     <div className="left w-auto sm:w-[524px] sm:mr-16" >
                         <h2 className="text-xl font-medium sm:text-3xl sm:leading-relaxed mt-5 sm:mt-0  sm:ml-0">Diverse Range of Specialty Chemicals</h2>
-                        <p className="font-medium text-sm sm:text-lg whitespace-pre-wrap text-gray-500  tracking-normal mt-4  leading-loose sm:leading-loose  sm:ml-0 sm:mr-0 mr-5">Explore Molequle`s <span className="text-purple-600 leading-loose ">vast product portfolio,</span> ranging from APIs & Excipients in Pharma to Polymers in Plastics, encompassing a comprehensive range of industrial and specialty chemicals. <br />
+                        <p className="font-medium text-sm sm:text-lg whitespace-pre-wrap text-gray-500  tracking-normal mt-4  leading-loose sm:leading-loose  sm:ml-0 sm:mr-0 mr-5">Explore Molequle`s <span className="text-purple-600 leading-loose ">vast product portfolio,</span>  of Intermediates & Excipients for various Pharma end products, encompassing a comprehensive range of industrial and specialty chemicals.  <br />
                             Our efficient <span className="text-purple-600 leading-loose"> in-house formulation & rapid sampling
                                 process </span> ensures swift turnaround. Upholding top-notch quality and safety, our products come with essential certifications and compliances, such as USP, IP, and other global standards.</p>
                     </div>

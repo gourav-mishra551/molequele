@@ -8,12 +8,10 @@ import { PharmaIntermidatesData } from './data';
 
 
 const tableHead = {
-    name: "Campaign Name",
-    parentId: "Campaign Id",
-    campaignType: "Type",
-    status: "Status",
-    channel: "Channel",
-    action: "Actions"
+    name: "Product Name",
+    parentId: "CAS No.",
+    campaignType: "Application",
+    
   };
 const PharmaIntermidates = () => {
     // ========================search bar

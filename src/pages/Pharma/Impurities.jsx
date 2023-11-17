@@ -7,12 +7,10 @@ import Pagination from "rc-pagination";
 import { ImpuritesData } from './data';
 
 const tableHead = {
-    name: "Campaign Name",
-    parentId: "Campaign Id",
-    campaignType: "Type",
-    status: "Status",
-    channel: "Channel",
-    action: "Actions"
+    name: "Product Name",
+    parentId: "CAS No.",
+    campaignType: "Key Make",
+   
   };
 const Impurities = () => {
     const countPerPage = 15;

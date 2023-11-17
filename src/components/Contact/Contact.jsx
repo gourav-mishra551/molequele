@@ -58,7 +58,7 @@ const Contact = () => {
                 <img className="contact-svg  mr-5 sm:h-auto sm:w-auto h-[24px] w-[24px]" src="./Group 48736.svg"/>
                 <p className="contact-text font-medium">
                   
-                utpal@molequle.biz
+                info@molequle.biz
                 </p>
                 </div>
                 <div className="flex">

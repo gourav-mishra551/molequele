@@ -23,16 +23,16 @@ export const items = [
     {
         status: "active",
         imgSrc: "./Ellipse 74.png",
-        name: "Abhijeet",
-        position: "New Delhi",
-        quote: "We will also facilitate the business marketing of these products with our SEO experts so that they become a ready to use website & help sell product from company"
+        name: "Salim Ahmed",
+        position: "Mumbai",
+        quote: "We have been able to introduce new products in the market in collaboration with Molequle. Their team has taken off the burden of sales from my hands and helped me focus on manufacturing. "
     },
     {
         status: "inactive",
         imgSrc: "./Ellipse 74 (2).png",
-        name: "Ishan Mehta",
-        position: "Baddi, Himachal Pradesh",
-        quote: "We rely on Molequle's strong supplier network and operational excellence. They've not only simplified our sourcing process but have elevated product quality."
+        name: "Rahul Malhotra",
+        position: "New Delhi",
+        quote: "Their commitment to quality and innovative solutions has significantly enhanced our product offerings. Molequle understand our unique needs & we look forward to continued success together."
     }
 ];
 

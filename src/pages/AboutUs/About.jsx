@@ -24,7 +24,7 @@ const About = () => {
                             <h1 className='text-white font-semibold text-[20px] sm:text-[32px] mt-4 sm:mt-8  w-auto  mx-auto flex justify-center' >Molequle:
                             </h1>
                         </div>
-                        <p className='font-[500] text-[16px] sm:text-[20px] mx-auto text-white w-auto flex justify-center mt-2 sm:mt-2 text-center sm:mb-0 mb-4' style={{ lineHeight: "32px", letterSpacing: "2%" }}>Your Trusted Partner in Chemical Solutions </p>
+                        <p className='font-[500] text-[16px] sm:text-[20px] mx-auto text-white w-auto flex justify-center mt-2 sm:mt-2 text-center sm:mb-0 mb-4' style={{ lineHeight: "32px", letterSpacing: "2%" }}>Trusted Supplier of Pharma Intermediates and Excipients for top Indian Manufactures </p>
 
                     </div>
                 </header>
@@ -137,6 +137,11 @@ const About = () => {
                                     <img className='sm:h-auto sm:w-auto h-[30px] w-[30px] flex justify-center mx-auto mt-10' src="./Icon (4).svg" alt="icon" />
                                     <h1 className=' mx-auto sm:mt-5 mt-1 sm:mb-5 mb-1 flex  justify-center font-[600] text-[12.5px] sm:text-[26px]' style={{ lineHeight: "12px" }}>Commitment</h1>
                                     <p className='sm:w-[300px] font-[400] mx-auto text-center text-[8.38px] sm:text-[17.18px] sm:leading-[25.85px] leading-3 text-[#808080] font-[Mulish]'>Commitment is the bedrock of our actions, an unwavering promise to prioritize excellence in all endeavours</p>
+                                </div>
+                                <div className='sm:h-[326px] h-auto max-w-[100%]  hover:border hover:rounded-xl hover:border-[#DCDCDC]'>
+                                    <img className='sm:h-auto sm:w-auto h-[30px] w-[30px] flex justify-center mx-auto mt-10' src="./Icon (5).svg" alt="icon" />
+                                    <h1 className=' mx-auto sm:mt-5 mt-1 sm:mb-5 mb-1 flex  justify-center font-[600] text-[12.5px] sm:text-[26px]' style={{ lineHeight: "12px" }}>Sustainability</h1>
+                                    <p className='sm:w-[300px] font-[400] mx-auto text-center text-[8.38px] sm:text-[17.18px] sm:leading-[25.85px] leading-3 text-[#808080] font-[Mulish]'>Demonstrating responsibility towards the enviroment and society, striving for sustainable and eco-friendly practices.</p>
                                 </div>
                                 
                             </div>

@@ -20,7 +20,7 @@ const Footer2 = () => {
           <div className="flex flex-col text-[14px] sm:text-[16px] sm:w-[850px] sm:max-w-[100%] sm:flex-row sm:flex justify-between mt-8 font-medium text-gray-400">
             <div className="flex mr-8">
               <Link to='/pharma'><div className="mr-2"  >Pharma</div></Link>
-              <Link to='/nutrition'><div className=" sm:ml-8 ml-5 sm:mt-0">Nutritional Suppliments</div></Link>
+              <Link to='/nutrition'><div className=" sm:ml-8 ml-5 sm:mt-0">Nutraceuticals</div></Link>
 
 
               
@@ -37,7 +37,7 @@ const Footer2 = () => {
             <a href="https://www.linkedin.com/company/molequle/" className="linkdin mr-5" target="_blank" rel="noreferrer">
               <img src="./Linkdin.svg" alt="linkdin" />
             </a>
-            <a className="whastaap sm:h-auto" href="http://wa.me/91956019070" target="_blank" rel="noreferrer">
+            <a className="whastaap sm:h-auto" href="http://wa.me/919560190710" target="_blank" rel="noreferrer">
               <img src="./Group 38548.svg" alt="tweeter" />
             </a>
           </div>

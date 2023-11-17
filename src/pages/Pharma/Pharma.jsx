@@ -16,12 +16,10 @@ import TopHeader from "../../components/TopHeader/TopHeader";
 import NavBar2 from "../../components/Navbar/Navbar2";
 
 const tableHead = {
-  name: "Campaign Name",
-  parentId: "Campaign Id",
-  campaignType: "Type",
-  status: "Status",
-  channel: "Channel",
-  action: "Actions"
+  name: "Product Name",
+  parentId: "CAS No.",
+  campaignType: "Grade",
+  status: "Make",
 };
 
 function Pharma() {
@@ -167,7 +165,7 @@ function Pharma() {
               </Link>
             </li>
 
-            <li className='font-medium w-max text-[16px] sm:mr-8 md:mr-14 link-underline-list link-underline-black-list' style={{ lineHeight: "24px" }}>Nutrition & Suppliment</li>
+            <li className='font-medium w-max text-[16px] sm:mr-8 md:mr-14 link-underline-list link-underline-black-list' style={{ lineHeight: "24px" }}>Nutraceuticals</li>
 
           </ul>
         </div>
@@ -236,7 +234,7 @@ function Pharma() {
               onClick={() => handleAccordionClick(2)}
             >
 
-              <p className="accordion__name text-[15px] sm:text-[20px] font-[600] text-black">Impurities  <a className="text-[#666666] font-[400] text-[14px] ml-5"> {ImpuritesData.length} items</a></p>
+              <p className="accordion__name text-[15px] sm:text-[20px] font-[600] text-black">High-Grade Solvents  <a className="text-[#666666] font-[400] text-[14px] ml-5"> {ImpuritesData.length} items</a></p>
               <img src="./Groupup.svg" alt="up" />
             </div>
             <div className="accordion__details">
