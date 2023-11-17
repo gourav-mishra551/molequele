@@ -215,7 +215,67 @@ export const ImpuritesData = [
     campaignType: "",
   },
 ]
-		
+
+
+// ============================ neutra   Data   ======================
+export const neutraData = [
+  {
+    name: "Hydroxypropyl Methylcellulose (HPMC)",
+      parentId: "9004-65-3",
+      campaignType: "E5, E15, K100",
+      status: "China",
+  },
+  {
+    name: "Polyvinylpyrrolidone (PVP)",
+    parentId: "9003-39-8",
+    campaignType: "K25, K30, K90",
+    status: "China",
+    
+  },
+  {
+    name: "Xanthan Gum",
+    parentId: "11138-66-2",
+    campaignType: "80M, 200M",
+    status: "China",
+    
+  },
+  {
+    name: "Gelatine",
+    parentId: "9000-70-8",
+    campaignType: "Fish/Bovine",
+    status: "China/Europe",
+    
+  },
+  {
+    name: "Creatine Monohydrate",
+    parentId: "6020-87-7",
+    campaignType: "80M, 200M",
+    status: "China",
+    
+  },
+  {
+    name: "L-Glutamine",
+    parentId: "56-85-9",
+    campaignType: "",
+    status: "China",
+    
+  },
+  {
+    name: "Starch",
+    parentId: "9005-84-9",
+    campaignType: "",
+    status: "India",
+    
+  },
+  {
+    name: "Modified Starch",
+    parentId: "65996-62-5",
+    campaignType: "",
+    status: "Indonesia",
+    
+  },
+]
+
 		
 
 	
