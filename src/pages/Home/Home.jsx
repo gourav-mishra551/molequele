@@ -1,5 +1,4 @@
 import Navbar2 from "../../components/Navbar/Navbar2";
-import TopHeader from "../../components/TopHeader/TopHeader";
 import Header from "../../components/Header/Header";
 import Contact from "../../components/Contact/Contact";
 import Industry from "../../components/Industry/Industry";
@@ -13,7 +12,7 @@ const Home = () => {
   }, []);
   return (
     <div>
-      <TopHeader />
+     
      
         <div className="bg-white">
         <div className="sm:mx-auto sm:w-[1280px]">

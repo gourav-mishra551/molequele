@@ -17,8 +17,8 @@ import Footer from '../../components/Footer/Footer';
 import TopHeader from "../../components/TopHeader/TopHeader";
 
 const tableHead = {
-	status: "Category",
 	channel: "Application Industry",
+	status: "Category",
 	name: "Product Name",
 	parentId: "CAS Number",
 	campaignType: "Application / Make",	
