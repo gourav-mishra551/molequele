@@ -17,18 +17,17 @@ import Footer from '../../components/Footer/Footer';
 import TopHeader from "../../components/TopHeader/TopHeader";
 
 const tableHead = {
-	name: "Campaign Name",
-	parentId: "Campaign Id",
-	campaignType: "Type",
-	status: "Status",
-	channel: "Channel",
-	action: "Actions"
+	status: "Category",
+	channel: "Application Industry",
+	name: "Product Name",
+	parentId: "CAS Number",
+	campaignType: "Application / Make",	
 };
 const Main = () => {
 	React.useEffect(() => {
 		window.scrollTo(0, 0);
 	}, []);
-	const countPerPage = 30;
+	const countPerPage = 100;
 	const [value, setValue] = React.useState("");
 	const [currentPage, setCurrentPage] = React.useState(1);
 	const [collection, setCollection] = React.useState(
@@ -94,7 +93,7 @@ const Main = () => {
 				<div className=" sm:pl-0 sm:pr-0">
 					<div className="industrybg">
 						<h1 className='flex justify-center font-semibold text-[20px] sm:text-[28px] sm:pt-10 pt-6' style={{ lineHeight: "42px" }}>List of the key products we offer</h1>
-						<p className='sm:flex justify-center font-medium sm:text-[20px] text-[16px] pt-2 pb-8 text-black mb-0 ml text-center' style={{ letterSpacingz: "2%" }}>If you can’t find the product <span className="flex justify-center sm:ml-2">you are looking for, please contact us.</span> </p>
+						<p className='sm:flex justify-center font-medium sm:text-[20px] text-[16px] pt-2 pb-8 text-black mb-0 ml text-center' style={{ letterSpacingz: "2%" }}>Trusted Supplier of Pharma Intermediates and<span className="flex justify-center sm:ml-2">Excipients for top Indian Manufactures</span> </p>
 					</div>
 					
 					{/* search bar */}

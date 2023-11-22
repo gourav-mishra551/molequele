@@ -5,32 +5,32 @@ const Industry = () => {
     return (
         <>  
             <div className="w-auto ">
-                <h1 className="text-2xl mx-auto font-medium sm:text-3xl mt-[4%] mb-[1%]  sm:w-[auto]  w-[375px] max-w-[100%]" >Industry </h1>
+                <h1 className="text-2xl mx-auto font-medium sm:text-3xl mt-[4%] mb-[1%]  sm:w-[auto]  w-[375px] max-w-[100%]" >Categories: </h1>
                 <div className="grid sm:gap-x-6 gap-x-2 grid-cols-2 sm:grid-cols-6 sm:w-[fit-content]  w-[375px] max-w-[100%]  pt-5 ">
                     <div className="h-[158px] w-auto sm:w-auto sm:h-auto overflow-hidden hover:border-purple-700  border-transparent border-2 hover:border-current hover:rounded-[4px] sm:mb-0 mb-2">
                         <Link to='/pharma'>
                         <div className="containers">
-                            <img className="mt-0 ml-0 mb-5 sm:w-[156px] sm:h-[208px] mr-0 sm:m-0 image overflow-hidden" src="./Frame 550.svg" alt="img1" />
-                            <div className="bottom-right sm:top-[137px] top-[108px]">Pharma</div>
+                            <img className="mt-0 ml-0 mb-5 sm:w-[156px] object-none sm:h-[208px] mr-0 sm:m-0 image overflow-hidden" src="./Rectangle 28634.png" alt="img1" />
+                            <div className="bottom-right sm:top-[173px] top-[123px]">Intermediates</div>
                         </div>
                         </Link>
                     </div>
                     <div className="h-[158px] w-[163px] sm:w-auto sm:h-auto overflow-hidden hover:border-purple-700  border-transparent border-2 hover:border-current hover:rounded-[4px] sm:mb-0 mb-2">
                         <div className="containers">
                             <img className="mt-0 ml-0  mr-0 sm:m-0 image" src="./Rectangle 28635.svg" alt="img2" />
-                            <div className="bottom-right sm:top-[137px] top-[108px]">Agro Chemical</div>
+                            <div className="bottom-right sm:top-[173px] top-[123px]">Excipients</div>
                         </div>
                     </div>
                     <div className="h-[158px] w-[163px] sm:w-auto sm:h-auto overflow-hidden hover:border-purple-700  border-transparent border-2 hover:border-current hover:rounded-[4px] sm:mb-0 mb-2">
                         <div className="containers">
-                            <img className="m-0 sm:m-0 image" src="./Rectangle 28636.svg" alt="img3" />
-                            <div className="bottom-right  sm:top-[137px] top-[108px]">Cosmetics & Personal Care</div>
+                            <img className="m-0 sm:m-0 image" src="./Rectangle 28640.svg" alt="img3" />
+                            <div className="bottom-right  sm:top-[173px] top-[123px]">Solvents</div>
                         </div>
                     </div>
                     <div className="h-[158px] w-[163px] sm:w-auto sm:h-auto overflow-hidden hover:border-purple-700  border-transparent border-2 hover:border-current hover:rounded-[4px] sm:mb-0 mb-2">
                         <div className="containers">
                             <img className="m-0 sm:m-0 image" src="./Rectangle 28637.svg" alt="img5" />
-                            <div className="bottom-right sm:top-[135px] top-[108px]">Nutrition & Supplements</div>
+                            <div className="bottom-right sm:top-[173px] top-[123px]">Nutraceutical</div>
                         </div>
                     </div>
                    

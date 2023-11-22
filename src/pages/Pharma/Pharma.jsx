@@ -141,20 +141,20 @@ function Pharma() {
         <div className=" sm:pl-0 sm:pr-0">
           <div className="industrybg">
             <h1 className='flex justify-center font-semibold text-[20px] sm:text-[28px] sm:pt-10 pt-6' style={{ lineHeight: "42px" }}>List of the key products we offer</h1>
-            <p className='sm:flex justify-center font-medium sm:text-[20px] text-[16px] pt-2 pb-8 text-black mb-0 ml text-center' style={{ letterSpacingz: "2%" }}>If you can’t find the product  <span className="flex justify-center ml-2">you are looking for, please contact us.</span> </p>
+            <p className='sm:flex justify-center font-medium sm:text-[20px] text-[16px] pt-2 pb-8 text-black mb-0 ml text-center' style={{ letterSpacingz: "2%" }}>Trusted Supplier of Pharma Intermediates and  <span className="flex justify-center ml-2">Excipients for top Indian Manufactures</span> </p>
           </div>
         </div>
         {/* search bar */}
-        <Link to = '/industry'>
-        <div>
-          <input
-            className="mx-auto lg:w-[995px] lg:h-[64px] md:w-[700px]  md:h-[60px] h-[54px] w-[353px] flex justify-center sm:pl-5"
-            placeholder="Search Products....."
-            value={value}
-            onChange={e => setValue(e.target.value)}
-          />
-          {/* <button className="bg-[#8D2ED1] w-[66px] sm:w-[131px] h-[40px] sm:h-[44px] rounded text-white absolute  2xl:right-[11rem] xl:right-[8rem] right-[14px] md:right-[2rem] lg:right-[4rem] sm:right-0 top-[-65px] sm:top-[-60px] text-[13px]">Search</button> */}
-        </div>
+        <Link to='/industry'>
+          <div>
+            <input
+              className="mx-auto lg:w-[995px] lg:h-[64px] md:w-[700px]  md:h-[60px] h-[54px] w-[353px] flex justify-center sm:pl-5"
+              placeholder="Search Products....."
+              value={value}
+              onChange={e => setValue(e.target.value)}
+            />
+            {/* <button className="bg-[#8D2ED1] w-[66px] sm:w-[131px] h-[40px] sm:h-[44px] rounded text-white absolute  2xl:right-[11rem] xl:right-[8rem] right-[14px] md:right-[2rem] lg:right-[4rem] sm:right-0 top-[-65px] sm:top-[-60px] text-[13px]">Search</button> */}
+          </div>
         </Link>
         {/* list */}
         <div className="overflow-auto mt-6 sm:mb-2">
@@ -166,17 +166,36 @@ function Pharma() {
                 Pharma
               </Link>
             </li>
-            <Link to= "/neutra">
-            <li className='font-medium w-max text-[15px] sm:text-[16px] sm:mr-8 md:mr-14 link-underline-list link-underline-black-list sm:pb-[25px]' style={{ lineHeight: "24px" }}>Nutraceuticals</li></Link>
+            <Link to="/neutra">
+              <li className='font-medium w-max text-[15px] sm:text-[16px] sm:mr-8 md:mr-14 link-underline-list link-underline-black-list sm:pb-[25px]' style={{ lineHeight: "24px" }}>Nutraceuticals</li></Link>
 
           </ul>
         </div>
 
 
+        <div
+          className={`accordion__item ${openAccordion === 1 ? "open" : ""}`}
+          ref={(el) => (accordionRefs.current[1] = el)}
+        >
+          <div
+            className="accordion__header flex justify-between "
+            onClick={() => handleAccordionClick(1)}
+          >
+            <p className="accordion__name text-[15px] sm:text-[20px] font-[600] text-black">
+              Pharma Intermediates
+              <a className="text-[#666666] font-[400] text-[14px] ml-5"> {PharmaIntermidatesData.length} items</a>
+            </p>
+            <img src="./Groupup.svg" alt="up" />
+          </div>
+          <div className="accordion__details">
+            <PharmaIntermidates />
+          </div>
+        </div>
 
 
 
-        <div className="accordion__container">
+
+        <div className="accordion__container mt-5">
           <div
             className={`accordion__item  ${openAccordion === 0
               ? "open" : ""}`}
@@ -209,24 +228,8 @@ function Pharma() {
             </div>
           </div>
 
-          <div
-            className={`accordion__item ${openAccordion === 1 ? "open" : ""}`}
-            ref={(el) => (accordionRefs.current[1] = el)}
-          >
-            <div
-              className="accordion__header flex justify-between"
-              onClick={() => handleAccordionClick(1)}
-            >
-              <p className="accordion__name text-[15px] sm:text-[20px] font-[600] text-black">
-                Pharma Intermediates
-                <a className="text-[#666666] font-[400] text-[14px] ml-5"> {PharmaIntermidatesData.length} items</a>
-              </p>
-              <img src="./Groupup.svg" alt="up" />
-            </div>
-            <div className="accordion__details">
-              <PharmaIntermidates />
-            </div>
-          </div>
+
+
           <div
             className={`accordion__item ${openAccordion === 2 ? "open" : ""}`}
             ref={(el) => (accordionRefs.current[2] = el)}
